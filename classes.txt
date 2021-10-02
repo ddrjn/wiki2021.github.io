@@ -1,0 +1,2 @@
+section-white : sections where background is white and text is black
+section-gradient : sections where background is gradient color and text is white
