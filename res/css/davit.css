@@ -27,29 +27,29 @@
 
 
 @font-face {
-    font-family: med;
-    src: "res/font/Exo2-Medium.ttf";
+    font-family: 'med';
+    src: url('font/Exo2-Medium.ttf');
   }
 
 @font-face {
     font-family: jirni;
-    src: "res/font/Exo2-Black.ttf";
+    src: url("font/Exo2-Black.ttf");
 }
 
 body{
-font-family: med !important;
-
+font-family:'med' !important;
+font-weight: 300 !important;
 
 }
 
 b{
 font-family: jirni;
-
+font-weight: 300 !important;
 }
 
 strong{
     font-family: jirni;
-    
+    font-weight: 300 !important;
     }
 
 .dropdown-item{
