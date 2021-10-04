@@ -119,17 +119,21 @@ footer > .container > .row{
 /* Wave */
 /* ХАХАХАХА забей)))) */
 .wave-up {
-  height:50px;
+  height:35px;
   width:100%;
-  background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(#5B69AA), color-stop(0.49, #5B69AA), color-stop(0.51, #fff), to(white));
-  -webkit-background-size: 49px 100%;
+  background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #5B69AA), to(#5B69AA));
+  -webkit-background-size: 35px 100%;
+  
+  transform: rotateX(180deg) translateY(-20px);
 }
 
+
 .wave-down{
-  height:50px;
+  height:35px;
   width:100%;
-  background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#5B69AA), color-stop(0.49, #5B69AA), color-stop(0.51, #212529), to(#212529));
-  -webkit-background-size: 49px 100%;
+  background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(#212529), color-stop(0.49, #212529), color-stop(0.51, #5B69AA), to(#5B69AA));
+  -webkit-background-size: 35px 100%;
+  transform: rotateX(180deg) ;
 }
 
 
