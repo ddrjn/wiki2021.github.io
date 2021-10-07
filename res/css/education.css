@@ -1,0 +1,79 @@
+/* Education page */
+
+/* INTRODUCTION */
+/* ################################ */
+h1 {
+    font-weight: bold;
+}
+
+/* Main section gradient */
+.section-grad-education {
+    background-image: linear-gradient(#867481, #FBA58E);
+    color: white !important;
+}
+
+/* introduction container */
+.education-intro {
+    position: relative;
+}
+
+/* Introduction text */
+.education-intro-text {
+    position: absolute;
+    top: 9%;
+    left: 0;
+    width: 100%;
+}
+.education-intro-text p {
+    font-size: 1.8vw;
+    width: 90%;
+    margin: 0 auto;
+    color: #72646e;
+}
+
+/* Workshop */
+.education-icons {
+    width: 80%;
+    margin: 0 auto;
+}
+/* ################################ */
+
+
+/* Waves between sections */
+/* ################################ */
+.wave-up-education {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #867481), to(#867481));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+.wave-down-education {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #FBA58E), to(#FBA58E));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) ;
+}
+/* ################################ */
+
+
+/* Public events */
+/* ################################ */
+.workshop-wave {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.education-workshops {
+    position: relative;
+}
+
+.education-julygem {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+}
+
+/* ################################ */
