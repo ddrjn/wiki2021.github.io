@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="res/css/education.css">
     <!-- Для иконок -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <!-- navbar -->
@@ -105,7 +107,7 @@
                             escape room, participated in many science fairs, and introduced the fundamentalprinciples 
                             of synthetic biology to a wider audience of different ages and fields.And we do not just do it, 
                             we do it in an entertaining and funny way. We do not teachwith complex over-the-head explanations,
-                            we teach while playing.
+                            we teach while playing. 
                         </p>
                     </div>
                 </div>
@@ -142,11 +144,131 @@
         <div class="container">
             <div class="d-flex align-items-center row">
                 <h1> Public events </h1>
-                <div class="education-workshops">
-                    <img src="res/img/education_workshops_wave.svg" alt="" class="img-responsive workshop-wave">
-                    <div class="education-julygem">
+                <div class="education-public-events">
+                    <!-- Это SVG -->
+                    <!-- 
+                        В чем сок.
+                        у нас еcть координаты этих кружочков
+                        я хотел в скрипте эти координаты пиздить
+                        и после вставлять дивы около этих кооринат.
+                        Это сверх универсально ибо если мы добавим новый кружок - он уже будет у нас и впихнуть в него новы див = изи.
+                        Плюс эта хуйня по идее должна уже быть responsive
+
+                        Но у меня пока что нихуя не получилось.
+                        я там сверху ебнул jquery чтобы все это асинхронно делать, но я не могу понять
+                        как относятся коориданы SVG и DOMTree...
+                     -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 553 2147">
+                        <defs>
+                            <style>
+                                .cls-1{fill:#fff;stroke:#000;stroke-miterlimit:10;}
+                            </style>
+                        </defs>
+                        <g id="layer_2" data-name="Слой 2">
+                            <g id="layer_2_1" data-name="Слой 1">
+                                <path class="cls-1" d="M423.5,2128.5c-83-19-199.56-55.59-212-125-23.81-132.82,354.3-270.1,328-372-26.2-101.5-424.26-53.94-439-131-16.27-85.07,455.67-212.06,441-303-14.94-92.61-520-57.77-532-141-12.67-87.68,535.15-213.38,522-300-11.87-78.21-469.24-46.63-484-136-14.25-86.29,398.79-196.43,383-297-12.82-81.67-295.69-76.05-309-164-8-52.6,84.85-109.73,152-145"/>
+                                <circle class="cls-1 modal-circle" cx="121.5" cy="159.5" r="13" id="testCircle"/>
+                                <circle class="cls-1 modal-circle" cx="430.5" cy="323.5" r="9" id="circlePaide"/>
+                                <circle class="cls-1 modal-circle" cx="47.5" cy="620.5" r="10" id="circleNarva14"/>
+                                <circle class="cls-1 modal-circle" cx="531.5" cy="756.5" r="10" id="circleVoru"/>
+                                <circle class="cls-1 modal-circle" cx="9.5" cy="1056.5" r="9" id="circleNarva28"/>
+                                <circle class="cls-1 modal-circle" cx="541.5" cy="1197.5" r="11" id="circleTartu"/>
+                                <circle class="cls-1 modal-circle" cx="100.5" cy="1500.5" r="11" id="circleDragon"/>
+                                <circle class="cls-1 modal-circle" cx="539.5" cy="1631.5" r="9" id="circleAHHA"/>
+                                <circle class="cls-1 modal-circle" cx="211.5" cy="2003.5" r="12" id="circleGlobal"/>
+                                <circle class="cls-1 modal-circle" cx="423.5" cy="2128.5" r="18" id="circleEscape"/>
+                                <circle class="cls-1 modal-circle" cx="273.5" cy="14.5" r="14"/>
+                            </g>
+                        </g>
+                    </svg>
+
+                    <div class="pe-julygem pe-modal" id="peJulyGEM">
+                        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#peModal_julygem"> -->
+                            
+                        <h4> JulyGEM (Calgary) </h4>
                         <p>
-                            JulyGEM (Calgary)
+                            31.07
+                        </p>
+                        <!-- </button> -->
+                    </div>
+                    <!-- Modal -->
+                    <!-- <div class="modal" id="peModal_julygem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Et aliquam inventore eaque neque hic iste nihil debitis est! 
+                              Eveniet ullam libero voluptate excepturi minus blanditiis cupiditate 
+                              sed dicta maxime obcaecati.
+                            </div>
+                            
+                          </div>
+                        </div>
+                    </div> -->
+                    
+                    <div class="pe-paideworkshop pe-modal" id="pePaide">
+                        <h4> Paide workshop </h4>
+                        <p>
+                            13.08
+                        </p>
+                    </div>
+                    <div class="pe-narva-14 pe-modal" id="peNarva14">
+                        <h4> Narva </h4>
+                        <p>
+                            14.08
+                        </p>
+                    </div>
+                    <div class="pe-voru pe-modal" id="peVoru">
+                        <h4> Voru </h4>
+                        <p>
+                            21.08
+                        </p>
+                    </div>
+                    <div class="pe-narva-28 pe-modal" id="peNarva28">
+                        <h4> Narva </h4>
+                        <p>
+                            28.08
+                        </p>
+                    </div>
+                    <div class="pe-tartu pe-modal" id="peTartu">
+                        <h4> Tartu </h4>
+                        <p>
+                            03.09
+                        </p>
+                    </div>
+                    <div class="pe-dragon pe-modal" id="peDragon">
+                        <h4> Dragon’s Biome<br>
+                            (KU Leuven) 
+                        </h4>
+                        <p>
+                            14.08
+                        </p>
+                    </div>
+                    <div class="pe-ahha pe-modal" id="peAHHA">
+                        <h4> AHHA (AHAHHAHAHAHA) </h4>
+                        <p>
+                            24.09
+                        </p>
+                    </div>
+                    <div class="pe-global pe-modal" id="peGlobal">
+                        <h4> 1st Global iGEM<br>
+                            Diagnostics & Therapeutics<br>
+                            Conference (Korea_HS) 
+                        </h4>
+                        <p>
+                            26.09
+                        </p>
+                    </div>
+                    <div class="pe-escape pe-modal" id="peEscape">
+                        <h4> Art Exhibition and <br>Escape room </h4>
+                        <p>
+                            06.10
                         </p>
                     </div>
                 </div>

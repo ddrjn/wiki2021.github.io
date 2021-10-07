@@ -70,15 +70,60 @@ h1 {
     margin: 0 auto;
 }
 
-.education-workshops {
+
+.education-public-events {
     position: relative;
+    /* background-image: url('../img/education_workshops_wave.svg'); */
 }
 
-.education-julygem {
+/* Modals */
+.pe-julygem {
     position: absolute;
-    top: 10%;
-    left: 0;
-    width: 100%;
+    /* top: 100px; */
+    left: 1%;
+
 }
+
+.pe-paideworkshop {
+    position: absolute;
+    right: 1%;
+}
+
+.pe-narva-14 {
+    position: absolute;
+    left: 15%;
+} 
+.pe-voru {
+    position: absolute;
+    right: 10%;
+} 
+.pe-narva-28 {
+    position: absolute;
+    left: 10%;
+} 
+.pe-tartu {
+    position: absolute;
+    right: 10%;
+} 
+.pe-dragon {
+    position: absolute;
+    /* ЕБАТЬ ЖЕ ЕГО ДВУХСТОРОННЕМ СКОТЧЕМ, ДА ЭТО КОСТЫЛЬ */
+    left: -1%;
+} 
+.pe-ahha {
+    position: absolute;
+    right: 10%;
+} 
+.pe-global {
+    position: absolute;
+    left: 5%;
+} 
+.pe-escape {
+    position: absolute;
+    /* НИХУЯ СЕБЕ, ЕЩЕ ОДИН! */
+    right: -1%;
+} 
+
+/* Circle hover */
 
 /* ################################ */
