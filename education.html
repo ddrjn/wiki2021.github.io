@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" data-target="" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Education </title>
     <link rel="stylesheet" type="text/css" href="bootstrap-5.1.1-dist/css/bootstrap.css">
@@ -167,82 +167,227 @@
                         <g id="layer_2" data-name="Слой 2">
                             <g id="layer_2_1" data-name="Слой 1">
                                 <path class="cls-1" d="M423.5,2128.5c-83-19-199.56-55.59-212-125-23.81-132.82,354.3-270.1,328-372-26.2-101.5-424.26-53.94-439-131-16.27-85.07,455.67-212.06,441-303-14.94-92.61-520-57.77-532-141-12.67-87.68,535.15-213.38,522-300-11.87-78.21-469.24-46.63-484-136-14.25-86.29,398.79-196.43,383-297-12.82-81.67-295.69-76.05-309-164-8-52.6,84.85-109.73,152-145"/>
-                                <circle class="cls-1 modal-circle" cx="121.5" cy="159.5" r="13" id="testCircle"/>
-                                <circle class="cls-1 modal-circle" cx="430.5" cy="323.5" r="9" id="circlePaide"/>
-                                <circle class="cls-1 modal-circle" cx="47.5" cy="620.5" r="10" id="circleNarva14"/>
-                                <circle class="cls-1 modal-circle" cx="531.5" cy="756.5" r="10" id="circleVoru"/>
-                                <circle class="cls-1 modal-circle" cx="9.5" cy="1056.5" r="9" id="circleNarva28"/>
-                                <circle class="cls-1 modal-circle" cx="541.5" cy="1197.5" r="11" id="circleTartu"/>
-                                <circle class="cls-1 modal-circle" cx="100.5" cy="1500.5" r="11" id="circleDragon"/>
-                                <circle class="cls-1 modal-circle" cx="539.5" cy="1631.5" r="9" id="circleAHHA"/>
-                                <circle class="cls-1 modal-circle" cx="211.5" cy="2003.5" r="12" id="circleGlobal"/>
-                                <circle class="cls-1 modal-circle" cx="423.5" cy="2128.5" r="18" id="circleEscape"/>
-                                <circle class="cls-1 modal-circle" cx="273.5" cy="14.5" r="14"/>
+                                <circle class="cls-1 modal-circle" data-target="modalJulyGEM" cx="121.5" cy="159.5" r="13" id="testCircle"/>
+                                <circle class="cls-1 modal-circle" data-target="modalPaide" cx="430.5" cy="323.5" r="9" id="circlePaide"/>
+                                <circle class="cls-1 modal-circle" data-target="modalNarva14" cx="47.5" cy="620.5" r="10" id="circleNarva14"/>
+                                <circle class="cls-1 modal-circle" data-target="modalVoru" cx="531.5" cy="756.5" r="10" id="circleVoru"/>
+                                <circle class="cls-1 modal-circle" data-target="modalNarva28" cx="9.5" cy="1056.5" r="9" id="circleNarva28"/>
+                                <circle class="cls-1 modal-circle" data-target="modalTartu" cx="541.5" cy="1197.5" r="11" id="circleTartu"/>
+                                <circle class="cls-1 modal-circle" data-target="modalDragon" cx="100.5" cy="1500.5" r="11" id="circleDragon"/>
+                                <circle class="cls-1 modal-circle" data-target="modalAHHA" cx="539.5" cy="1631.5" r="9" id="circleAHHA"/>
+                                <circle class="cls-1 modal-circle" data-target="modalGlobal" cx="211.5" cy="2003.5" r="12" id="circleGlobal"/>
+                                <circle class="cls-1 modal-circle" data-target="modalEscape" cx="423.5" cy="2128.5" r="18" id="circleEscape"/>
+                                <circle class="cls-1" cx="273.5" cy="14.5" r="14"/>
                             </g>
                         </g>
                     </svg>
 
-                    <div class="pe-julygem pe-modal" id="peJulyGEM">
-                        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#peModal_julygem"> -->
-                            
+                    <div class="pe-julygem " id="peJulyGEM">
                         <h4> JulyGEM (Calgary) </h4>
                         <p>
                             31.07
                         </p>
-                        <!-- </button> -->
                     </div>
-                    <!-- Modal -->
-                    <!-- <div class="modal" id="peModal_julygem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <!-- JulyGEM (Calgary) MODAL -->
+                    <div class="modal fade" id="modalJulyGEM" tabindex="-1" role="dialog" aria-labelledby="modalJulyGEMlabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
+                            <div class="modal-content bg-modal-img">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"> Modal title </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt    
+                                    </p>
+                                </div>
                             </div>
-                            <div class="modal-body">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                              Et aliquam inventore eaque neque hic iste nihil debitis est! 
-                              Eveniet ullam libero voluptate excepturi minus blanditiis cupiditate 
-                              sed dicta maxime obcaecati.
-                            </div>
-                            
-                          </div>
                         </div>
-                    </div> -->
+                    </div>
                     
-                    <div class="pe-paideworkshop pe-modal" id="pePaide">
+                    
+                    <div class="pe-paideworkshop " id="pePaide">
                         <h4> Paide workshop </h4>
                         <p>
                             13.08
                         </p>
                     </div>
-                    <div class="pe-narva-14 pe-modal" id="peNarva14">
+                    <!-- JulyGEM (Calgary) MODAL -->
+                    <div class="modal fade" id="modalPaide" tabindex="-1" role="dialog" aria-labelledby="modalJulyGEMlabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content bg-modal-img">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"> Modal title </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pe-narva-14 " id="peNarva14">
                         <h4> Narva </h4>
                         <p>
                             14.08
                         </p>
                     </div>
-                    <div class="pe-voru pe-modal" id="peVoru">
+                    <!-- JulyGEM (Calgary) MODAL -->
+                    <div class="modal fade" id="modalNarva14" tabindex="-1" role="dialog" aria-labelledby="modalJulyGEMlabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content bg-modal-img">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"> Modal title </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pe-voru " id="peVoru">
                         <h4> Voru </h4>
                         <p>
                             21.08
                         </p>
                     </div>
-                    <div class="pe-narva-28 pe-modal" id="peNarva28">
+                    <!-- JulyGEM (Calgary) MODAL -->
+                    <div class="modal fade" id="modalVoru" tabindex="-1" role="dialog" aria-labelledby="modalJulyGEMlabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content bg-modal-img">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"> Modal title </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pe-narva-28 " id="peNarva28">
                         <h4> Narva </h4>
                         <p>
                             28.08
                         </p>
                     </div>
-                    <div class="pe-tartu pe-modal" id="peTartu">
+                    <!-- JulyGEM (Calgary) MODAL -->
+                    <div class="modal fade" id="modalNarva28" tabindex="-1" role="dialog" aria-labelledby="modalJulyGEMlabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content bg-modal-img">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"> Modal title </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pe-tartu " id="peTartu">
                         <h4> Tartu </h4>
                         <p>
                             03.09
                         </p>
                     </div>
-                    <div class="pe-dragon pe-modal" id="peDragon">
+                    <!-- JulyGEM (Calgary) MODAL -->
+                    <div class="modal fade" id="modalTartu" tabindex="-1" role="dialog" aria-labelledby="modalJulyGEMlabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content bg-modal-img">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"> Modal title </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pe-dragon " id="peDragon">
                         <h4> Dragon’s Biome<br>
                             (KU Leuven) 
                         </h4>
@@ -250,13 +395,69 @@
                             14.08
                         </p>
                     </div>
-                    <div class="pe-ahha pe-modal" id="peAHHA">
+                    <!-- JulyGEM (Calgary) MODAL -->
+                    <div class="modal fade" id="modalDragon" tabindex="-1" role="dialog" aria-labelledby="modalJulyGEMlabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content bg-modal-img">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"> Modal title </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pe-ahha " id="peAHHA">
                         <h4> AHHA (AHAHHAHAHAHA) </h4>
                         <p>
                             24.09
                         </p>
                     </div>
-                    <div class="pe-global pe-modal" id="peGlobal">
+                    <!-- JulyGEM (Calgary) MODAL -->
+                    <div class="modal fade" id="modalAHHA" tabindex="-1" role="dialog" aria-labelledby="modalJulyGEMlabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content bg-modal-img">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"> Modal title </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pe-global " id="peGlobal">
                         <h4> 1st Global iGEM<br>
                             Diagnostics & Therapeutics<br>
                             Conference (Korea_HS) 
@@ -265,11 +466,66 @@
                             26.09
                         </p>
                     </div>
-                    <div class="pe-escape pe-modal" id="peEscape">
+                    <!-- JulyGEM (Calgary) MODAL -->
+                    <div class="modal fade" id="modalGlobal" tabindex="-1" role="dialog" aria-labelledby="modalJulyGEMlabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content bg-modal-img">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"> Modal title </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pe-escape " id="peEscape">
                         <h4> Art Exhibition and <br>Escape room </h4>
                         <p>
                             06.10
                         </p>
+                    </div>
+                    <!-- JulyGEM (Calgary) MODAL -->
+                    <div class="modal fade" id="modalEscape" tabindex="-1" role="dialog" aria-labelledby="modalJulyGEMlabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content bg-modal-img">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"> Modal title </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                        Voluptatibus repudiandae incidunt exercitationem optio dignissimos 
+                                        deleniti laboriosam recusandae est, distinctio totam sint quis? 
+                                        Consequuntur, dicta porro? Fugiat, quidem. Maxime, repellat deserunt    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

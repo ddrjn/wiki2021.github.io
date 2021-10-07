@@ -125,5 +125,29 @@ h1 {
 } 
 
 /* Circle hover */
+/* 
+Чисто ДЕМО. Потом можем тут какой ниюудь ревльно красивый ээфект сделать типо градиент снизу.
 
+*/
+.modal-circle:hover {
+    fill:red;
+}
+
+
+.pe-modal {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    visibility: hidden;
+}
+
+.modal .bg-modal-img {
+    background-image: url('../img/education_modal_bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+}
 /* ################################ */

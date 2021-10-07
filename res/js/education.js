@@ -67,7 +67,7 @@ $(window).on('scroll', () => {
     //     modalCoordMap[i].obj.style.top = `${modalCoordMap[i].y}px`
     // }
 
-
+    //  ~ 200*i + 200 + i*50 
     pe_julygem.css('top', `${jg_coords[1]/10 + 200}px`)
     pe_paide.css('top', `${paide_coords[1]/10 + 550}px`)
     pe_narva_14.css('top', `${narva_14_coords[1]/10 + 1100}px`)
@@ -89,4 +89,14 @@ $(window).on('scroll', () => {
     // console.log(`SVG BCR: ${paide_coords}, (${paide_coords[1]/2.27})`)
     // console.log(`PAIDE Pos: ${pe_paide.position().top}, ${pe_paide.position().left}`)
     // console.log("OFFSET:", pe_julygem.offset())
+})
+
+
+
+$('.modal-circle').on('click', function() {
+    let target = $(this).data('target')
+    if (target != null && target != '') {
+        console.log(target)
+        $(`#${target}`).modal('show')
+    }
 })
