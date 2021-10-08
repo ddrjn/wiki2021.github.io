@@ -1,0 +1,153 @@
+/* Education page */
+
+/* INTRODUCTION */
+/* ################################ */
+h1 {
+    font-weight: bold;
+}
+
+/* Main section gradient */
+.section-grad-education {
+    background-image: linear-gradient(#867481, #FBA58E);
+    color: white !important;
+}
+
+/* introduction container */
+.education-intro {
+    position: relative;
+}
+
+/* Introduction text */
+.education-intro-text {
+    position: absolute;
+    top: 9%;
+    left: 0;
+    width: 100%;
+}
+.education-intro-text p {
+    font-size: 1.8vw;
+    width: 90%;
+    margin: 0 auto;
+    color: #72646e;
+}
+/* ################################ */
+
+/* WORKSHOPS */
+/* ################################ */
+
+.education-icons {
+    width: 80%;
+    margin: 0 auto;
+}
+.hover-div:hover {
+    box-shadow: 4px 4px 14px 6px rgba(0,0,0,0.6);
+}
+/* ################################ */
+
+/* Waves between sections */
+/* ################################ */
+.wave-up-education {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #867481), to(#867481));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+.wave-down-education {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #FBA58E), to(#FBA58E));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) ;
+}
+/* ################################ */
+
+
+/* Public events */
+/* ################################ */
+.workshop-wave {
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.education-public-events {
+    position: relative;
+    /* background-image: url('../img/education_workshops_wave.svg'); */
+}
+
+/* Modals */
+.pe-julygem {
+    position: absolute;
+    /* top: 100px; */
+    left: 1%;
+
+}
+
+.pe-paideworkshop {
+    position: absolute;
+    right: 1%;
+}
+
+.pe-narva-14 {
+    position: absolute;
+    left: 15%;
+} 
+.pe-voru {
+    position: absolute;
+    right: 10%;
+} 
+.pe-narva-28 {
+    position: absolute;
+    left: 10%;
+} 
+.pe-tartu {
+    position: absolute;
+    right: 10%;
+} 
+.pe-dragon {
+    position: absolute;
+    /* ЕБАТЬ ЖЕ ЕГО ДВУХСТОРОННЕМ СКОТЧЕМ, ДА ЭТО КОСТЫЛЬ */
+    left: -1%;
+} 
+.pe-ahha {
+    position: absolute;
+    right: 10%;
+} 
+.pe-global {
+    position: absolute;
+    left: 5%;
+} 
+.pe-escape {
+    position: absolute;
+    /* НИХУЯ СЕБЕ, ЕЩЕ ОДИН! */
+    right: -1%;
+} 
+
+/* Circle hover */
+/* 
+Чисто ДЕМО. Потом можем тут какой ниюудь ревльно красивый ээфект сделать типо градиент снизу.
+
+*/
+.modal-circle:hover {
+    fill:red;
+}
+
+
+.pe-modal {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    visibility: hidden;
+}
+
+.modal .bg-modal-img {
+    background-image: url('../img/education_modal_bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+}
+/* ################################ */
