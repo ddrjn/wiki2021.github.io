@@ -71,7 +71,7 @@ strong {
   padding-bottom: 5%;
 }
 
-footer > .container > .row{
+footer > .container-fluid > .row{
   padding-top: 1%;
   padding-bottom: 1%;
 }
@@ -99,10 +99,7 @@ footer > .container > .row{
 
 
 /* Footer Huyuter */
-.contact-us-container {
-  /* Как по мне это ебучий костыль. очень недоволен как я это сделал но по другому пока не нашел */
-  margin-left: 15%; 
-}
+
 
 .contact-us-container h3 {
   font-weight: 900;
@@ -157,6 +154,12 @@ footer > .container > .row{
   .info-text{
     font-size: 3.2vw;
   }
+}
+
+.social-name{
+
+  margin-top: 1rem;
+
 }
 
 
