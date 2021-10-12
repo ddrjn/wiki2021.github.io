@@ -36,9 +36,19 @@ h1 {
 /* ################################ */
 
 .education-icons {
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
 }
+
+.icons-kostilj {
+    width: 80%;
+}
+
+.svg-invert-on-hover:hover {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
 .hover-div:hover {
     box-shadow: 4px 4px 14px 6px rgba(0,0,0,0.6);
 }
@@ -74,6 +84,7 @@ h1 {
     fill: #fff;
     stroke: #867481;
     stroke-miterlimit: 10;
+    transition: 0.8s;
 }
 
 .pe-header {
@@ -147,12 +158,33 @@ h1 {
 /* Circle hover */
 /* 
 Чисто ДЕМО. Потом можем тут какой ниюудь ревльно красивый ээфект сделать типо градиент снизу.
-
 */
+
 .modal-circle:hover {
-    fill:red;
+    fill: #5B69AA;
 }
 
+/* 
+    Пытался сделать красивый градиент чтобы типо на hover
+    Он шел снизу вверх как в main section
+*/
+
+/* 
+.modal-circle:hover {
+    fill: url('#circle-hover-gradient');
+}
+
+.stop {
+    transition: 2s;
+}           
+
+.modal-circle:hover stop:first-child {
+    stop-color: #24bed2;
+}
+
+.modal-circle:hover stop:last-child {
+    stop-color: #32ffe4;
+} */
 
 .modal .bg-modal-img {
     background-image: url('../img/education_modal_bg.svg');
