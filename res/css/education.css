@@ -70,13 +70,33 @@ h1 {
     margin: 0 auto;
 }
 
+.cls-1 {
+    fill: #fff;
+    stroke: #867481;
+    stroke-miterlimit: 10;
+}
+
+.pe-header {
+    color: #9C7884;
+    margin-bottom: 5%;
+}
 
 .education-public-events {
     position: relative;
     /* background-image: url('../img/education_workshops_wave.svg'); */
 }
 
+
 /* Modals */
+/* General class to target all modals */
+.pe-modal {
+    color: #5B69AA;
+}
+
+.pe-modal:hover {
+    box-shadow: 2px 2px 20px 4px rgba(0,0,0,0.6);
+}
+
 .pe-julygem {
     position: absolute;
     /* top: 100px; */
@@ -133,14 +153,6 @@ h1 {
     fill:red;
 }
 
-
-.pe-modal {
-    position: fixed; 
-    top: 50%;
-    left: 50%;
-    background-color: red;
-    visibility: hidden;
-}
 
 .modal .bg-modal-img {
     background-image: url('../img/education_modal_bg.svg');
