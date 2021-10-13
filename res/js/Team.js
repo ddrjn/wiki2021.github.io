@@ -324,7 +324,7 @@ class Circle {
             if(this.location.y<=this.boundY.x || this.location.y>=this.boundY.y){
                 this.velocity.y = (-this.velocity.y)/abs(this.velocity.y)*this.maxSpeed;
                 
-                    this.location.y =this.location.y + this.velocity.y*3;
+                    this.location.y =this.location.y + this.velocity.y*6;
             }
             
         }
@@ -369,7 +369,7 @@ class Circle {
     }
 
     increaseMaxSpeed(){
-        this.maxSpeed = min(window.innerWidth,window.innerHeight)/300;
+        this.maxSpeed = min(window.innerWidth,window.innerHeight)/500;
 
     }
 
