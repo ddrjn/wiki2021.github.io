@@ -23,6 +23,9 @@ let frameXbounds,frameYbounds;
 var modalOpen = false;
 var vectorGiven = false;
 var mentorsExited=new Array();
+let canvasSize;
+
+let offset;
 function preload() {
     butilka = loadImage('res/img/butilka.png');
     memberInfo = loadJSON('res/members/members.json', loadImages);
@@ -35,10 +38,10 @@ function setup() {
      butilkaXbounds = createVector(butilkaStart+mentorCircleSize,butilkaSizeX*0.8);
      butilkaYbounds = createVector(butilkaStart+mentorCircleSize/2,butilkaSizeY);
      frameXbounds = createVector(personCircleSize,window.innerWidth-personCircleSize);
-     frameYbounds = createVector(butilkaSizeY*1.5,window.innerHeight*1.5);
+     frameYbounds = createVector(butilkaSizeY*1.5,canvasSize*0.95);
     for (var k = 0; k < mentorNum; k++){
 
-        mentors[k] = new Circle(mentorCircleSize,color(91, 105, 170, 200),createVector(random(butilkaXbounds.x,butilkaXbounds.y),random(butilkaYbounds.x,butilkaYbounds.y)),imgArray[k],createVector(0.2,2));
+        mentors[k] = new Circle(mentorCircleSize,color(91, 105, 170, 200),createVector(random(butilkaXbounds.x,butilkaXbounds.y),random(butilkaYbounds.x,butilkaYbounds.y)),imgArray[k],createVector(random(-1.5,1.5),2));
         mentors[k].setBounds(butilkaXbounds,butilkaYbounds);
         mentorsExited[k]=false;
     } //creating mentors inside the butilka
@@ -49,8 +52,11 @@ function setup() {
         var col = slaveID %4;
         var row = int(slaveID /4);
         var cont = (window.innerWidth-personCircleSize*2)/4;
-        slaves[slaveID] = new Circle(personCircleSize,color(91, 105, 170, 200),createVector(personCircleSize*2+cont*col+random(-personCircleSize,personCircleSize),butilkaSizeY*2+personCircleSize+row*2*personCircleSize+random(-personCircleSize,personCircleSize)),imgArray[k],createVector(random(-1,1),random(-1,1)));
-        slaves[slaveID].setBounds(frameXbounds,frameYbounds);
+        //slaves[slaveID] = new Circle(personCircleSize,color(91, 105, 170, 200),createVector(personCircleSize*2+cont*col+random(-personCircleSize,personCircleSize),butilkaSizeY*2+personCircleSize+row*2*personCircleSize+random(-personCircleSize,personCircleSize)),imgArray[k],createVector(random(-1,1),random(-1,1)));
+        slaves[slaveID] = new Circle(personCircleSize,color(91, 105, 170, 200),createVector(random(butilkaXbounds.x,butilkaXbounds.y),random(butilkaYbounds.x,butilkaYbounds.y)),imgArray[k],createVector(0.2,3));
+        slaves[slaveID].setBounds(butilkaXbounds,butilkaYbounds);
+        
+        //slaves[slaveID].setBounds(frameXbounds,frameYbounds);
     }
 
 
@@ -70,7 +76,7 @@ function setup() {
 
 
     
-    myCanvas = createCanvas(window.innerWidth, window.innerHeight * 2);
+    myCanvas = createCanvas(window.innerWidth, canvasSize);
     myCanvas.parent("teamCanvas");
     myCanvas.background('rgba(255,255,255, 0)');
     
@@ -91,35 +97,43 @@ function mainActivity(){
     // image(imgArray[0], 400, 400, 100, 100)
     //ellipse(100,100,200,200)
     //background('rgba(255,255,255, 0)');
-   
+
+
+
     for (var i =0; i<emptyCircles.length;i++){
         emptyCircles[i].moveAbout();
         emptyCircles[i].display();
 
     }
+ for (var i =0; i<slaves.length;i++){
+        slaves[i].moveAbout();
+        slaves[i].display();
+        if(!slaves[i].getExited()&&!mentorsExited[i]){
+            slaves[i].setExited(frameYbounds.x);
+            }
+            if(slaves[i].getExited()&&!mentorsExited[i]){
+                mentorsExited[i]=true;
+                slaves[i].setBounds(frameXbounds,frameYbounds);
+    
+    
+            }
+    }
+
+    imageMode(CORNER);
+    image(butilka, butilkaStart, butilkaStart,butilkaSizeX,butilkaSizeY);
+
+
+    
 
     for (var i =0; i<mentors.length;i++){
         mentors[i].moveAbout();
         mentors[i].display();
-        if(!mentors[i].getExited()&&!mentorsExited[i]){
-        mentors[i].setExited(frameYbounds.x);
-        }
-        if(mentors[i].getExited()&&!mentorsExited[i]){
-            mentorsExited[i]=true;
-            mentors[i].setBounds(frameXbounds,frameYbounds);
-
-
-        }
+        
 
     }
-    imageMode(CORNER);
-    image(butilka, butilkaStart, butilkaStart,butilkaSizeX,butilkaSizeY);
+    
 
-    for (var i =0; i<slaves.length;i++){
-        slaves[i].moveAbout();
-        slaves[i].display();
-
-    }
+   
 
 }
 
@@ -128,9 +142,9 @@ function draw() {
 
     if(startAnimating){
     if(!vectorGiven){
-        for (var k = 0; k < mentorNum; k++){
-        mentors[k].setBounds(frameXbounds,createVector(mentorCircleSize,frameYbounds.y));
-        mentors[k].setVel(createVector(window.innerWidth,butilkaSizeY))
+        for (var k = 0; k < slaves.length; k++){
+        slaves[k].setBounds(frameXbounds,createVector(mentorCircleSize,frameYbounds.y));
+        slaves[k].setVel(createVector(window.innerWidth,butilkaSizeY))
         console.log("set");
         }
 
@@ -151,10 +165,10 @@ function mouseWheel(event) {
     // Change the red value according
     // to the scroll delta value
     scrollval = window.scrollY
-    //console.log(scrollval);
-
+    console.log(document.getElementById("teamCanvas").offsetTop);
+    console.log(scrollval);
     
-    if (scrollval > window.innerHeight / 2) {
+    if (scrollval > offset) {
         startAnimating = true;
 
     }
@@ -220,8 +234,21 @@ function calculateVars() {
     mentorCircleSize = window.innerWidth / 12;
     EmptyCircleSize = window.innerWidth / 25;
     butilkaSizeX = window.innerWidth / 1.25;
-    butilkaSizeY = window.innerHeight / 2.5;
+    butilkaSizeY = window.innerWidth / 5.4;
     butilkaStart = window.innerWidth*0.05;
+    offset = document.getElementById("teamCanvas").offsetTop*0.8;
+    canvasSize = window.innerHeight*1.3;
+
+    if(window.innerHeight>window.innerWidth){
+        personCircleSize = window.innerHeight / 17;
+    mentorCircleSize = window.innerHeight / 15;
+    EmptyCircleSize = window.innerHeight / 25;
+    emptyCircleNum = 30;
+    offset = document.getElementById("teamCanvas").offsetTop*0.5;
+    canvasSize = window.innerHeight;
+
+
+    }
 
 }
 
@@ -234,7 +261,7 @@ class Circle {
     velocity;
     boundX=null;
     boundY=null;
-    maxSpeed = 4;
+    maxSpeed = min(window.innerWidth,window.innerHeight)/900;
     constructor(size, color, location,img ,velocity) {
         this.size = size;
         this.color = color;
@@ -265,8 +292,9 @@ class Circle {
     }
 
     moveAbout(){
-        var accx = random(-0.02,0.02);
-        var accy = random(-0.02,0.02);
+        var m = min(window.innerWidth,window.innerHeight)/25000
+        var accx = random(-m,m);
+        var accy = random(-m,m);
         this.velocity.x = this.velocity.x + accx;
         this.velocity.y = this.velocity.y + accy;
         if(this.velocity.x>this.maxSpeed)this.velocity.x = this.maxSpeed
