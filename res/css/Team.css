@@ -1,0 +1,27 @@
+.wave-up-team {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #888EBA), to(#888EBA));
+    -webkit-background-size: 35px 100%;
+    
+    transform: rotateX(180deg) translateY(-20px);
+  }
+
+  .section-grad-team{
+    background-image: linear-gradient(#888EBA, #BD8481);
+    color: white !important;
+  }
+  .wave-down-team{
+    height:40px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(#212529), color-stop(0.49, #212529), color-stop(0.51, #BD8481), to(#BD8481));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) ;
+  }
+
+
+.modal-content{
+    background-image: linear-gradient(#888EBA, #BD8481);
+    color: white !important;
+
+  }
