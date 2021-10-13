@@ -41,7 +41,7 @@ function setup() {
      frameYbounds = createVector(butilkaSizeY*1.5,canvasSize*0.95);
     for (var k = 0; k < mentorNum; k++){
 
-        mentors[k] = new Circle(mentorCircleSize,color(91, 105, 170, 200),createVector(random(butilkaXbounds.x,butilkaXbounds.y),random(butilkaYbounds.x,butilkaYbounds.y)),imgArray[k],createVector(random(-1.5,1.5),2));
+        mentors[k] = new Circle(mentorCircleSize,color(91, 105, 170, 200),createVector(random(butilkaXbounds.x+personCircleSize/2,butilkaXbounds.y-personCircleSize/2),random(butilkaYbounds.x+personCircleSize/2,butilkaYbounds.y-personCircleSize/2)),imgArray[k],createVector(random(-0.3,0.3),0.3));
         mentors[k].setBounds(butilkaXbounds,butilkaYbounds);
         mentorsExited[k]=false;
     } //creating mentors inside the butilka
@@ -158,7 +158,7 @@ function draw() {
     if(startAnimating){
     if(!vectorGiven){
         for (var k = 0; k < slaves.length; k++){
-        slaves[k].setBounds(frameXbounds,createVector(mentorCircleSize,frameYbounds.y));
+        slaves[k].setBounds(frameXbounds,createVector(butilkaStart,frameYbounds.y));
         slaves[k].setVel(createVector(window.innerWidth,butilkaSizeY));
         console.log("set");
         }
@@ -317,7 +317,7 @@ class Circle {
                 }
                 else {
                     this.location.x =this.location.x - this.velocity.x;
-                    this.velocity.x = (-this.velocity.x)/abs(this.velocity.x)*this.maxSpeed*2 ;
+                    this.velocity.x = (-this.velocity.x)/abs(this.velocity.x)*this.maxSpeed ;
                    
                     
                 }
@@ -326,7 +326,7 @@ class Circle {
         if(this.location.y<=this.boundY.x){
             
            
-                this.location.y -=  this.velocity.y;
+                this.location.y -=  this.velocity.y/abs(this.velocity.y)*this.maxSpeed;
             
             this.velocity.y = (-this.velocity.y);
            
@@ -336,7 +336,7 @@ class Circle {
             
             
             
-            this.location.y -=  this.velocity.y;
+            this.location.y -=  this.velocity.y/abs(this.velocity.y)*this.maxSpeed;
             
             this.velocity.y = (-this.velocity.y);
         }
