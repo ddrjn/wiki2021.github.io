@@ -142,6 +142,18 @@ function mainActivity(){
 
 function draw() {
 
+    if(!startAnimating){
+        scrollval = window.scrollY
+        // console.log(document.getElementById("teamCanvas").offsetTop);
+         //console.log(scrollval);
+         
+         if (scrollval > offset) {
+             startAnimating = true;
+     
+         }
+
+    }
+
 
     if(startAnimating){
     if(!vectorGiven){
@@ -163,21 +175,7 @@ function draw() {
 }
 
 
-function mouseWheel(event) {
 
-    // Change the red value according
-    // to the scroll delta value
-    scrollval = window.scrollY
-    console.log(document.getElementById("teamCanvas").offsetTop);
-    console.log(scrollval);
-    
-    if (scrollval > offset) {
-        startAnimating = true;
-
-    }
-
-
-}
 
 function mousePressed(){
     if(!modalOpen){
@@ -296,37 +294,37 @@ class Circle {
     }
 
     moveAbout(){
-        var m = min(window.innerWidth,window.innerHeight)/25000
+        var m = max(window.innerWidth,window.innerHeight)/30000
         var accx = random(-m,m);
         var accy = random(-m,m);
         if(this.tumble){
             this.velocity.x = this.velocity.x + accx;
             this.velocity.y = this.velocity.y + accy;
         }
-        if(this.velocity.x>this.maxSpeed)this.velocity.x = this.maxSpeed
-        if(this.velocity.x<0-this.maxSpeed)this.velocity.x = 0-this.maxSpeed
-        if(this.velocity.y>this.maxSpeed)this.velocity.y = this.maxSpeed
-        if(this.velocity.y<0-this.maxSpeed)this.velocity.y = 0-this.maxSpeed
+        if(this.velocity.x>this.maxSpeed)this.velocity.x -= this.maxSpeed*0.1;
+        if(this.velocity.x<0-this.maxSpeed)this.velocity.x += this.maxSpeed*0.1;
+        if(this.velocity.y>this.maxSpeed)this.velocity.y -= this.maxSpeed*0.1;
+        if(this.velocity.y<0-this.maxSpeed)this.velocity.y += this.maxSpeed*0.1;
         this.location.x =this.location.x + this.velocity.x;
         this.location.y =this.location.y + this.velocity.y;
         if(this.boundX!=null){
             if(this.location.x<=this.boundX.x || this.location.x>=this.boundX.y){
                 if(this.escape){
                     //console.log("esc");
-                    this.velocity.x = 0-this.maxSpeed/random(1.5,2.5); this.velocity.y = this.maxSpeed/random(1.2,2); this.escape =false;
+                    this.velocity.x = 0-this.maxSpeed/random(1,this.maxSpeed); this.velocity.y = this.maxSpeed/random(1.2,this.maxSpeed); this.escape =false;
                     this.location.x =this.location.x + this.velocity.x;
                     
                 }
                 else {
-                    this.velocity.x = -this.velocity.x;
+                    this.velocity.x = (-this.velocity.x)/abs(this.velocity.x)*this.maxSpeed ;
                     this.location.x =this.location.x + this.velocity.x;
                     
                 }
         }
             if(this.location.y<=this.boundY.x || this.location.y>=this.boundY.y){
-                this.velocity.y = -this.velocity.y;
+                this.velocity.y = (-this.velocity.y)/abs(this.velocity.y)*this.maxSpeed;
                 
-                    this.location.y =this.location.y + this.velocity.y;
+                    this.location.y =this.location.y + this.velocity.y*3;
             }
             
         }
