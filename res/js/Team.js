@@ -35,7 +35,7 @@ function preload() {
 
 
 function setup() {
-     butilkaXbounds = createVector(butilkaStart+mentorCircleSize,butilkaSizeX*0.8);
+     butilkaXbounds = createVector(butilkaStart+mentorCircleSize/2,butilkaSizeX*0.8);
      butilkaYbounds = createVector(butilkaStart+mentorCircleSize/2,butilkaSizeY);
      frameXbounds = createVector(personCircleSize,window.innerWidth-personCircleSize);
      frameYbounds = createVector(butilkaSizeY*1.5,canvasSize*0.95);
@@ -159,7 +159,7 @@ function draw() {
     if(!vectorGiven){
         for (var k = 0; k < slaves.length; k++){
         slaves[k].setBounds(frameXbounds,createVector(mentorCircleSize,frameYbounds.y));
-        slaves[k].setVel(createVector(window.innerWidth,butilkaSizeY))
+        slaves[k].setVel(createVector(window.innerWidth,butilkaSizeY));
         console.log("set");
         }
 
@@ -301,10 +301,10 @@ class Circle {
             this.velocity.x = this.velocity.x + accx;
             this.velocity.y = this.velocity.y + accy;
         }
-        if(this.velocity.x>this.maxSpeed)this.velocity.x -= this.maxSpeed*0.1;
-        if(this.velocity.x<0-this.maxSpeed)this.velocity.x += this.maxSpeed*0.1;
-        if(this.velocity.y>this.maxSpeed)this.velocity.y -= this.maxSpeed*0.1;
-        if(this.velocity.y<0-this.maxSpeed)this.velocity.y += this.maxSpeed*0.1;
+        if(this.velocity.x>=this.maxSpeed)this.velocity.x = this.maxSpeed;
+        if(this.velocity.x<=0-this.maxSpeed)this.velocity.x = -this.maxSpeed;
+        if(this.velocity.y>=this.maxSpeed)this.velocity.y = this.maxSpeed;
+        if(this.velocity.y<=0-this.maxSpeed)this.velocity.y = -this.maxSpeed;
         this.location.x =this.location.x + this.velocity.x;
         this.location.y =this.location.y + this.velocity.y;
         if(this.boundX!=null){
@@ -316,16 +316,31 @@ class Circle {
                     
                 }
                 else {
-                    this.velocity.x = (-this.velocity.x)/abs(this.velocity.x)*this.maxSpeed ;
-                    this.location.x =this.location.x + this.velocity.x;
+                    this.location.x =this.location.x - this.velocity.x;
+                    this.velocity.x = (-this.velocity.x)/abs(this.velocity.x)*this.maxSpeed*2 ;
+                   
                     
                 }
         }
-            if(this.location.y<=this.boundY.x || this.location.y>=this.boundY.y){
-                this.velocity.y = (-this.velocity.y)/abs(this.velocity.y)*this.maxSpeed;
-                
-                    this.location.y =this.location.y + this.velocity.y*6;
-            }
+
+        if(this.location.y<=this.boundY.x){
+            
+           
+                this.location.y -=  this.velocity.y;
+            
+            this.velocity.y = (-this.velocity.y);
+           
+        }else
+
+        if(this.location.y>=this.boundY.y){
+            
+            
+            
+            this.location.y -=  this.velocity.y;
+            
+            this.velocity.y = (-this.velocity.y);
+        }
+            
             
         }
 
