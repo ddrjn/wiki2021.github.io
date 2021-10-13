@@ -53,9 +53,10 @@ function setup() {
         var row = int(slaveID /4);
         var cont = (window.innerWidth-personCircleSize*2)/4;
         //slaves[slaveID] = new Circle(personCircleSize,color(91, 105, 170, 200),createVector(personCircleSize*2+cont*col+random(-personCircleSize,personCircleSize),butilkaSizeY*2+personCircleSize+row*2*personCircleSize+random(-personCircleSize,personCircleSize)),imgArray[k],createVector(random(-1,1),random(-1,1)));
-        slaves[slaveID] = new Circle(personCircleSize,color(91, 105, 170, 200),createVector(random(butilkaXbounds.x,butilkaXbounds.y),random(butilkaYbounds.x,butilkaYbounds.y)),imgArray[k],createVector(0.2,3));
+        slaves[slaveID] = new Circle(personCircleSize,color(91, 105, 170, 200),createVector(random(butilkaXbounds.x,butilkaXbounds.y),random(butilkaYbounds.x,butilkaYbounds.y)),imgArray[k],createVector(0.2,4));
         slaves[slaveID].setBounds(butilkaXbounds,butilkaYbounds);
-        
+        slaves[slaveID].disableTumble();
+        slaves[slaveID].increaseMaxSpeed();
         //slaves[slaveID].setBounds(frameXbounds,frameYbounds);
     }
 
@@ -114,6 +115,8 @@ function mainActivity(){
             if(slaves[i].getExited()&&!mentorsExited[i]){
                 mentorsExited[i]=true;
                 slaves[i].setBounds(frameXbounds,frameYbounds);
+                slaves[i].enableTumble();
+                slaves[i].resetMaxSpeed();
     
     
             }
@@ -262,6 +265,7 @@ class Circle {
     boundX=null;
     boundY=null;
     maxSpeed = min(window.innerWidth,window.innerHeight)/900;
+    tumble = true;
     constructor(size, color, location,img ,velocity) {
         this.size = size;
         this.color = color;
@@ -295,8 +299,10 @@ class Circle {
         var m = min(window.innerWidth,window.innerHeight)/25000
         var accx = random(-m,m);
         var accy = random(-m,m);
-        this.velocity.x = this.velocity.x + accx;
-        this.velocity.y = this.velocity.y + accy;
+        if(this.tumble){
+            this.velocity.x = this.velocity.x + accx;
+            this.velocity.y = this.velocity.y + accy;
+        }
         if(this.velocity.x>this.maxSpeed)this.velocity.x = this.maxSpeed
         if(this.velocity.x<0-this.maxSpeed)this.velocity.x = 0-this.maxSpeed
         if(this.velocity.y>this.maxSpeed)this.velocity.y = this.maxSpeed
@@ -328,6 +334,15 @@ class Circle {
 
     }
 
+    disableTumble(){
+        this.tumble=false;
+
+
+    }
+    enableTumble(){
+        this.tumble = true;
+
+    }
     setBounds(boundx,boundy){
         this.boundX =boundx;
         this.boundY = boundy;
@@ -355,6 +370,16 @@ class Circle {
 
     }
 
+    increaseMaxSpeed(){
+        this.maxSpeed = min(window.innerWidth,window.innerHeight)/300;
+
+    }
+
+    resetMaxSpeed(){
+        this.maxSpeed = min(window.innerWidth,window.innerHeight)/900;
+
+
+    }
 
 
 
