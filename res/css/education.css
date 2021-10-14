@@ -81,79 +81,26 @@ h1 {
 }
 
 .cls-1 {
+    fill:none;
+}
+.cls-1,.cls-2{
+    stroke:#000;
+    stroke-miterlimit:10;
+}
+.cls-2{
+    fill:#fff;
+}
+.cls-1 {
     fill: #fff;
     stroke: #867481;
     stroke-miterlimit: 10;
     transition: 0.8s;
 }
 
-.pe-header {
-    color: #9C7884;
-    margin-bottom: 5%;
-}
-
-.education-public-events {
-    position: relative;
-    /* background-image: url('../img/education_workshops_wave.svg'); */
-}
 
 
 /* Modals */
 /* General class to target all modals */
-.pe-modal {
-    color: #5B69AA;
-}
-
-.pe-modal:hover {
-    box-shadow: 2px 2px 20px 4px rgba(0,0,0,0.6);
-}
-
-.pe-julygem {
-    position: absolute;
-    /* top: 100px; */
-    left: 1%;
-
-}
-
-.pe-paideworkshop {
-    position: absolute;
-    right: 1%;
-}
-
-.pe-narva-14 {
-    position: absolute;
-    left: 15%;
-} 
-.pe-voru {
-    position: absolute;
-    right: 10%;
-} 
-.pe-narva-28 {
-    position: absolute;
-    left: 10%;
-} 
-.pe-tartu {
-    position: absolute;
-    right: 10%;
-} 
-.pe-dragon {
-    position: absolute;
-    /* ЕБАТЬ ЖЕ ЕГО ДВУХСТОРОННЕМ СКОТЧЕМ, ДА ЭТО КОСТЫЛЬ */
-    left: -1%;
-} 
-.pe-ahha {
-    position: absolute;
-    right: 10%;
-} 
-.pe-global {
-    position: absolute;
-    left: 5%;
-} 
-.pe-escape {
-    position: absolute;
-    /* НИХУЯ СЕБЕ, ЕЩЕ ОДИН! */
-    right: -1%;
-} 
 
 /* Circle hover */
 /* 
@@ -164,27 +111,6 @@ h1 {
     fill: #5B69AA;
 }
 
-/* 
-    Пытался сделать красивый градиент чтобы типо на hover
-    Он шел снизу вверх как в main section
-*/
-
-/* 
-.modal-circle:hover {
-    fill: url('#circle-hover-gradient');
-}
-
-.stop {
-    transition: 2s;
-}           
-
-.modal-circle:hover stop:first-child {
-    stop-color: #24bed2;
-}
-
-.modal-circle:hover stop:last-child {
-    stop-color: #32ffe4;
-} */
 
 .modal .bg-modal-img {
     background-image: url('../img/education_modal_bg.svg');
