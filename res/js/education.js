@@ -45,11 +45,14 @@
 // let pe_global = $("#peGlobal")
 // let pe_escape = $("#peEscape")
 
+window.onload = function(){
+
+var a = document.getElementById("circle1").getBoundingClientRect().top +document.documentElement.scrollTop;
+document.getElementById("workshop1").style.position="absolute"
+document.getElementById("workshop1").style.top = `${a}px`;
 
 
-var a = document.getElementById("circle1").offsetTop;
-document.getElementById("workshop1").style.position="absolute;"
-document.getElementById("workshop1").style.top = `${a}px;`;
+}
 
 // Я ЭТО ПЕРЕПИШУ, ПОТОМУ ЧТО БЛЯТЬ У МЕНЯ ГЛАЗА СЛЕЗЯТЬСЯ ОТ ТАКОГО
 

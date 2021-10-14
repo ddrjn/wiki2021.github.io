@@ -2,9 +2,7 @@
 
 /* INTRODUCTION */
 /* ################################ */
-h1 {
-    font-weight: bold;
-}
+
 
 /* Main section gradient */
 .section-grad-education {
@@ -118,6 +116,13 @@ h1 {
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+
+}
+
+
+.cirle1::after{
+content: "julijem";
+color: black;
 
 }
 /* ################################ */
