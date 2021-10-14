@@ -1,7 +1,7 @@
-
-
 let myCanvas;
+let butilkaOpen;
 let butilka;
+let butilkaCompressed;
 let scrollval = 0;
 let memberInfo;
 var imgArray = new Array();//array storing peoples images
@@ -23,11 +23,15 @@ let frameXbounds,frameYbounds;
 var modalOpen = false;
 var vectorGiven = false;
 var mentorsExited=new Array();
+var emptyExited=new Array();
 let canvasSize;
 
 let offset;
 function preload() {
+
     butilka = loadImage('res/img/Team_Bottle.png');
+    butilkaCompressed = loadImage('res/img/Bottle_pressed.png');
+    butilkaOpen = butilka;
     memberInfo = loadJSON('res/members/members.json', loadImages);
     calculateVars();
 
@@ -66,8 +70,12 @@ function setup() {
        
         
        
-        emptyCircles[k] = new Circle(EmptyCircleSize,color(91, 105, 170, random(100,255)),createVector(random(frameXbounds.x,frameXbounds.y),random(frameYbounds.x,frameYbounds.y)),null,createVector(random(-1,0),random(1,0)));
-        emptyCircles[k].setBounds(frameXbounds,frameYbounds);
+        emptyCircles[k] = new Circle(EmptyCircleSize,color(91, 105, 170, random(100,255)),createVector(random(butilkaXbounds.x,butilkaXbounds.y),random(butilkaYbounds.x,butilkaYbounds.y)),null,createVector(random(-1,1),random(-4,4)));
+        emptyCircles[k].setBounds(butilkaXbounds,butilkaYbounds);
+        emptyCircles[k].disableTumble();
+        emptyCircles[k].increaseMaxSpeed2();
+
+
     }
 
     
@@ -105,8 +113,23 @@ function mainActivity(){
         emptyCircles[i].moveAbout();
         emptyCircles[i].display();
 
+        if(!emptyCircles[i].getExited()&&!emptyExited[i]){
+            emptyCircles[i].setExited(frameYbounds.x);
+            }
+            if(emptyCircles[i].getExited()&&!emptyExited[i]){
+                emptyExited[i]=true;
+                emptyCircles[i].setBounds(frameXbounds,frameYbounds);
+                emptyCircles[i].enableTumble();
+                emptyCircles[i].increaseMaxSpeed();
+    
+    
+            }
+
+
     }
- for (var i =0; i<slaves.length;i++){
+
+
+    for (var i =0; i<slaves.length;i++){
         slaves[i].moveAbout();
         slaves[i].display();
         if(!slaves[i].getExited()&&!mentorsExited[i]){
@@ -116,11 +139,13 @@ function mainActivity(){
                 mentorsExited[i]=true;
                 slaves[i].setBounds(frameXbounds,frameYbounds);
                 slaves[i].enableTumble();
-                slaves[i].resetMaxSpeed();
-    
+                setTimeout( (m)=>{
+                slaves[m].resetMaxSpeed();
+                },2000,i);
     
             }
     }
+
 
     imageMode(CORNER);
     image(butilka, butilkaStart, butilkaStart,butilkaSizeX,butilkaSizeY);
@@ -148,8 +173,8 @@ function draw() {
          //console.log(scrollval);
          
          if (scrollval > offset) {
-             startAnimating = true;
-     
+            startAnimating = true;
+            butilka = butilkaCompressed;
          }
 
     }
@@ -157,14 +182,34 @@ function draw() {
 
     if(startAnimating){
     if(!vectorGiven){
+        var timing = 100;
+        var minitimig = 100*slaves.length/emptyCircles.length;
         for (var k = 0; k < slaves.length; k++){
-        slaves[k].setBounds(frameXbounds,createVector(butilkaStart,frameYbounds.y));
-        slaves[k].setVel(createVector(window.innerWidth,butilkaSizeY));
-        console.log("set");
+            setTimeout( (m)=>{
+        slaves[m].setBounds(frameXbounds,createVector(butilkaStart,frameYbounds.y));
+        slaves[m].setLoc(createVector(butilkaStart+butilkaSizeX,butilkaStart+butilkaSizeY/2))
+        slaves[m].setVel(createVector(random(window.innerWidth/4,window.innerWidth/4*3),frameYbounds.y));
+            },k*timing,k);
+
+
+
         }
 
-    }
+        for (var k = 0; k < emptyCircles.length; k++){
+            setTimeout( (m)=>{
+        emptyCircles[m].setBounds(frameXbounds,createVector(butilkaStart,frameYbounds.y));
+        emptyCircles[m].setLoc(createVector(butilkaStart+butilkaSizeX,butilkaStart+butilkaSizeY/2))
+        emptyCircles[m].setVel(createVector(random(0,window.innerWidth/4*3),frameYbounds.y));
+            },k*minitimig,k);
+        
+        }
+        setTimeout( ()=>{butilka = butilkaOpen;},emptyCircles.length*1.1*minitimig);
+
+
+
         vectorGiven = true;
+    }
+        
   
 
   
@@ -294,7 +339,7 @@ class Circle {
     }
 
     moveAbout(){
-        var m = max(window.innerWidth,window.innerHeight)/30000
+        var m = this.maxSpeed/10;
         var accx = random(-m,m);
         var accy = random(-m,m);
         if(this.tumble){
@@ -309,18 +354,21 @@ class Circle {
         this.location.y =this.location.y + this.velocity.y;
         if(this.boundX!=null){
             if(this.location.x<=this.boundX.x || this.location.x>=this.boundX.y){
-                if(this.escape){
+                //if(this.escape){
                     //console.log("esc");
-                    this.velocity.x = 0-this.maxSpeed/random(1,this.maxSpeed); this.velocity.y = this.maxSpeed/random(1.2,this.maxSpeed); this.escape =false;
-                    this.location.x =this.location.x + this.velocity.x;
+                  //  this.velocity.x = 0-this.maxSpeed/random(1,this.maxSpeed);
+                 //    this.velocity.y = this.maxSpeed/random(1.2,this.maxSpeed); 
+                 //    this.escape =false;
+                //    this.location.x =this.location.x + this.velocity.x;
                     
-                }
-                else {
+               // }
+              //  else 
+              //  {
                     this.location.x =this.location.x - this.velocity.x;
                     this.velocity.x = (-this.velocity.x)/abs(this.velocity.x)*this.maxSpeed ;
                    
                     
-                }
+               // }
         }
 
         if(this.location.y<=this.boundY.x){
@@ -388,8 +436,23 @@ class Circle {
 
     }
 
+    increaseMaxSpeed2(){
+        this.maxSpeed = min(window.innerWidth,window.innerHeight)/150;
+
+    }
+
+
+    
+
     resetMaxSpeed(){
         this.maxSpeed = min(window.innerWidth,window.innerHeight)/900;
+
+
+    }
+
+
+    setLoc(newloc){
+        this.location = newloc;
 
 
     }
