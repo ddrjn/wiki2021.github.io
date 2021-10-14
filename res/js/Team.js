@@ -27,7 +27,7 @@ let canvasSize;
 
 let offset;
 function preload() {
-    butilka = loadImage('res/img/butilka.png');
+    butilka = loadImage('res/img/Team_Bottle.png');
     memberInfo = loadJSON('res/members/members.json', loadImages);
     calculateVars();
 
@@ -53,7 +53,7 @@ function setup() {
         var row = int(slaveID /4);
         var cont = (window.innerWidth-personCircleSize*2)/4;
         //slaves[slaveID] = new Circle(personCircleSize,color(91, 105, 170, 200),createVector(personCircleSize*2+cont*col+random(-personCircleSize,personCircleSize),butilkaSizeY*2+personCircleSize+row*2*personCircleSize+random(-personCircleSize,personCircleSize)),imgArray[k],createVector(random(-1,1),random(-1,1)));
-        slaves[slaveID] = new Circle(personCircleSize,color(91, 105, 170, 200),createVector(random(butilkaXbounds.x,butilkaXbounds.y),random(butilkaYbounds.x,butilkaYbounds.y)),imgArray[k],createVector(0.2,4));
+        slaves[slaveID] = new Circle(personCircleSize,color(91, 105, 170, 200),createVector(random(butilkaXbounds.x,butilkaXbounds.y),random(butilkaYbounds.x,butilkaYbounds.y)),imgArray[k],createVector(random(-1,1),random(-4,4)));
         slaves[slaveID].setBounds(butilkaXbounds,butilkaYbounds);
         slaves[slaveID].disableTumble();
         slaves[slaveID].increaseMaxSpeed();
@@ -384,7 +384,7 @@ class Circle {
     }
 
     increaseMaxSpeed(){
-        this.maxSpeed = min(window.innerWidth,window.innerHeight)/500;
+        this.maxSpeed = min(window.innerWidth,window.innerHeight)/300;
 
     }
 
