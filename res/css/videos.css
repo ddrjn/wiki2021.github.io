@@ -1,0 +1,36 @@
+/* .video-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.video-switches {
+    display: flex;
+    flex-direction: column;
+}
+ */
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.video-switch {
+    margin: 5%;
+}
+
+
+/* #videoElem {
+    width: 100%;
+    height: auto;
+    margin: 5%;
+    background-image: url('../img/Big_ramka_bez_fona.svg') no-repeat auto;
+} */
+
+.video-switches {
+    margin: 5%;
+    
+}
+
+.video-switch {
+    margin-top: 5%;
+}
