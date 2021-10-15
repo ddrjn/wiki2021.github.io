@@ -1,36 +1,50 @@
 /* Education page */
 
+
 /* INTRODUCTION */
+
+
 /* ################################ */
 
 
 /* Main section gradient */
+
 .section-grad-education {
     background-image: linear-gradient(#867481, #FBA58E);
     color: white !important;
 }
 
+
 /* introduction container */
+
 .education-intro {
     position: relative;
 }
 
+
 /* Introduction text */
+
 .education-intro-text {
     position: absolute;
     top: 9%;
     left: 0;
     width: 100%;
 }
+
 .education-intro-text p {
     font-size: 1.8vw;
     width: 90%;
     margin: 0 auto;
     color: #72646e;
 }
+
+
 /* ################################ */
 
+
 /* WORKSHOPS */
+
+
 /* ################################ */
 
 .education-icons {
@@ -48,46 +62,62 @@
 }
 
 .hover-div:hover {
-    box-shadow: 4px 4px 14px 6px rgba(0,0,0,0.6);
+    box-shadow: 4px 4px 14px 6px rgba(0, 0, 0, 0.6);
 }
+
+
 /* ################################ */
 
+
 /* Waves between sections */
+
+
 /* ################################ */
+
 .wave-up-education {
-    height:35px;
-    width:100%;
+    height: 35px;
+    width: 100%;
     background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #867481), to(#867481));
     -webkit-background-size: 35px 100%;
     transform: rotateX(180deg) translateY(-20px);
 }
+
 .wave-down-education {
-    height:35px;
-    width:100%;
+    height: 35px;
+    width: 100%;
     background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #FBA58E), to(#FBA58E));
     -webkit-background-size: 35px 100%;
-    transform: rotateX(180deg) ;
+    transform: rotateX(180deg);
 }
+
+
 /* ################################ */
 
 
 /* Public events */
+
+
 /* ################################ */
+
 .workshop-wave {
     width: 60%;
     margin: 0 auto;
 }
 
 .cls-1 {
-    fill:none;
+    fill: none;
 }
-.cls-1,.cls-2{
-    stroke:#000;
-    stroke-miterlimit:10;
+
+.cls-1,
+.cls-2 {
+    stroke: #000;
+    stroke-miterlimit: 10;
 }
-.cls-2{
-    fill:#fff;
+
+.cls-2 {
+    fill: #fff;
 }
+
 .cls-1 {
     fill: #fff;
     stroke: #867481;
@@ -96,11 +126,15 @@
 }
 
 
-
 /* Modals */
+
+
 /* General class to target all modals */
 
+
 /* Circle hover */
+
+
 /* 
 Чисто ДЕМО. Потом можем тут какой ниюудь ревльно красивый ээфект сделать типо градиент снизу.
 */
@@ -109,85 +143,43 @@
     fill: #5B69AA;
 }
 
-
-.modal .bg-modal-img {
-    background-image: url('../img/education_modal_bg.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-
+.cls-2:hover {
+    fill: #888EBA;
 }
 
-
-.cirle1::after{
-content: "julijem";
-color: black;
-
+.workshop {
+    color: #696B7B;
 }
 
-
-.cls-2:hover{
-fill: #888EBA;
-
-
-}
-
-.workshop{
-color:#696B7B;
-
-
-}
-
-p{
-
-margin-bottom: 0!important;
-
+p {
+    margin-bottom: 0!important;
 }
 
 @media screen and (max-width: 992px) {
-    .workshop{
-      font-size: 1.8vw;
+    .workshop {
+        font-size: 1.8vw;
     }
-  }
-  @media screen and (max-width: 768px) {
-    .workshop{
-      font-size: 2.1vw;
-    }
-  }
-  @media screen and (max-width: 576px) {
-    .workshop{
-      font-size: 2.8vw;
-    }
-  }
+}
 
-  .workshop {
+@media screen and (max-width: 768px) {
+    .workshop {
+        font-size: 2.1vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .workshop {
+        font-size: 2.8vw;
+    }
+}
+
+.workshop {
     font-size: 1.5vw;
-  }
+}
 
-  .modal-content{
-    background-image: linear-gradient(#888EBA, #BD8481);
-    color: white !important;
+#defaultCanvas0 {
+    display: none;
+}
 
-  }
-
-  .rounded-team{
-border-radius: 4%;
-
-
-  }
-
-  .close{
-    padding: 2% !important;
-
-
-  }
-
-
-  .pe-header{
-    color:#BD8481 ;
-   
-
-  }
 
 /* ################################ */
