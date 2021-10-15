@@ -2,9 +2,7 @@
 
 /* INTRODUCTION */
 /* ################################ */
-h1 {
-    font-weight: bold;
-}
+
 
 /* Main section gradient */
 .section-grad-education {
@@ -36,9 +34,19 @@ h1 {
 /* ################################ */
 
 .education-icons {
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
 }
+
+.icons-kostilj {
+    width: 80%;
+}
+
+.svg-invert-on-hover:hover {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
 .hover-div:hover {
     box-shadow: 4px 4px 14px 6px rgba(0,0,0,0.6);
 }
@@ -71,86 +79,34 @@ h1 {
 }
 
 .cls-1 {
+    fill:none;
+}
+.cls-1,.cls-2{
+    stroke:#000;
+    stroke-miterlimit:10;
+}
+.cls-2{
+    fill:#fff;
+}
+.cls-1 {
     fill: #fff;
     stroke: #867481;
     stroke-miterlimit: 10;
+    transition: 0.8s;
 }
 
-.pe-header {
-    color: #9C7884;
-    margin-bottom: 5%;
-}
-
-.education-public-events {
-    position: relative;
-    /* background-image: url('../img/education_workshops_wave.svg'); */
-}
 
 
 /* Modals */
 /* General class to target all modals */
-.pe-modal {
-    color: #5B69AA;
-}
-
-.pe-modal:hover {
-    box-shadow: 2px 2px 20px 4px rgba(0,0,0,0.6);
-}
-
-.pe-julygem {
-    position: absolute;
-    /* top: 100px; */
-    left: 1%;
-
-}
-
-.pe-paideworkshop {
-    position: absolute;
-    right: 1%;
-}
-
-.pe-narva-14 {
-    position: absolute;
-    left: 15%;
-} 
-.pe-voru {
-    position: absolute;
-    right: 10%;
-} 
-.pe-narva-28 {
-    position: absolute;
-    left: 10%;
-} 
-.pe-tartu {
-    position: absolute;
-    right: 10%;
-} 
-.pe-dragon {
-    position: absolute;
-    /* ЕБАТЬ ЖЕ ЕГО ДВУХСТОРОННЕМ СКОТЧЕМ, ДА ЭТО КОСТЫЛЬ */
-    left: -1%;
-} 
-.pe-ahha {
-    position: absolute;
-    right: 10%;
-} 
-.pe-global {
-    position: absolute;
-    left: 5%;
-} 
-.pe-escape {
-    position: absolute;
-    /* НИХУЯ СЕБЕ, ЕЩЕ ОДИН! */
-    right: -1%;
-} 
 
 /* Circle hover */
 /* 
 Чисто ДЕМО. Потом можем тут какой ниюудь ревльно красивый ээфект сделать типо градиент снизу.
-
 */
+
 .modal-circle:hover {
-    fill:red;
+    fill: #5B69AA;
 }
 
 
@@ -162,4 +118,76 @@ h1 {
     height: 100%;
 
 }
+
+
+.cirle1::after{
+content: "julijem";
+color: black;
+
+}
+
+
+.cls-2:hover{
+fill: #888EBA;
+
+
+}
+
+.workshop{
+color:#696B7B;
+
+
+}
+
+p{
+
+margin-bottom: 0!important;
+
+}
+
+@media screen and (max-width: 992px) {
+    .workshop{
+      font-size: 1.8vw;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .workshop{
+      font-size: 2.1vw;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .workshop{
+      font-size: 2.8vw;
+    }
+  }
+
+  .workshop {
+    font-size: 1.5vw;
+  }
+
+  .modal-content{
+    background-image: linear-gradient(#888EBA, #BD8481);
+    color: white !important;
+
+  }
+
+  .rounded-team{
+border-radius: 4%;
+
+
+  }
+
+  .close{
+    padding: 2% !important;
+
+
+  }
+
+
+  .pe-header{
+    color:#BD8481 ;
+   
+
+  }
+
 /* ################################ */
