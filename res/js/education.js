@@ -15,6 +15,25 @@ function ts(aaa) {
 
 function setPoints(attach) {
 
+    var esc = document.getElementById("es_circle");
+    var esb = document.getElementById("es_back").getBoundingClientRect().top + document.documentElement.scrollTop;
+    esc.style.position = "absolute";
+    esc.style.top = `${esb-esc.clientHeight/12}px`;
+    esc.style.left = "33.33%";
+    esc.style.width = "33.33%";
+
+
+    if (attach) {
+        document.getElementById("pe_rm").addEventListener("click", showMore);
+
+    }
+    var modaltrigers = document.getElementsByClassName("modal-pointer");
+    for (var mt = 0; mt < 10; mt++) {
+        if (attach) {
+            modaltrigers[mt].addEventListener("click", ts, false);
+            modaltrigers[mt].myParam = mt + 1;
+        }
+    }
     for (var i = 1; i < 11; i++) {
         var a = document.getElementById("circle" + i).getBoundingClientRect().top + document.documentElement.scrollTop;
         var b = document.getElementById("workshop" + i);
@@ -28,9 +47,9 @@ function setPoints(attach) {
             var circ = document.getElementById("circle" + i);
             var wkshp = document.getElementById("workshop" + i);
             circ.addEventListener("click", ts, false);
-            circ.myParam = i;
+            circ.myParam = i + 9;
             wkshp.addEventListener("click", ts, false);
-            wkshp.myParam = i;
+            wkshp.myParam = i + 9;
 
 
             var peventstop = document.getElementById("p-events").getBoundingClientRect().top + document.documentElement.scrollTop;
@@ -56,12 +75,33 @@ function setPoints(attach) {
 
 
 }
+window.addEventListener("load", yourFunction, false);
 
-function preload() {
-    console.log("a");
-    workshops = loadJSON('res/info/workshops.json', changestuff);
-    setPoints(true);
+
+function showMore() {
+    setTimeout(myonresize, 10);
+    var x = document.getElementById("hiddenText");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+
+
 }
+
+function yourFunction() {
+
+
+    setPoints(true);
+
+    workshops = loadJSON('res/info/workshops.json', changestuff);
+}
+
+
+
+
+
 
 function setup() {
 
@@ -69,10 +109,14 @@ function setup() {
 }
 
 
+function myonresize() {
+    setTimeout(setPoints, 20, false);
+
+
+}
 
 window.onresize = function() {
-    setPoints(false);
-
+    myonresize();
 }
 
 
@@ -84,8 +128,8 @@ function changestuff(stuff) {
         var b = document.getElementById("workshop" + i);
         var children = b.children;
         console.log(children.length);
-        children[0].innerHTML = stuff.workshops[i - 1].name;
-        children[1].innerHTML = stuff.workshops[i - 1].date;
+        children[0].innerHTML = stuff.workshops[i + 8].name;
+        children[1].innerHTML = stuff.workshops[i + 8].date;
 
     }
 
