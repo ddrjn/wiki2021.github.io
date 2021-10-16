@@ -70,10 +70,12 @@
     /* width: 70%; */
     font-size: 1.4vw;
     margin: 6%;
+    z-index: 1;
 }
 
 #dveHujni {
     width: 25%;
+    z-index: 1;
 }
 
 @media screen and (max-width: 992px) {
@@ -124,7 +126,6 @@
 
 .lab-course-container {
     display: flex;
-
     
 }
 
@@ -147,4 +148,15 @@
     background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #969BC3), to(#969BC3));
     -webkit-background-size: 35px 100%;
     transform: rotateX(180deg) translateY(-20px);
+}
+
+
+#tsparticles {
+    position: absolute;
+    margin-top: 5%;
+    width: 100vw;
+    height: 190vh;
+    /* z-index: -1; */
+    
+
 }
