@@ -19,7 +19,7 @@ tsParticles.load('tsparticles', {
                     mode: "bubble",
                     parallax: {
                         enable: true,
-                        force: 180,
+                        force: 200,
                         smooth: 10,
                     }
                   },
@@ -64,7 +64,7 @@ tsParticles.load('tsparticles', {
                   outMode: 'bounce',
                   enable: true,
                   random: true,
-                  speed: 0.5,
+                  speed: 0.7,
                   straight: false
                 //   outModes: {
                 //     bottom: "out",
@@ -311,7 +311,7 @@ tsParticles.load('tsparticles', {
                     // 32
                 // NACHALO  
                 size: {
-                    value: 16,
+                    value: 12,
                     animation: {
                       speed: 30,
                       minimumValue: 0.1
