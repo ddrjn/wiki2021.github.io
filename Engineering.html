@@ -110,16 +110,20 @@
             <div class="col-1"></div>
             <div class="col-10">
                 <p class="t-xxs text-justify">
-                    We developed a testing system that would allow us to engineer a specific protease for the cleavage of the SALSA protein. In order to target SALSA, we first carried out a structural analysis of the SALSA protein to estimate which sequences are on the surface
-                    of the protein and accessible for proteolytic cleavage. Having identified the regions to target, we were then posed with the task of creating an effective, specific and affordable method of carrying out this cleavage. For this, we
-                    developed a method that enables us to screen for proteases that target distinct sequences. The method enables high-throughput screening where the protease cleavage efficiency is translated to yeast growth rate as a simple readout.
+                    <b class="t-l">Overview</b><br><br> We developed a testing system that would allow us to engineer a specific protease for the cleavage of the SALSA protein. In order to target SALSA, we first carried out a structural analysis of the
+                    SALSA protein to estimate which sequences are on the surface of the protein and accessible for proteolytic cleavage. Having identified the regions to target, we were then posed with the task of creating an effective, specific and affordable
+                    method of carrying out this cleavage. For this, we developed a method that enables us to screen for proteases that target distinct sequences. The method enables high-throughput screening where the protease cleavage efficiency is translated
+                    to yeast growth rate as a simple readout.
+
                 </p>
 
                 <p class="t-xxs text-justify">
-                    The SALSA protein consists of 15 folded domains separated by unstructured linker regions, raising a question of which regions to choose as the target sequence for the protease. The scavenger receptor cysteine-rich (SRCR) domains are of key importance
-                    for this project, as they are involved in both SALSA binding to the tooth and bacteria binding to the SALSA protein. According to the three-dimensional structure of the SALSA protein, the SRCR domains are globular domains that are
-                    not easily accessible to proteases. The linkers, or SRCR-interspersed domains (SIDs), however, are unstructured and can potentially be easily cleaved (Figure 1). SIDs are roughly 20-amino-acid-long threonine-serine-proline-rich stretches
-                    consisting of a number of glycosylation sites that proposedly render the linkers to extended conformation, spanning 7 nm.</p>
+                    <b class="t-l">SALSA structure</b><br><br> The SALSA protein consists of 15 folded domains separated by unstructured linker regions, raising a question of which regions to choose as the target sequence for the protease. The scavenger
+                    receptor cysteine-rich (SRCR) domains are of key importance for this project, as they are involved in both SALSA binding to the tooth and bacteria binding to the SALSA protein (Bikker et al., 2002). According to the three-dimensional
+                    structure of the SALSA protein (AlphaFold Protein Structure Database, n.d.), the SRCR domains are globular domains that are not easily accessible to proteases. The linkers, or SRCR-interspersed domains (SIDs), however, are unstructured
+                    and can potentially be easily cleaved (Figure 1). SIDs are roughly 20-amino-acid-long threonine-serine-proline-rich stretches consisting of a number of glycosylation sites that proposedly render the linkers to extended conformation,
+                    spanning 7 nm (Reichhardt et al., 2020; Turenchalk & Xu, 2001).
+                </p>
 
             </div>
             <div class="col-1"></div>
@@ -160,23 +164,34 @@
             <div class="col-10">
                 <p class="text-justify color-1 t-sxs">
 
-                    Having aligned all SIDs and obtained a consensus sequence, we were able to make a decision about which proteases to consider based on their sequence specificity, as well as toxicity, availability and cost. (Supplementary alignment 1)(Supplementary alignment
-                    2) Two candidate proteases, trypsin and prolyl peptidase, were identified as the most suitable enzymes based on these parameters. Trypsin cleaves peptide bonds from the C-terminal side of positively charged lysine and arginine residues,
-                    whereas prolyl peptidase cleaves C-terminally of proline residues. As SRCR-interspersed domains are highly enriched with proline residues (Alignment 1), they are the ideal substrate for prolyl peptidase. To set up the protease specificity
-                    assay, we also used the TEV protease as the model and control enzyme, as it is highly sequence-specific and thoroughly studied. While trypsin and prolyl peptidase have less determinants for cleavage site, TEV protease specifically
-                    targets the sequence ENLYFQS/G.
+                    <b class="t-l">Target sequences</b><br><br> Having aligned all SIDs and obtained a consensus sequence, we were able to make a decision about which proteases to consider based on their sequence specificity, as well as toxicity, availability
+                    and cost. (Supplementary alignment 1)(Supplementary alignment 2) Two candidate proteases, trypsin and prolyl peptidase, were identified as the most suitable enzymes based on these parameters. Trypsin cleaves peptide bonds from the
+                    C-terminal side of positively charged lysine and arginine residues, whereas prolyl peptidase cleaves C-terminally of proline residues. As SRCR-interspersed domains are highly enriched with proline residues (Alignment 1), they are the
+                    ideal substrate for prolyl peptidase. To set up the protease specificity assay, we also used the TEV protease as the model and control enzyme, as it is highly sequence-specific and thoroughly studied. While trypsin and prolyl peptidase
+                    have less determinants for cleavage site, TEV protease specifically targets the sequence ENLYFQS/G.
                 </p>
 
                 <p class="text-justify color-1 t-sxs">
-                    We modified the yeast two-hybrid system to test the candidate proteases in cleaving the desired sequence. Canonical yeast two-hybrid screening aims to study protein-protein interactions. The system consists of a transcription factor, promoter and a reporter
-                    gene. The transcription factor consists of separate binding and activation domains, and can only induce transcription when the two domains are close to each other. In two-hybrid, each domain has a protein of interest fused to it. Therefore,
-                    when two proteins interact, the two transcription factor domains come close to each other. This leads to activation of the promoter and transcription of the reporter gene, which is used as a readout of the assay. If the two proteins
-                    do not interact, there is no transcription of the reporter gene.
+                    <b class="t-l">Yeast surface display for protein engineering</b><br><br> Yeast surface display is a method for high-throughput screening of proteins based on their interactions. One way to target SALSA would be to engineer a protease
+                    that binds strongly to SALSA, making the assumption that increased local concentration of the protease near SALSA would lead to cleavage of SALSA. Yeast surface display has been used to engineer antibodies for distinct targets, and
+                    a similar approach could be used for the protease and SALSA interaction. However, Furthermore, a modified version of yeast surface display has been used to engineer a TEV protease with slightly different specificity. This approach,
+                    however, requires
+
+
                 </p>
 
                 <p class="text-justify color-1 t-sxs">
-                    For our modified yeast two-hybrid system, we adopted the idea of transcription factor's domains in proximity to each other. However, in our case, domains are in conjunction from the beginning and need to be separated. We used the Golden Gate assembly
-                    MoClo yeast toolkit
+                    <b class="t-l">Modified yeast two-hybrid system to detect protease activity</b><br><br> We modified the yeast two-hybrid system to test the candidate proteases in cleaving the desired sequence. Canonical yeast two-hybrid screening
+                    aims to study protein-protein interactions (Wong et al., 2017a). The system consists of a transcription factor, promoter and a reporter gene. The transcription factor consists of separate binding and activation domains, and can only
+                    induce transcription when the two domains are close to each other. In two-hybrid, each domain has a protein of interest fused to it. Therefore, when two proteins interact, the two transcription factor domains come close to each other.
+                    This leads to activation of the promoter and transcription of the reporter gene, which is used as a readout of the assay. If the two proteins do not interact, there is no transcription of the reporter gene (Wong et al., 2017b). For
+                    our modified yeast two-hybrid system, we adopted the idea of transcription factor's domains in proximity to each other. However, in our case, domains are in conjunction from the beginning and need to be separated.
+
+
+                </p>
+
+                <p class="text-justify color-1 t-sxs">
+                    <b class="t-l">Transcriptional units</b><br><br> We used the Golden Gate assembly MoClo yeast toolkit (Lee et al., 2015) to make the necessary constructs for our protease targeting assay.
                 </p>
 
 
@@ -219,9 +234,9 @@
 
 
                 <p class="t-xxs text-justify color-10">
-                    To make the necessary constructs for our protease targeting assay. We constructed a system with three cassette plasmids, termed transcriptional units. The first transcriptional unit (TU1) includes the coding sequence for SIC1∆N that inhibits cell cycle
-                    progression, consequently terminating cell growth. SIC1∆N is expressed as the reporter gene from the LexA binding domain promoter. The transcription of Sic1∆N is dependent on the transcription factor encoded in the second transcription
-                    unit (TU2).
+                    We constructed a system with three cassette plasmids, termed transcriptional units. The first transcriptional unit (TU1) includes the coding sequence for SIC1∆N that inhibits cell cycle progression, consequently terminating cell growth. SIC1∆N is expressed
+                    as the reporter gene from the LexA binding domain promoter. The transcription of Sic1∆N is dependent on the transcription factor encoded in the second transcription unit (TU2[3] ).
+
 
                 </p>
 
@@ -255,8 +270,9 @@
                 <p class="t-xxs text-justify color-1">
                     The final component, expressed as the third transcriptional unit (TU3), is the protease. To improve the specificity of our protease, we employed a strategy to increase the affinity of the protease to SALSA . For this, we made use of the same mechanism
                     that the cariogenic bacteria use to bind SALSA. S. mutans cell surface contains streptococcal antigen I/II (SA I/II) adhesin, which binds to salivary agglutinin. Studies mapped the residues in the C terminus of SA I/II as the prominent
-                    region for binding to salivary receptors. We used this sequence of residues as a ligand to facilitate the binding of the protease and the SRCR domain fused to the transcription factor. We also added the SV40 nuclear localization sequence
-                    to the protease, which guides the protease to the nucleus, where the transcription factor functions.
+                    region for binding to salivary receptors (Kelly et al., 1999). We used this sequence of residues as a ligand to facilitate the binding of the protease and the SRCR domain fused to the transcription factor. We also added the SV40 nuclear
+                    localization sequence to the protease, which guides the protease to the nucleus, where the transcription factor functions.
+
                 </p>
 
 
@@ -271,7 +287,7 @@
             <div class="col-2">
             </div>
             <div class="col-8">
-                <img src="res/img/engineering/Engineering_Figure2.svg" alt="" class="img-fluid">
+                <img src="res/img/engineering/Engineering_Figure3.svg" alt="" class="img-fluid">
                 <p class="t-sxs text-justify color-1">
                     <b>Figure 3. A predicted structural model of the SALSA protein.</b> The unstructured SID linkers separate the SRCR domains that bind to the teeth and that are used by the bacteria to anchor on the tooth.
 
@@ -298,16 +314,18 @@
             <div class="col-1"></div>
             <div class="col-10">
                 <p class="t-xxs text-justify">
-                    Both TU2 and TU3 contain GAL1 promoters. Therefore, the second and the third transcriptional units are expressed simultaneously. When the protease cuts the SID domain in the transcription factor, it divides the LexA and VP16 domains of the transcription
-                    factor, inactivating the transcription factor and the expression of SIC1∆N. In this case, the cells grow normally, indicating that protease has efficiently cleaved the desired sequence. If the protease fails to cut the SID linker,
-                    then the transcription factor attaches to the SIC1∆N promoter, leading to expression of the inhibitor and termination of the cell cycle and yeast growth.Our modified yeast two-hybrid system is intended to integrate into yeast S. cerevisiae
-                    chromosomes, which we approached in two ways: separate integration for each transcription unit or teamwise integration.
+                    <b class="t-l">Protease activity inactivates expression of a growth repressor</b><br><br> Both TU2 and TU3 contain GAL1 promoters. Therefore, the second and the third transcriptional units are expressed simultaneously. When the protease
+                    cuts the SID domain in the transcription factor, it divides the LexA and VP16 domains of the transcription factor, inactivating the transcription factor and the expression of SIC1∆N. In this case, the cells grow normally, indicating
+                    that protease has efficiently cleaved the desired sequence. If the protease fails to cut the SID linker, then the transcription factor attaches to the SIC1∆N promoter, leading to expression of the inhibitor and termination of the cell
+                    cycle and yeast growth. Our modified yeast two-hybrid system is intended to integrate into yeast S. cerevisiae chromosomes, which we approached in two ways: separate integration for each transcription unit or teamwise integration.
+
                 </p>
 
                 <p class="t-xxs text-justify">
                     All three transcription units have sites for homologous recombination to integrate coding sequences into S. cerevisiae chromosomes: URA3 homology for TU1, LEU2 homology for TU2, and HO homology for TU3. Furthermore, we can assemble multigene plasmid from
                     TU1, TU2, and TU3 using Golden Gate assembly and the aforementioned MoClo yeast toolkit. Integration vector inserts our coding sequence into URA3 homology teamwise. Two possibilities for integration make our system versatile and make
                     transcriptional units integration not dependent on each other. Therefore, during laboratory experiments, we do not necessarily need to wait to obtain all transcriptional units for yeast transformation.
+
                 </p>
             </div>
             <div class="col-1"></div>
@@ -320,12 +338,14 @@
             <div class="col-1"></div>
             <div class="col-10">
                 <p class="t-xxs text-justify">
-                    <b>zagalovok</b><br> After testing our candidate proteases and finding the ones that cleave the SID linkers most efficiently, we plan to implement error-prone PCR to create protease libraries and to improve their specificity for the
-                    SID linkers. Error-prone PCR is a random mutagenesis technique for introducing mutations in genes encoding proteins. Mutations appear because of using a polymerase with decreased proofreading ability and the specific conditions of
-                    the polymerase chain reaction — specifically, the concentration of Mg2+ and Mn2+ ions and an unbalanced ratio of nucleotides. The number of cycles can control the frequency of the mutations incorporated. The mutant PCR products are
-                    subsequently cloned into an expression vector resulting in the library for screening changes in proteins activity and identifying beneficial mutations. As the screening is based on positive selection using a simple readout, yeast growth,
-                    this is a powerful tool to isolate rare variants that have increased efficiency for cleaving the SID linkers. Also, the assay selects for specific proteases, as proteases with very broad specificity will target additional yeast proteins,
-                    causing off-target toxicity and their depletion in the competitive growth assay. This attribute is also beneficial for our project to obtain a protease with least off-target effects when used for oral hygiene.
+                    <b class="t-l">High-throughput screening of proteases</b><br><br> After testing our candidate proteases and finding the ones that cleave the SID linkers most efficiently, we plan to implement error-prone PCR to create protease libraries
+                    and to improve their specificity for the SID linkers. Error-prone PCR is a random mutagenesis technique for introducing mutations in genes encoding proteins. Mutations appear because of using a polymerase with decreased proofreading
+                    ability and the specific conditions of the polymerase chain reaction — specifically, the concentration of Mg2+ and Mn2+ ions and an unbalanced ratio of nucleotides. The number of cycles can control the frequency of the mutations incorporated.
+                    The mutant PCR products are subsequently cloned into an expression vector resulting in the library for screening changes in proteins activity and identifying beneficial mutations (Tao & Raz, 2015). As the screening is based on positive
+                    selection using a simple readout, yeast growth, this is a powerful tool to isolate rare variants that have increased efficiency for cleaving the SID linkers. Also, the assay selects for specific proteases, as proteases with very broad
+                    specificity will target additional yeast proteins, causing off-target toxicity and their depletion in the competitive growth assay. This attribute is also beneficial for our project to obtain a protease with least off-target effects
+                    when used for oral hygiene.
+
                 </p>
 
             </div>
@@ -340,17 +360,18 @@
                 <div class="collapse" id="references">
 
                     <p class="color-10 t-sxs text-justify">
-                        A, G., H, H., & B, S. (2013). Potential use of Atlantic cod trypsin in biomedicine. BioMed Research International, 2013. https://doi.org/10.1155/2013/749078 Are You Storing Food Safely? | FDA. (n.d.). Retrieved October 15, 2021, from https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely
-                        Cavities/tooth decay - Symptoms and causes - Mayo Clinic. (n.d.). Retrieved October 14, 2021, from https://www.mayoclinic.org/diseases-conditions/cavities/symptoms-causes/syc-20352892 Evans, D. F., Pye, G., Bramley, R., Clark,
-                        A. G., Dyson, T. J., & Hardcastle, J. D. (1988). Measurement of gastrointestinal pH profiles in normal ambulant human subjects. Gut, 29(8), 1035. https://doi.org/10.1136/GUT.29.8.1035 Lam, M. P. Y., Lau, E., Liu, X., Li, J., &
-                        Chu, I. K. (2012). Sample Preparation for Glycoproteins. Comprehensive Sampling and Sample Preparation, 3, 307–322. https://doi.org/10.1016/B978-0-12-381373-2.00085-5 NM, M., & SG, L. (2007). Aralast: an alpha 1-protease inhibitor
-                        for the treatment of alpha-antitrypsin deficiency. Expert Opinion on Pharmacotherapy, 8(15), 2609–2614. https://doi.org/10.1517/14656566.8.15.2609 Peres, M. A., Macpherson, L. M. D., Weyant, R. J., Daly, B., Venturelli, R., Mathur,
-                        M. R., Listl, S., Celeste, R. K., Guarnizo-Herreño, C. C., Kearns, C., Benzian, H., Allison, P., & Watt, R. G. (2019). Oral diseases: a global public health challenge. The Lancet, 394(10194), 249–260. https://doi.org/10.1016/S0140-6736(19)31146-8
-                        Rathee, M., & Sapra, A. (2021). Dental Caries. StatPearls. https://www.ncbi.nlm.nih.gov/books/NBK551699/ Review of Proteins & Enzymes. (n.d.). Retrieved October 15, 2021, from http://science.halleyhosting.com/sci/soph/organic/enzyme/a36.htm
-                        StableCellTM Trypsin Solutions. (n.d.). Retrieved October 15, 2021, from https://www.sigmaaldrich.com/EE/en/technical-documents/protocol/cell-culture-and-cell-culture-analysis/mammalian-cell-culture/stablecell-trypsin-solutions
-                        Trypsin from porcine pancreas Proteomics Grade, BioReagent, Dimethylated. (n.d.). Retrieved October 15, 2021, from www.sigmaaldrich.com/homepage.html]. Tutuian, R., & Castell, D. O. (2006). Gastroesophageal reflux monitoring: pH
-                        and impedance. GI Motility Online, Published Online: 16 May 2006; | Doi:10.1038/Gimo31. https://doi.org/10.1038/GIMO31 Wohlman, A., Kabacoff, B. L., & Avakian, S. (2016). Comparative Stability of Trypsin and Chymotrypsin in Human
-                        Intestinal Juice: Https://Doi.Org/10.3181/00379727-109-27092, 109(1), 26–28. https://doi.org/10.3181/00379727-109-27092
+                        AlphaFold Protein Structure Database. (n.d.). Retrieved October 16, 2021, from https://alphafold.ebi.ac.uk/entry/Q9UGM3<br> Bikker, F. J., Ligtenberg, A. J. M., Nazmi, K., Veerman, E. C. I., van’t Hof, W., Bolscher, J. G. M., Poustka,
+                        A., Amerongen, A. V. N., & Mollenhauer, J. (2002). Identification of the Bacteria-binding Peptide Domain on Salivary Agglutinin (gp-340/DMBT1), a Member of the Scavenger Receptor Cysteine-rich Superfamily*. Journal of Biological
+                        Chemistry, 277(35), 32109–32115. https://doi.org/https://doi.org/10.1074/jbc.M203788200 Kelly, C. G., Younson, J. S., Hikmat, B. Y., Todryk, S. M., Czisch, M., Haris, P. I., Flindall, I. R., Newby, C., Mallet, A. I., Ma, J. K.-C.,
+                        & Lehner, T. (1999). A synthetic peptide adhesion epitope as a novel antimicrobial agent. Nature Biotechnology, 17(1), 42–47. https://doi.org/10.1038/5213<br> Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015).
+                        A Highly Characterized Yeast Toolkit for Modular, Multipart Assembly. ACS Synthetic Biology, 4(9), 975–986. https://doi.org/10.1021/SB500366V<br> Reichhardt, M. P., Loimaranta, V., Lea, S. M., & Johnson, S. (2020). Structures of
+                        SALSA/DMBT1 SRCR domains reveal the conserved ligand-binding mechanism of the ancient SRCR fold. Life Science Alliance, 3(4). https://doi.org/10.26508/LSA.201900502<br> Tao, A., & Raz, E. (2015). Allergy Bioinformatics. Turenchalk,
+                        G. S., & Xu, T. (2001). Lats in Cell-cycle Regulation and Tumorigenesis BT - Encyclopedic Reference of Cancer. Encyclopedic Reference of Cancer, 491–496. https://doi.org/10.1007/3-540-30683-8_944<br> Wong, J. H., Alfatah, M., Sin,
+                        M. F., Sim, H. M., Verma, C. S., Lane, D. P., & Arumugam, P. (2017a). A yeast two-hybrid system for the screening and characterization of small-molecule inhibitors of protein–protein interactions identifies a novel putative Mdm2-binding
+                        site in p53. BMC Biology 2017 15:1, 15(1), 1–17. https://doi.org/10.1186/S12915-017-0446-7<br> Wong, J. H., Alfatah, M., Sin, M. F., Sim, H. M., Verma, C. S., Lane, D. P., & Arumugam, P. (2017b). A yeast two-hybrid system for the
+                        screening and characterization of small-molecule inhibitors of protein–protein interactions identifies a novel putative Mdm2-binding site in p53. BMC Biology 2017 15:1, 15(1), 1–17. https://doi.org/10.1186/S12915-017-0446-7<br>
+
+                    </p>
                 </div>
 
             </div>
@@ -386,6 +407,7 @@
                         Trypsin from porcine pancreas Proteomics Grade, BioReagent, Dimethylated. (n.d.). Retrieved October 15, 2021, from www.sigmaaldrich.com/homepage.html]. Tutuian, R., & Castell, D. O. (2006). Gastroesophageal reflux monitoring: pH
                         and impedance. GI Motility Online, Published Online: 16 May 2006; | Doi:10.1038/Gimo31. https://doi.org/10.1038/GIMO31 Wohlman, A., Kabacoff, B. L., & Avakian, S. (2016). Comparative Stability of Trypsin and Chymotrypsin in Human
                         Intestinal Juice: Https://Doi.Org/10.3181/00379727-109-27092, 109(1), 26–28. https://doi.org/10.3181/00379727-109-27092
+
                     </p>
                 </div>
 
