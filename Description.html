@@ -109,18 +109,18 @@
             <div class="d-flex align-items-center row">
                 <div class="dve-kartinki">
                     <img src="res/img/description_dve_kartinki.svg" alt="" id="dvekartinki" class="img-fluid">
-                    <div class="desc-text t-s">
-                        <p>
+                    <div class="desc-text">
+                        <p class="text-justify t-xxs">
                             Caries is one of the most widespread dental diseases globally, affecting around
                             <b>2.3 
                             billion</b> people in their permanent teeth (<b>WHO</b>). Some food particles remain on the tooth 
                             surface and between the teeth after eating, creating a suitable environment for 
                             bacteria to grow, especially when consuming sugar-containing food.
                         </p>
-                        <p>
+                        <p class="text-justify">
                             Without good oral hygiene and proper tooth brushing, bacteria can attach to the tooth surface and use food remains as a growth substrate. The microbial metabolism produces different organic acids that damage hard tooth tissues, causing their degradation. These processes lead to caries - tooth decay.
                         </p>
-                        <p>
+                        <p class="text-justify">
                             The most common bacterial species that causes caries in humans is <i>Streptococcus mutans</i>. This bacteria binds to a specific protein called SALSA (The Salivary Scavenger and Agglutinin) on the tooth surface. This interaction helps S. mutans to attach to the tooth surface and form biofilm
                         </p>
                         
@@ -128,19 +128,19 @@
                 </div>
                 <img src="res/img/Description_wave_belaya.svg" alt="" class="img-fluid" id="white_wave">
                 <div class="desc-text-2">
-                    <p>
+                    <p class="text-justify">
                         SALSA protein is an innate immune system protein that has a diverse array of functions. For instance, SALSA regulates inflammation and tissue repair. SALSA is secreted from mucosal surfaces, and it regulates the activation of the complement system.
                     </p>
-                    <p>
+                    <p class="text-justify">
                         Complement is a group of innate immune proteins responsible for enhancing antibody and phagocytic cell function  through binding directly to mannose-binding lectin, a pattern recognition molecule that activates the complement system by means of attaching to foreign invaders. Complement also interacts with the ficolins, defence proteins that function in recognition of carbohydrate molecules on pathogens, apoptotic and necrotic cells, and C1q, the recognition molecule of the complement complex C1
                     </p>
-                    <p>
+                    <p class="text-justify">
                         C1 is a component of the proteolytic cascade of the complement system - a calcium-dependent protein complex that induces the disintegration of antigens via lysis or by stimulation of intrinsic and adaptive immune processes. Activation of the complement system is associated mainly in generating inflammation and fighting microbial infections. Besides that, SALSA also binds and agglutinates the cariogenic bacterium <i>Streptococcus mutans</i>
                     </p>
-                    <p>
+                    <p class="text-justify">
                         In humans, SALSA consists of three protein domains and is structured the following way: a stretch of 13 highly conserved scavenger receptor cysteine-rich (SRCR) domains, separated by SRCR interspersed domains (SIDs), followed by two C1r/C1s, urchin embryonic growth factor and bone morphogenetic protein-1 (CUB) domains, the 14th SRCR domain and a zona pellucida (ZP) domain in the C terminus
                     </p>
-                    <p>
+                    <p class="text-justify">
                         The SRCR and CUB domains are involved in ligand binding, the ZP domain functions in protein polymerization. The attachment of SALSA to teeth is mediated by the SRCR domains.
                     </p>
                 </div>
@@ -153,16 +153,16 @@
     <section class="section-white">
         <div class="container">
             <div class="d-flex align-items-center row darker-text">
-                <p>
+                <p class="text-justify">
                     After examining the SALSA structure, we came up with an idea to eliminate the possibility for cariogenic bacteria to use SALSA as an anchor for accumulation on teeth. For that we aimed to use a protease that will cleave the SALSA protein, leaving no sites for the bacteria to bind on the tooth surface.
                 </p>
-                <p>
+                <p class="text-justify">
                     Proteases are a class of degradative enzymes that break proteins into small peptides or single amino acids. They catalyze the reaction of peptide bond hydrolysis between two amino acids in the protein. Proteases are classified as exo- and endonucleases by the place where they cleave the protein. Exonucleases cleave at the terminus of a protein, while endonucleases potentially cleave peptide bonds along the whole length of the protein. Moreover, another classification of proteases is based on their catalytic mechanism. This classification is determined by the amino acid residue in the catalytic center (e.g., Serine proteases, aspartate proteases, etc.). 
                 </p>
-                <p>
+                <p class="text-justify">
                     We carried out a research literature study to determine potential proteases to cleave the SALSA protein. We aimed to choose the protease with the highest specificity for the SALSA protein and the lowest toxicity. Among the proteases selected for our experiments are trypsin, prolyl peptidase and TEV protease. To increase the affinity of the proteases, we used a part of the adhesin sequence of S. mutans as a ligand . Studies mapped residues in the C-terminal of the streptococcus antigen I/II as a main place which binds to the salivary agglutinins. Additionally, we planned to implement error-prone PCR for creating a library of proteases with mutations that increase proteases specificity.
                 </p>
-                <p>
+                <p class="text-justify">
                     On account of SRCRs being involved in ligand binding, or, pertaining to the topic of our project, the binding of bacteria, we aimed to find amino acid sequences identical to protease substrates along with sites conformationally available for cleavage in these folds. According to the three-dimensional structure of the SALSA protein, the domains are buried in the core of the globule and are not otherwise easily accessible to proteases. The linkers, or SRCR-interspersed domains (SIDs), however, are located on the protein surface and can be easily cleaved. SIDs are roughly 20-amino-acid-long threonine-serine-proline rich stretches consisting of a number of glycosylation sites that proposedly render the conformation of the linkers extended to 7 nm.
                 </p>
             </div>
@@ -174,13 +174,13 @@
     <section class="section-grad-description">
         <div class="container">
             <div class="d-flex align-items-center row desc-text-2">
-                    <p>
+                    <p class="text-justify">
                         TEV (The tobacco etch virus) protease - is a highly sequence-specific cysteine protease. Substrates for TEV protease require a Gly or Ser residue in the P1’ position. This determines the efficient cleavage. Optimal activity of this protease can be observed in the pH range from 6.0 to 9.0. Seeing as TEV is highly specific and researched, we have selected it as our model and control enzyme. As a proof of principle, we introduced 6 nucleotides specific for TEV cleavage in the middle of the SID sequence embedded in the testing system so as to ensure successful cleavage of the linker. In case the cleavage does not occur, we are notified that the problem lies in the system itself. This approach enables us to determine if our test system is reliable and specific.
                     </p>
-                    <p>
+                    <p class="text-justify">
                         Trypsin is a pancreatic serine protease that participates in the digestion of food proteins and other processes occurring in living organisms. The medium-sized globular protein is produced as a zymogen, namely trypsinogen, an inactive precursor of the enzyme, which can be actuated by the removal of a terminal hexapeptide to yield single-chain β-trypsin, which by autolysis yields α-trypsin. Trypsin cleaves peptide bonds from the C-terminal side of positively charged lysine and arginine residues.
                     </p>
-                    <p>
+                    <p class="text-justify">
                         Prolyl peptidase is a large enzyme that belongs to a distinct class of serine peptidases. It is widespread in mammals, bacteria, fungi, and plants. Prolyl peptidase functions in immune and inflammatory responses and nutrient digestion. Prolyl peptidase cleaves C-terminally of prolyl residues, and its optimal pH is 4-5. In the human organism, prolyl peptidase is believed to be responsible for the maturation and degradation of peptide hormones and neuropeptides. The reason behind choosing prolyl peptidase for our project is its abundance, low price, and the absence of harmful effects to human cells. Additionally, target site for cleavage in the SALSA protein is proline-rich, which makes prolyl peptidase the first candidate for our project.
                     </p>
             </div>
@@ -193,10 +193,10 @@
         <div class="container">
             <div class="d-flex align-items-center row darker-text">
                 
-                    <p>
+                    <p class="text-justify">
                         Unfortunately, some of our proteases of choice have detrimental effects on the cells or cause mild side effects when used as medical treatments. In case of trypsin, these issues can be overcome by using a neutralizer alpha-1 antitrypsin immediately after using the protease. Alpha-1 antitrypsin is a human protein that accumulates in human serum and is accountable for more than 90% of antiprotease activity in serum.
                     </p>
-                    <p>
+                    <p class="text-justify">
                         The main goal of our project is to construct a system for testing proteases. This system includes three transcriptional units integrated into the yeast genome: a protease, a reporter gene (an inhibitor of a cell cycle progression), and SID target cleavage domain surrounded by the reporter's transcription factor. The protease’s transcriptional unit contains a ligand that binds to SRCR. Once bound, the protease cuts SID domain and detaches the transcription factor parts of the reporter gene from, thereby stopping cell cycle inhibitor expression. Cell growth serves as an indicator of high proteolytic activity of the protease.
                     </p>
                    
