@@ -88,6 +88,7 @@ function setup() {
 
     myCanvas = createCanvas(window.innerWidth, canvasSize);
     myCanvas.parent("teamCanvas");
+    myCanvas.id("teamcanvas");
     myCanvas.background('rgba(255,255,255, 0)');
 
     ellipseMode(CENTER);

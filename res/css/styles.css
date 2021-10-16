@@ -186,6 +186,14 @@ footer>.container-fluid>.row {
     -webkit-background-size: 35px 100%;
 }
 
+.wave_white_black-impl {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(#212529), color-stop(0.49, #212529), color-stop(0.51, #ffffff), to(#ffffff));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
 @media all and (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
         display: none;
