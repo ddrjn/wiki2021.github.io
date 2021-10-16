@@ -94,6 +94,10 @@ function setup() {
     noStroke();
 
     //allocate values to screen size dependent vars
+
+    setTimeout(() => {
+        startAnimating = true;
+    }, 5000);
 }
 
 

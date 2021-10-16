@@ -6,7 +6,18 @@ function ts(aaa) {
 
     document.getElementById("exampleModalLongTitle").innerHTML = workshops.workshops[j].name + " - " + workshops.workshops[j].date;
     document.getElementById("memberDesc").innerHTML = workshops.workshops[j].descrition;
-    document.getElementById("personImage").src = workshops.workshops[j].photo;
+    var mediaSource = workshops.workshops[j].photo;
+    if (mediaSource.substr(mediaSource.length - 4) == '.mp4') {
+        document.getElementById("personVideo").setAttribute("src", workshops.workshops[j].photo);
+        document.getElementById("personVideo").load();
+        document.getElementById("personImage").style.display = "none";
+        document.getElementById("personVideo").style.display = "block";
+
+    } else {
+        document.getElementById("personVideo").style.display = "none";
+        document.getElementById("personImage").style.display = "block";
+        document.getElementById("personImage").src = workshops.workshops[j].photo;
+    }
     var myModal = new bootstrap.Modal(document.getElementById("memberModal"), {});
     myModal.show();
     document.getElementById("closeModal").addEventListener("click", function() { myModal.hide(); });
