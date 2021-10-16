@@ -46,11 +46,17 @@ strong {
     color: rgba(0, 0, 0, 0.55) !important;
 }
 
-.section-white {
+.section-white-top {
     background-color: #ffffff;
     color: black;
     padding-right: 10%;
     padding-left: 10%;
+    padding-bottom: 5%;
+}
+
+.section-white {
+    background-color: #ffffff;
+    color: black;
     padding-bottom: 5%;
 }
 
