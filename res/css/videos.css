@@ -1,0 +1,26 @@
+#thumbnail {
+    width: 45%;
+}
+.video-menu {
+    height: 30vw;
+}
+
+.video-fluid {
+    width: auto;
+    height: 100%;
+}
+
+.videocontainer {
+    height:30vw;
+}
+
+.thumbnail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.thumbnail__text {
+    margin-left: 10%;
+}

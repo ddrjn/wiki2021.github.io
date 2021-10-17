@@ -1,0 +1,19 @@
+{
+    "videos": [
+        {
+            "name": "resveratrol",
+            "source": "res/videos/resveratrol.mp4"
+        },
+
+        {
+            "name": "interstellar",
+            "source": "res/videos/interstellar.mp4"
+        },
+
+        {
+            "name": "sparkle",
+            "source": "res/videos/sparkle.mp4"
+        }
+
+    ]
+}
