@@ -413,7 +413,7 @@
                 </div>
                 <div class="grad-text color-10">
                     <p class="text-justify t-xxs">
-                        EYFP is a rapidly-maturing yellow/green fluorescent protein derived from Aequorea victoria (Nagai et al., 2002) that can be used for both mammalian and bacterial gene expression studies (Hentschel et al., 2013, Enhanced Yellow Fluorescent Protein (EYFP) Tubulin Localization | Nikon’s MicroscopyU, n.d.). It is a weak dimer with high acid sensitivity that can be uniquely quenched by chloride ion (Cl-) (Nagai et al., 2002). Besides fast maturation of only 9 minutes, EYFP has quite a high quantum field of 0.67 units (EYFP :: Fluorescent Protein Database, n.d.). EYFP is one of the brightest fluorescent proteins (brighter than EGFP, ECFP and mRFP1) (Jusuk et al., 2015) and therefore is specifically useful for super-resolution microscopy. The Photostability of EYFP is 60 seconds which is lower than that of GFP and ECFP
+                        EYFP is a rapidly-maturing yellow/green fluorescent protein derived from Aequorea victoria (Nagai et al., 2002) that can be used for both mammalian and bacterial gene expression studies (Hentschel et al., 2013, Enhanced Yellow Fluorescent Protein (EYFP) Tubulin Localization | Nikon’s MicroscopyU, n.d.). It is a weak dimer with high acid sensitivity that can be uniquely quenched by chloride ion (Cl-) (Nagai et al., 2002). Besides fast maturation of only 9 minutes, EYFP has quite a high quantum field of 0.67 units (EYFP :: Fluorescent Protein Database, n.d.). EYFP is one of the brightest fluorescent proteins (brighter than EGFP, ECFP and mRFP1) (Jusuk et al., 2015) and therefore is specifically useful for super-resolution microscopy. The photostability of EYFP is 60 seconds which is lower than that of GFP and ECFP. 
                     </p>
                     <p class="text-justify t-xxs">
                         EYFP has an excitation maximum at 513 nm wavelength and emission peak at 527 nm wavelength that can be seen on Figure 3.
@@ -447,29 +447,40 @@
                         </caption>
                         <thead>
                           <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">
+                                Excitation
+                                Laser
+                                (nm)
+                            </th>
+                            <th scope="col">
+                                Excitation
+                                Filter
+                                CWL / BW (nm)
+                            </th>
+                            <th scope="col">
+                                Dichromatic
+                                Mirror
+                                Cut-On (nm)
+                            </th>
+                            <th scope="col">
+                                Barrier
+                                Filter
+                                CWL / BW (nm)
+                            </th>
+                            <th scope="col">
+                                Relative
+                                Brightness
+                                (% of EGFP)
+                            </th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
+                            <th scope="row">Argon (514)</th>
+                            <td>490/40</td>
+                            <td>515LP</td>
+                            <td>540/30</td>
+                            <td>151</td>
                           </tr>
                         </tbody>
                     </table>
@@ -486,16 +497,27 @@
                 <div class="header-text-imgs">
                     <img src="res/img/contribution/Contribution_orange1.svg" alt="" id="header_yellow_img" class="img-fluid">
                     <p class="text-center t-l color-10">
-                        <b>Monomeric OrangeFluorescent Protein (mOrange):</b>
+                        <b>Monomeric orange fluorescent protein (mOrange):</b>
                     </p>
                     <img src="res/img/contribution/Contribution_orange2.svg" alt="" id="header_yellow_img" class="img-fluid">
                 </div>
                 <div class="grad-text color-10">
                     <p class="text-justify t-xxs">
-                        mOrange is an extremely bright orange fluorescent protein that can be expressed both in bacterial and in mammalian cells (Kremers et al., 2009). It has a high extinction coefficient and quantum yield which allows it to be a perfect FRET (fluorescence resonance energy transfer) acceptor. mOrange has a slow half-life time of 2.5 hours for maturation at 37°C (MOrange :: Fluorescent Protein Database, n.d.). Due to a low photostability (6.4 s) which is approximately 5 % that of EGFP, its usage is limited. However, by applying a directed evolution approach that selected for higher photostability, this deficiency was overcome. This improvement resulted in the mOrange2 derivative, which has a photostability that is 30% higher than that of EGFP (Formation Stages of the MOrange Fluorescent Protein Chromophore, n.d.
+                        mOrange is an extremely bright orange fluorescent protein that can be expressed both
+                        in bacterial and in mammalian cells (Kremers et al., 2009). 
+                        It has a high extinction coefficient and quantum yield which allows it to be a perfect
+                        FRET (fluorescence resonance energy transfer) acceptor. mOrange has a slow half-life time
+                        of 2.5 hours for maturation at 37°C <i>(MOrange :: Fluorescent Protein Database</i>, n.d.).
+                        Due to a low photostability (6.4 s) which is approximately 5 % that of EGFP, its usage 
+                        is limited. However, by applying a directed evolution approach that selected for higher 
+                        photostability, this deficiency was overcome. This improvement resulted in the mOrange2 
+                        derivative, which has a photostability that is 30% higher than that of EGFP (</i>Formation 
+                        Stages of the MOrange Fluorescent Protein Chromophore</i>, n.d.).
                     </p>
                     <p class="text-justify t-xxs">
-                        It can be seen on Figure 4 that the excitation maximum for the mOrange is at 548 nm, and the emission maximum is at 562 nm. The extinction coefficient was 71000 M-1cm-1. Quantum yield is 0.69.
+                        It can be seen on Figure 4 that the excitation maximum for the mOrange is at 548 
+                        nm, and the emission maximum is at 562 nm. The extinction coefficient was 71000 
+                        M<sup>-1</sup>cm<sup>-1</sup>. Quantum yield is 0.69.
                     </p>
                 </div>
             </div>
@@ -510,7 +532,11 @@
                 <figure class="figure">
                     <img src="res/img/contribution/contribution_morange.svg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
                     <figcaption class="figure-caption t-sss">
-                        <b>Figure 4.</b> <i>The emission and excitation spectra of mOrange (mOrange:: Fluorescent Protein Database, n.d.).</i>
+                        <b>Figure 4.</b> 
+                        <i>
+                            The emission and excitation spectra of mOrange (mOrange:: 
+                            Fluorescent Protein Database, n.d.).
+                        </i>
                     </figcaption>
                 </figure>
                 <p class="text-justify color-1 t-xxs">
@@ -521,36 +547,48 @@
                         <caption class="color-1 t-sss">
                             <b>Table 5.</b> 
                             <i>
-                            Fluorescent Nikon microscope A1 HD25/A1R HD25 settings for mOrange (Imaging Fluorescent Proteins | Nikon’s MicroscopyU, n.d.).
+                            Fluorescent Nikon microscope A1 HD25/A1R HD25 settings for mOrange 
+                            (Imaging Fluorescent Proteins | Nikon’s MicroscopyU, n.d.).
 
                             </i>
 
                         </caption>
                         <thead>
                           <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">
+                                Excitation
+                                Laser
+                                (nm)
+                            </th>
+                            <th scope="col">
+                                Excitation
+                                Filter
+                                CWL / BW (nm)
+                            </th>
+                            <th scope="col">
+                                Dichromatic
+                                Mirror
+                                Cut-On (nm)
+                            </th>
+                            <th scope="col">
+                                Barrier
+                                Filter
+                                CWL / BW (nm)
+                            </th>
+                            <th scope="col">
+                                Relative
+                                Brightness
+                                (% of EGFP)
+                            </th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
+                            <th scope="row">He-Ne (543)</th>
+                            <td>525/40</td>
+                            <td>550LP</td>
+                            <td>585/50</td>
+                            <td>146</td>
                           </tr>
                         </tbody>
                     </table>
@@ -567,14 +605,22 @@
                 <div class="header-text-imgs">
                     <img src="res/img/contribution/Contribution_red1.svg" alt="" id="header_yellow_img" class="img-fluid">
                     <p class="text-center t-l color-10">
-                        <b> Monomeric RedFluorescent Protein 1 (mRFP1): </b>
+                        <b> Monomeric red fluorescent protein 1 (mRFP1): </b>
                     </p>
                     <img src="res/img/contribution/Contribution_red2.svg" alt="" id="header_yellow_img" class="img-fluid">
                 </div>
                 <div class="grad-text color-10">
                     <p class="text-justify t-xxs">
-                        mRFP1 is a substantially mutated monomeric form of DsRed, cloned from Discosoma coral (Jach et al., 2006). mRFP1 was derived from the poorly fluorescent dimer T1-I125R of DsRed by applying directed evolution with a combination of targeted and random mutagenesis. mRFP1 is ideal for multicolor imaging in conjunction with GFP as they have minimal spectral overlap. Thus, mRFP1 has almost no emission when excited at wavelengths optimal for GFP, and vice versa. mRFP1 is relatively rapidly maturing, with a maturation time of 60 minutes at 37 °C. mRFP1 has low acid sensitivity with its pKa equaling 4.5 (Campbell et al., 2002). Its photostability half-life is 6.2 s and it can  be used in both mammalian (HeLa) and bacterial (E. coli) cells (Campbell et al., 2002)
-    
+                        mRFP1 is a substantially mutated monomeric form of DsRed, cloned from <i>Discosoma</i>
+                        coral (Jach et al., 2006). mRFP1 was derived from the poorly fluorescent dimer
+                        T1-I125R of DsRed by applying directed evolution with a combination of targeted
+                        and random mutagenesis. mRFP1 is ideal for multicolor imaging in conjunction 
+                        with GFP as they have minimal spectral overlap. Thus, mRFP1 has almost no 
+                        emission when excited at wavelengths optimal for GFP, and vice versa. mRFP1 
+                        is relatively rapidly maturing, with a maturation time of 60 minutes at 37 °C.
+                        mRFP1 has low acid sensitivity with its pKa equaling 4.5 (Campbell et al., 2002). 
+                        Its photostability half-life is 6.2 s and it can  be used in both mammalian (HeLa) 
+                        and bacterial <i>(E. coli)</i> cells (Campbell et al., 2002).    
                     </p>
                 </div>
             </div>
@@ -591,8 +637,26 @@
                     <figcaption class="figure-caption t-sss">
                         <b>Figure 5.</b> 
                         <i>
-                            The emission and excitation spectra of mRFP1. (MRFP1 :: Fluorescent Protein Database, n.d.) The light orange line corresponds to the absorption spectrum, the dark orange line corresponds to the excitation spectrum, the red line corresponds to the emission spectrum. The excitation maximum of 584 nm, the emission maximum of 607 nm, the extinction coefficient of 50000M-1*cm-1 and the quantum yield of 0.25 were recorded. Confocal microscopy settings for mRFP1 can be found in Table 6.
+                            The emission and excitation spectra of mRFP1. (MRFP1 :: 
+                            Fluorescent Protein Database, n.d.) The light orange line corresponds 
+                            to the absorption spectrum, the dark orange line corresponds to the 
+                            excitation spectrum, the red line corresponds to the emission spectrum. 
+                            The excitation maximum of 584 nm, the emission maximum of 607 nm, the 
+                            extinction coefficient of 50000M-1*cm-1 and the quantum yield of 0.25 
+                            were recorded. Confocal microscopy settings for mRFP1 can be found in 
+                            Table 6.
                         </i>
+                        <p class=colo-1>
+                            The light orange line corresponds to the absorption spectrum, 
+                            the dark orange line corresponds to the excitation spectrum, the red 
+                            line corresponds to the emission spectrum. The excitation maximum of 584 nm, 
+                            the emission maximum of 607 nm, the extinction coefficient of 50000M<i>-1</i> &times; 
+                            cm<i>-1</i> and 
+                            the quantum yield of 0.25 were recorded. 
+                            Confocal microscopy settings for mRFP1 can be found in Table 6.
+                        </p>
+                        
+
                     </figcaption>
                 </figure>
                 
@@ -606,29 +670,41 @@
                         </caption>
                         <thead>
                           <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">
+                                Excitation
+                                Laser
+                                (nm)
+                            </th>
+                            <th scope="col">
+                                Excitation
+                                Filter
+                                CWL / BW (nm)
+                            </th>
+                            <th scope="col">
+                                Dichromatic
+                                Mirror
+                                Cut-On (nm)
+                            </th>
+                            <th scope="col">
+                                Barrier
+                                Filter
+                                CWL / BW (nm)
+                            </th>
+                            <th scope="col">
+                                Relative
+                                Brightness
+                                (% of EGFP)
+
+                            </th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
+                            <th scope="row">Diode (594)</th>
+                            <td>560/55</td>
+                            <td>590LP</td>
+                            <td>630/60</td>
+                            <td>37</td>
                           </tr>
                         </tbody>
                     </table>
