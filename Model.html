@@ -335,7 +335,7 @@
 
     <div class="wave_10_4"></div>
 
-    <section class="section-grad-inverse">
+    <section class="grad-4-6">
         <div class="row ">
             <div class="col-2"></div>
             <div class="col-8 text-center">
@@ -345,16 +345,16 @@
 
                     <div class="carousel-inner justify-content-center ">
                         <div class="carousel-item active">
-                            <img src="res/img/model/fig1.png" class=" img-fluid carusel_img read_more_button" alt="...">
+                            <a href="#grafik1"> <img src="res/img/model/fig1.png" class=" img-fluid carusel_img read_more_button" alt="..."></a>
                         </div>
                         <div class="carousel-item">
-                            <img src="res/img/model/fig2.png" class=" img-fluid carusel_img read_more_button" alt="...">
+                            <a href="#grafik2"><img src="res/img/model/fig2.png" class=" img-fluid carusel_img read_more_button" alt="..."></a>
                         </div>
                         <div class="carousel-item">
-                            <img src="res/img/model/fig3.png" class="img-fluid carusel_img read_more_button" alt="...">
+                            <a href="#grafik3"> <img src="res/img/model/fig3.png" class="img-fluid carusel_img read_more_button" alt="..."></a>
                         </div>
                         <div class="carousel-item">
-                            <img src="res/img/model/fig4.png" class="img-fluid carusel_img read_more_button" alt="...">
+                            <a href="#grafik4"> <img src="res/img/model/fig4.png" class="img-fluid carusel_img read_more_button" alt="..."></a>
                         </div>
                     </div>
                     <button class="color-1 carousel-control-prev" type="button" data-bs-target="#grafik_carusel" data-bs-slide="prev">
@@ -388,295 +388,386 @@
         <div class="row  no_top_padding">
 
             <div class="col-1"></div>
-            <div class="col-10">
+            <div class="col-10 text-center">
                 <p class="t-xxs text-justify">
                     <b class="t-l">SALSA oral fluctuations model
                     </b><br><br>The ODE models allow the easiest representation of dynamic natural phenomena. Their relatively robust and modular nature allows us to implement and modify them according to our specific conditions. The
-                    first ODE model describes the natural oral fluctuations(dS(t)) of SALSA that was reproduced as a constant SALSA production (a) with frequent (t/45 ∈ N) SALSA removal (a((v0 - v1) /v0) due to involuntary swallowing calculated as production
-                    rate (a) multiplied to the ratio of swallowed (v0 - v1) and total saliva ( v0) ratio.
+                    first ODE model describes the natural oral fluctuations(dS(t)) of SALSA that was reproduced as a constant SALSA production (a) with frequent (t/45 ∈ N) SALSA removal (a((v
+                    <st>0</st> - v
+                    <st>1</st>) /v
+                    <st>0</st>) due to involuntary swallowing calculated as production rate (a) multiplied to the ratio of swallowed (v
+                    <st>0</st> - v
+                    <st>1</st>) and total saliva ( v
+                    <st>0</st>) ratio.
+                </p>
+                <p class="t-xxs text-justify">
+                    as production rate (a) multiplied to the ratio of swallowed (v
+                    <st>0</st>> - v
+                    <st>1</st>) and total saliva ( v
+                    <st>0</st>) ratio.
+                </p>
+
+                <p class="t-xxs text-justify">
+                    {dS(t) = a - a(v
+                    <st>0</st>-v
+                    <st>1</st>/v
+                    <st>0</st>), if t/0.75 ∈ N
+                </p>
+
+                <p class="t-xxs text-justify">
+                    {dS(t) = a , if t/0.75 ∉ N
+                </p>
 
 
-                    <br><br><br>
+                <p class="t-xxs text-justify">
+                    The involuntary swallowing period was estimated to be 0.75 min. This time value was derived from spontaneous swallow frequency (1.32 times/min) that was stated by Afkari S., 2007. (Afkari 2007)
 
                 </p>
+
+
+                <p class="t-xxs text-justify">
+                    The SALSA production rate was obtained by multiplication of unstimulated saliva flow rate (0.3-0.4 ml/min) with SALSA salivary concentration (0.5 ug/ml). It was calculated to be 0.15-0.2 μg/min. This was converted to 0.44118-0.58824 pmol/min with division
+                    by SALSA molecular weight (340 kDa) (Iorgulescu 2009 , Reichhardt 2012). The time needed for saliva swallowing is estimated to be 1 second (Soares et al. 2015).
+
+                </p>
+
+
+                <p class="t-xxs text-justify">
+                    SALSA after/before swallowing ratio is estimated to be 0.72 by division of saliva volume after swallowing (0.77 ± 0.23 ml) by saliva volume before swallowing (1.07 ± 0.39 ml). (Lagerlöf & Dawes 1984)
+                    <br><br>
+                </p>
+
+                <table class="col-1 table table-hover table-bordered  t-xxs background-transparent model-tables">
+                    <thead>
+
+                        <tr>
+                            <th scope="col">SALSA production rate (pmol/min)</th>
+                            <th scope="col">Duration of swallowing (min)</th>
+                            <th scope="col">SALSA after and before swallowing ratio
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">0.44118-0.58824</th>
+
+                            <td>0.16</td>
+                            <td>0.72</td>
+
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+                <p class="t-sxs text-justify">
+                    <b> Table 5.</b> SALSA natural oral fluctuation data.
+
+
+                    <br><br>
+                </p>
+
+                <p class="t-xxs text-justify">
+                    SALSA natural oral fluctuation model estimates the equilibrium amount of SALSA, reached after tooth brushing and spitting and kept until the next tooth brushing to approximately - 0.7393 pmol. Therefore, the approximate concentration of SALSA is estimated
+                    to be 0.739 pmol/ml or 739 pmol/l (pM), as the average volume of saliva in the oral cavity is 1 ml (Lagerlöf & Dawes 1984).
+
+
+
+
+                    <br><br>
+                </p>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <img src="res/img/model/fig1.png" alt="" class="img-fluid" id="grafik1">
+                        <p class="t-sxs text-justify">
+                            <b> Figure 1. </b> Model of the natural fluctuations of SALSA protein. Time 0 indicates the time of tooth brushing. Fluctuations are caused by involuntary swallowing (approx. every 45 seconds) *. Maximal and minimal concentrations
+                            are 1070 and 739 pM, respectively.
+
+                            <br><br>
+                        </p>
+                        <div class="col-2"></div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="col-1"></div>
             </div>
-            <div class="col-1"></div>
-        </div>
     </section>
 
 
-    <div class="wave_2_10"></div>
+    <div class="wave_6_10"></div>
     <section class="section-white">
 
         <div class="row">
             <div class="col-1"></div>
-            <div class="col-10">
-                <p class="text-justify color-1 t-sxs">
+            <div class="col-10 text-center">
+                <p class="text-justify color-1 t-xxs">
 
-                    <b class="t-l">Target sequences</b><br><br> Having aligned all SIDs and obtained a consensus sequence, we were able to make a decision about which proteases to consider based on their sequence specificity, as well as toxicity, availability
-                    and cost. (Supplementary alignment 1)(Supplementary alignment 2) Two candidate proteases, trypsin and prolyl peptidase, were identified as the most suitable enzymes based on these parameters. Trypsin cleaves peptide bonds from the
-                    C-terminal side of positively charged lysine and arginine residues, whereas prolyl peptidase cleaves C-terminally of proline residues. As SRCR-interspersed domains are highly enriched with proline residues (Alignment 1), they are the
-                    ideal substrate for prolyl peptidase. To set up the protease specificity assay, we also used the TEV protease as the model and control enzyme, as it is highly sequence-specific and thoroughly studied. While trypsin and prolyl peptidase
-                    have less determinants for cleavage site, TEV protease specifically targets the sequence ENLYFQS/G.
-                </p>
-
-                <p class="text-justify color-1 t-sxs">
-                    <b class="t-l">Yeast surface display for protein engineering</b><br><br> Yeast surface display is a method for high-throughput screening of proteins based on their interactions. One way to target SALSA would be to engineer a protease
-                    that binds strongly to SALSA, making the assumption that increased local concentration of the protease near SALSA would lead to cleavage of SALSA. Yeast surface display has been used to engineer antibodies for distinct targets, and
-                    a similar approach could be used for the protease and SALSA interaction. However, Furthermore, a modified version of yeast surface display has been used to engineer a TEV protease with slightly different specificity. This approach,
-                    however, requires
-
+                    <b class="t-l">SALSA proteolytic degradation model</b><br><br> To simulate the proteolytic degradation of SALSA, we used Michaelis-Menten kinetic parameters for different proteases (Table 3). Michaelis-Menten model is used to simulate
+                    one-substrate enzyme-catalyzed reaction as turnover number (kcat), enzyme (E) and substrate concentrations’ (Sn) multiplication, divided by the sum of Michaelis-Menten constant (KM) and substrate concentration (S). (Doran 2013) We
+                    considered SALSA being successfully removed when less than 5% of SALSA had remained undegraded. The change in the protein concentration (dS) was calculated as the difference between constant production SALSA (a) and it’s continuous
+                    proteolytic degradation in-between involuntary swallowing (t ∈ [0,0.75] ). For the proteolytic degradation equation, we used protease efficiency (p) relative to salivary conditions (pH 6.7-7.3, 30-37 ͒C) (Table 3) (Seethalakshmi et
+                    al. 2016),(Geneva et al., 2019)
 
                 </p>
+                <img src="res/img/model/formula1.png" alt="" class="img-fluid">
 
-                <p class="text-justify color-1 t-sxs">
-                    <b class="t-l">Modified yeast two-hybrid system to detect protease activity</b><br><br> We modified the yeast two-hybrid system to test the candidate proteases in cleaving the desired sequence. Canonical yeast two-hybrid screening
-                    aims to study protein-protein interactions (Wong et al., 2017a). The system consists of a transcription factor, promoter and a reporter gene. The transcription factor consists of separate binding and activation domains, and can only
-                    induce transcription when the two domains are close to each other. In two-hybrid, each domain has a protein of interest fused to it. Therefore, when two proteins interact, the two transcription factor domains come close to each other.
-                    This leads to activation of the promoter and transcription of the reporter gene, which is used as a readout of the assay. If the two proteins do not interact, there is no transcription of the reporter gene (Wong et al., 2017b). For
-                    our modified yeast two-hybrid system, we adopted the idea of transcription factor's domains in proximity to each other. However, in our case, domains are in conjunction from the beginning and need to be separated.
 
+                <p class="text-justify color-1 t-xxs">
+                    After the model simulation, we found that the effective concentrations of each candidate protease to be used are 1.288 uM for Human trypsin 2, 0.041 uM for Atlantic cod trypsin, and 4.29 uM for prolyl peptidase. This concentration is enough to degrade
+                    95% of the average SALSA concentration (960 pM) in the oral cavity during the time in-between swallowing (0.75 min) (Figure 3).
 
                 </p>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <img src="res/img/model/fig2.png" alt="" class="img-fluid" id="grafik2">
+                        <p class="t-sxs text-justify color-1 ">
+                            <b> Figure 2. </b> SALSA proteolytic degradation by three candidate proteases at their effective dose (capable of degrading >95% of total SALSA amount during 0.75 minutes).
 
-                <p class="text-justify color-1 t-sxs">
-                    <b class="t-l">Transcriptional units</b><br><br> We used the Golden Gate assembly MoClo yeast toolkit (Lee et al., 2015) to make the necessary constructs for our protease targeting assay.
-                </p>
+                            <br><br>
+                        </p>
+                        <div class="col-2"></div>
+                    </div>
 
+                    <p class="t-xxs text-justify color-1 ">
+                        According to our proteolytic degradation model, the most efficient protease is the Atlantic cod trypsin, despite its low activity in salivary conditions. We need the smallest amount of this protease to degrade SALSA protein, which minimizes the risks
+                        of toxic effects of proteases in the human body.
+
+                    </p>
+
+
+
+
+                </div>
+                <div class="col-1"></div>
 
             </div>
-            <div class="col-1"></div>
-
-        </div>
 
 
-        <div class="row no_top_padding">
-
-            <div class="col-2">
-            </div>
-            <div class="col-8">
-
-                <img src="res/img/engineering/Engineering_Figure2.svg" alt="" class="img-fluid">
-                <p class="t-sxs text-justify color-1 ilh">
-                    <b>Figure 2. A predicted structural model of the SALSA protein.</b> The unstructured SID linkers separate the SRCR domains that bind to the teeth and that are used by the bacteria to anchor on the tooth.
-                </p>
-            </div>
-            <div class="col-2">
-            </div>
-
-        </div>
 
 
 
 
     </section>
 
-    <div class="wave_10_4"></div>
 
-    <section class="grad-4-6">
 
-        <div class="row no_top_padding">
+    <div class="wave_10_6"></div>
+
+    <section class="grad-6-8">
+
+        <div class="row no_top_padding text-center">
 
             <div class="col-1">
             </div>
             <div class="col-10">
+
+
+                <p class="t-xxs  color-10 ">
+                    <b class="t-l">Neutralizing the protease activity and proteases elimination
+                    </b><br><br>
+                    <p class="text-justify">
+                        To simulate effective inhibition of the proteases by neutralizers (I), ODE formulas were used. Inhibition (dE) was considered successful when less than 5% of the protease was still active. Simulation is based on subtraction of the associated protease
+                        (E) and I (-kaIE) from dissociated EI (kdEI), supplied by neutralizer availability (dI) and EIformation (dEI). Such process occurs in-between involuntary swallowing (t ∈ [0,0.75])
+                    </p>
+
+
+                </p>
+
 
 
                 <p class="t-xxs text-justify color-10">
-                    We constructed a system with three cassette plasmids, termed transcriptional units. The first transcriptional unit (TU1) includes the coding sequence for SIC1∆N that inhibits cell cycle progression, consequently terminating cell growth. SIC1∆N is expressed
-                    as the reporter gene from the LexA binding domain promoter. The transcription of Sic1∆N is dependent on the transcription factor encoded in the second transcription unit (TU2[3] ).
+                    dE(t) = -kaIE+kdEI, t ∈ [0,0.75]
+
+                </p>
+                <p class="t-xxs text-justify color-10">
+                    dI(t) = -kaIE+kdEI, t ∈ [0,0.75]
+
+                </p>
+                <p class="t-xxs text-justify color-10">
+                    dEI(t) = kaIE-kdEI, t ∈ [0,0.75]
+
+                </p>
+
+                <p class="t-xxs text-justify color-10">
+                    ka and kd constants were unavailable for the Atlantic cod trypsin, and therefore protease inhibition was modeled for its closest relative with available constants - Human trypsin 2. For the neutralizer-induced candidate protease inactivation Human trypsin
+                    2 effective concentration was estimated to be 1.88 uM and inhibitor α1-antitrypsin concentration of 1.288 uM.
+
+
+                </p>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <img src="res/img/model/fig3.png" alt="" class="img-fluid" id="grafik3">
+
+                        <p class="t-sxs text-justify color-10 ">
+                            <b> Figure 3. </b> Inactivation of the Human trypsin 2 (blue line) by the α1-antitrypsin (orange line) and increase in inhibited Human trypsin 2 proteases (yellow line).
+
+                            <br><br>
+                        </p>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+
+
+
+                <p class="t-xxs text-justify color-10">
+                    Neutralized candidate protease is eliminated (dS(t)) by the frequent ( t/45 ∈ N) swallowing ( a(v0-v1/v0)) multiplied by the concentration (S) of the protease and to the ratio of the swallowed (v0-v1): whole saliva (v0) which is present in the oral cavity.
+
+
+                </p>
+
+
+                <p class="t-xxs text-justify color-10">
+
+                    {dS(t) = - S(v0-v1/v0), if t/45 ∈ N
+
+                </p>
+
+                <p class="t-xxs text-justify color-10">
+                    {dS(t) = 0 , if t/45 ∉ N
+
 
 
                 </p>
 
                 <p class="t-xxs text-justify color-10">
-                    The second transcriptional unit (TU2) contains parts of the transcription factor: LexA binding domain and VP16 activation domain, just as in conventional two-hybrid. However, the two domains are separated by the SID linker from SALSA and they are also
-                    fused with an SRCR domain. SRCR domain can be used as a separate binding partner for the engineered protease to increase the affinity of the protease for the transcription factor (explained below). The SID linker between the DNA binding
-                    and activation domains is the target site for the protease. As a proof of principle, in the positive control construct we included the 6 amino acid long specific TEV protease cleavage site in the middle of the SID. In case the cleavage
-                    by TEV does not occur, we are notified that the problem lies in the experimental setup itself. This approach enables us to determine if our test system is reliable and specific.
-
-                </p>
-            </div>
-            <div class="col-1">
-            </div>
-
-        </div>
+                    The time of neutralized candidate protease elimination was calculated to be approximately 6.75 minutes (Figure 4).
 
 
-
-    </section>
-
-    <div class="wave_6_10"></div>
-
-
-    <section class="section-white">
-
-        <div class="row no_bottom_padding">
-
-            <div class="col-1">
-            </div>
-            <div class="col-10">
-                <p class="t-xxs text-justify color-1">
-                    The final component, expressed as the third transcriptional unit (TU3), is the protease. To improve the specificity of our protease, we employed a strategy to increase the affinity of the protease to SALSA . For this, we made use of the same mechanism
-                    that the cariogenic bacteria use to bind SALSA. S. mutans cell surface contains streptococcal antigen I/II (SA I/II) adhesin, which binds to salivary agglutinin. Studies mapped the residues in the C terminus of SA I/II as the prominent
-                    region for binding to salivary receptors (Kelly et al., 1999). We used this sequence of residues as a ligand to facilitate the binding of the protease and the SRCR domain fused to the transcription factor. We also added the SV40 nuclear
-                    localization sequence to the protease, which guides the protease to the nucleus, where the transcription factor functions.
 
                 </p>
 
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <img src="res/img/model/fig4.png" alt="" class="img-fluid" id="grafik4">
 
-            </div>
-            <div class="col-1">
-            </div>
+                        <p class="t-sxs text-justify color-10 ">
+                            <b> Figure 4. </b> Neutralized candidate protease elimination, due to swallowing.
 
-        </div>
+                            <br><br>
+                        </p>
+                    </div>
+                    <div class="col-2"></div>
 
-        <div class="row no_bottom_padding">
-
-            <div class="col-2">
-            </div>
-            <div class="col-8">
-                <img src="res/img/engineering/Engineering_Figure3.svg" alt="" class="img-fluid">
-                <p class="t-sxs text-justify color-1">
-                    <b>Figure 3. A predicted structural model of the SALSA protein.</b> The unstructured SID linkers separate the SRCR domains that bind to the teeth and that are used by the bacteria to anchor on the tooth.
-
-                </p>
-
-
-            </div>
-            <div class="col-2">
-            </div>
-
-        </div>
-
-
-
-    </section>
-
-    <div class="wave-up"></div>
-
-
-
-    <section class="section-grad">
-
-        <div class="row no_bottom_padding">
-            <div class="col-1"></div>
-            <div class="col-10">
-                <p class="t-xxs text-justify">
-                    <b class="t-l">Protease activity inactivates expression of a growth repressor</b><br><br> Both TU2 and TU3 contain GAL1 promoters. Therefore, the second and the third transcriptional units are expressed simultaneously. When the protease
-                    cuts the SID domain in the transcription factor, it divides the LexA and VP16 domains of the transcription factor, inactivating the transcription factor and the expression of SIC1∆N. In this case, the cells grow normally, indicating
-                    that protease has efficiently cleaved the desired sequence. If the protease fails to cut the SID linker, then the transcription factor attaches to the SIC1∆N promoter, leading to expression of the inhibitor and termination of the cell
-                    cycle and yeast growth. Our modified yeast two-hybrid system is intended to integrate into yeast S. cerevisiae chromosomes, which we approached in two ways: separate integration for each transcription unit or teamwise integration.
-
-                </p>
-
-                <p class="t-xxs text-justify">
-                    All three transcription units have sites for homologous recombination to integrate coding sequences into S. cerevisiae chromosomes: URA3 homology for TU1, LEU2 homology for TU2, and HO homology for TU3. Furthermore, we can assemble multigene plasmid from
-                    TU1, TU2, and TU3 using Golden Gate assembly and the aforementioned MoClo yeast toolkit. Integration vector inserts our coding sequence into URA3 homology teamwise. Two possibilities for integration make our system versatile and make
-                    transcriptional units integration not dependent on each other. Therefore, during laboratory experiments, we do not necessarily need to wait to obtain all transcriptional units for yeast transformation.
-
-                </p>
-            </div>
-            <div class="col-1"></div>
-        </div>
-    </section>
-
-
-    <section class="section-grad-inverse">
-        <div class="row no_top_padding ">
-            <div class="col-1"></div>
-            <div class="col-10">
-                <p class="t-xxs text-justify">
-                    <b class="t-l">High-throughput screening of proteases</b><br><br> After testing our candidate proteases and finding the ones that cleave the SID linkers most efficiently, we plan to implement error-prone PCR to create protease libraries
-                    and to improve their specificity for the SID linkers. Error-prone PCR is a random mutagenesis technique for introducing mutations in genes encoding proteins. Mutations appear because of using a polymerase with decreased proofreading
-                    ability and the specific conditions of the polymerase chain reaction — specifically, the concentration of Mg2+ and Mn2+ ions and an unbalanced ratio of nucleotides. The number of cycles can control the frequency of the mutations incorporated.
-                    The mutant PCR products are subsequently cloned into an expression vector resulting in the library for screening changes in proteins activity and identifying beneficial mutations (Tao & Raz, 2015). As the screening is based on positive
-                    selection using a simple readout, yeast growth, this is a powerful tool to isolate rare variants that have increased efficiency for cleaving the SID linkers. Also, the assay selects for specific proteases, as proteases with very broad
-                    specificity will target additional yeast proteins, causing off-target toxicity and their depletion in the competitive growth assay. This attribute is also beneficial for our project to obtain a protease with least off-target effects
-                    when used for oral hygiene.
-
-                </p>
-
-            </div>
-            <div class="col-1"></div>
-        </div>
-
-
-
-        <div class="row no_top_padding no_bottom_padding">
-            <div class="col-1"></div>
-            <div class="col-10">
-                <div class="collapse" id="references">
-
-                    <p class="color-10 t-sxs text-justify">
-                        AlphaFold Protein Structure Database. (n.d.). Retrieved October 16, 2021, from https://alphafold.ebi.ac.uk/entry/Q9UGM3<br> Bikker, F. J., Ligtenberg, A. J. M., Nazmi, K., Veerman, E. C. I., van’t Hof, W., Bolscher, J. G. M., Poustka,
-                        A., Amerongen, A. V. N., & Mollenhauer, J. (2002). Identification of the Bacteria-binding Peptide Domain on Salivary Agglutinin (gp-340/DMBT1), a Member of the Scavenger Receptor Cysteine-rich Superfamily*. Journal of Biological
-                        Chemistry, 277(35), 32109–32115. https://doi.org/https://doi.org/10.1074/jbc.M203788200 Kelly, C. G., Younson, J. S., Hikmat, B. Y., Todryk, S. M., Czisch, M., Haris, P. I., Flindall, I. R., Newby, C., Mallet, A. I., Ma, J. K.-C.,
-                        & Lehner, T. (1999). A synthetic peptide adhesion epitope as a novel antimicrobial agent. Nature Biotechnology, 17(1), 42–47. https://doi.org/10.1038/5213<br> Lee, M. E., DeLoache, W. C., Cervantes, B., & Dueber, J. E. (2015).
-                        A Highly Characterized Yeast Toolkit for Modular, Multipart Assembly. ACS Synthetic Biology, 4(9), 975–986. https://doi.org/10.1021/SB500366V<br> Reichhardt, M. P., Loimaranta, V., Lea, S. M., & Johnson, S. (2020). Structures of
-                        SALSA/DMBT1 SRCR domains reveal the conserved ligand-binding mechanism of the ancient SRCR fold. Life Science Alliance, 3(4). https://doi.org/10.26508/LSA.201900502<br> Tao, A., & Raz, E. (2015). Allergy Bioinformatics. Turenchalk,
-                        G. S., & Xu, T. (2001). Lats in Cell-cycle Regulation and Tumorigenesis BT - Encyclopedic Reference of Cancer. Encyclopedic Reference of Cancer, 491–496. https://doi.org/10.1007/3-540-30683-8_944<br> Wong, J. H., Alfatah, M., Sin,
-                        M. F., Sim, H. M., Verma, C. S., Lane, D. P., & Arumugam, P. (2017a). A yeast two-hybrid system for the screening and characterization of small-molecule inhibitors of protein–protein interactions identifies a novel putative Mdm2-binding
-                        site in p53. BMC Biology 2017 15:1, 15(1), 1–17. https://doi.org/10.1186/S12915-017-0446-7<br> Wong, J. H., Alfatah, M., Sin, M. F., Sim, H. M., Verma, C. S., Lane, D. P., & Arumugam, P. (2017b). A yeast two-hybrid system for the
-                        screening and characterization of small-molecule inhibitors of protein–protein interactions identifies a novel putative Mdm2-binding site in p53. BMC Biology 2017 15:1, 15(1), 1–17. https://doi.org/10.1186/S12915-017-0446-7<br>
-
-                    </p>
+                </div>
+                <div class="col-1">
                 </div>
 
             </div>
-            <div class="col-1"></div>
-
-        </div>
-
-
-        <div class="row no_top_padding ">
-            <div class="col-sm-5 col-4"></div>
-            <div class="col-sm-2 col-4">
-                <button class="btn read_more_button color-10 t-sxs text-center" type="button" data-bs-toggle="collapse" data-bs-target="#references" aria-expanded="false" aria-controls="references">
-                References
-              </button>
-            </div>
-            <div class="col-sm-5 col-4"></div>
-        </div>
-
-        <div class="row no_top_padding no_bottom_padding">
-            <div class="col-1"></div>
-            <div class="col-10">
-                <div class="collapse" id="supmaterial">
-
-                    <p class="color-10 t-sxs text-justify">
-                        A, G., H, H., & B, S. (2013). Potential use of Atlantic cod trypsin in biomedicine. BioMed Research International, 2013. https://doi.org/10.1155/2013/749078 Are You Storing Food Safely? | FDA. (n.d.). Retrieved October 15, 2021, from https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely
-                        Cavities/tooth decay - Symptoms and causes - Mayo Clinic. (n.d.). Retrieved October 14, 2021, from https://www.mayoclinic.org/diseases-conditions/cavities/symptoms-causes/syc-20352892 Evans, D. F., Pye, G., Bramley, R., Clark,
-                        A. G., Dyson, T. J., & Hardcastle, J. D. (1988). Measurement of gastrointestinal pH profiles in normal ambulant human subjects. Gut, 29(8), 1035. https://doi.org/10.1136/GUT.29.8.1035 Lam, M. P. Y., Lau, E., Liu, X., Li, J., &
-                        Chu, I. K. (2012). Sample Preparation for Glycoproteins. Comprehensive Sampling and Sample Preparation, 3, 307–322. https://doi.org/10.1016/B978-0-12-381373-2.00085-5 NM, M., & SG, L. (2007). Aralast: an alpha 1-protease inhibitor
-                        for the treatment of alpha-antitrypsin deficiency. Expert Opinion on Pharmacotherapy, 8(15), 2609–2614. https://doi.org/10.1517/14656566.8.15.2609 Peres, M. A., Macpherson, L. M. D., Weyant, R. J., Daly, B., Venturelli, R., Mathur,
-                        M. R., Listl, S., Celeste, R. K., Guarnizo-Herreño, C. C., Kearns, C., Benzian, H., Allison, P., & Watt, R. G. (2019). Oral diseases: a global public health challenge. The Lancet, 394(10194), 249–260. https://doi.org/10.1016/S0140-6736(19)31146-8
-                        Rathee, M., & Sapra, A. (2021). Dental Caries. StatPearls. https://www.ncbi.nlm.nih.gov/books/NBK551699/ Review of Proteins & Enzymes. (n.d.). Retrieved October 15, 2021, from http://science.halleyhosting.com/sci/soph/organic/enzyme/a36.htm
-                        StableCellTM Trypsin Solutions. (n.d.). Retrieved October 15, 2021, from https://www.sigmaaldrich.com/EE/en/technical-documents/protocol/cell-culture-and-cell-culture-analysis/mammalian-cell-culture/stablecell-trypsin-solutions
-                        Trypsin from porcine pancreas Proteomics Grade, BioReagent, Dimethylated. (n.d.). Retrieved October 15, 2021, from www.sigmaaldrich.com/homepage.html]. Tutuian, R., & Castell, D. O. (2006). Gastroesophageal reflux monitoring: pH
-                        and impedance. GI Motility Online, Published Online: 16 May 2006; | Doi:10.1038/Gimo31. https://doi.org/10.1038/GIMO31 Wohlman, A., Kabacoff, B. L., & Avakian, S. (2016). Comparative Stability of Trypsin and Chymotrypsin in Human
-                        Intestinal Juice: Https://Doi.Org/10.3181/00379727-109-27092, 109(1), 26–28. https://doi.org/10.3181/00379727-109-27092
-
-                    </p>
-                </div>
-
-            </div>
-            <div class="col-1"></div>
-
-        </div>
-        <div class="row no_top_padding ">
-            <div class="col-sm-5 col-4"></div>
-            <div class="col-sm-2 col-4">
-                <button class="btn read_more_button color-10 t-sxs text-center" type="button" data-bs-toggle="collapse" data-bs-target="#supmaterial" aria-expanded="false" aria-controls="supmaterial">
-                Supplementary Material
-              </button>
-            </div>
-            <div class="col-sm-5 col-4"></div>
-        </div>
 
 
 
     </section>
+
+    <div class="wave_8_10"></div>
+
+
+    <section class="section-white color-1">
+
+        <div class="row no_bottom_padding text-center">
+
+            <div class="col-1">
+            </div>
+            <div class="col-10">
+
+
+
+                <p class="t-xxs  color-1 text-justify">
+                    <b class="t-l">Conclusion: 
+
+                    </b><br><br> We utilized several modelling techniques to conduct the research on the most effective, compatible and feasible proteases for the SALSA protein degradation. We were also successful in simulating the
+                    fluctuations of the protein in the oral cavity after brushing or enzymatic cleavage and calculated its amount before and after swallowing. Using the determined concentration, we found the optimal quantity of candidate proteases. Atlantic
+                    cod trypsin showed the most promising efficiency in cutting the SRCR domains in SALSA at minimal concentration. This negligible amount of Atlantic cod trypsin protease ( 0.041uM) should not be toxic for the organism, which we also
+                    discussed with Professor Seppo Meri. His deep knowledge of immune signalling explained the risks and benefits of our product and helped us design and develop it. (see Integrated Human Practices for more details). However, we still
+                    considered and modelled trypsin proteases inactivation by the relatively safe and non-toxic α1-antitrypsin inhibitor.
+
+
+
+                </p>
+
+
+                <div class="row no_top_padding no_bottom_padding">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="collapse" id="references">
+
+                            <p class="color-1 t-sxs text-justify">
+
+                                Pharmacology, 162(6), 1239. https://doi.org/10.1111/J.1476-5381.2010.01127.X<br> SA, A., MI, H., A, I., & F, A. (2014). A review of methods available to estimate solvent-accessible surface areas of soluble proteins in the
+                                folded and unfolded states. Current Protein & Peptide Science, 15(5), 456–476. https://doi.org/10.2174/1389203715666140327114232<br> Shoba Ranganathan, Michael Gribskov, Kenta Nakai, & Christian Schönbach. (2019). Applications,
+                                Volume 3. Encyclopedia of Bioinformatics and Computational Biology, 3, 938–952. http://www.sciencedirect.com/science/article/pii/B9780128114148090532<br> Clustal Omega
+                                < Multiple Sequence Alignment < EMBL-EBI. (n.d.). Retrieved October 15, 2021, from https://www.ebi.ac.uk/Tools/msa/clustalo/<br>
+                                    Zheng, Y., & Sriram, G. (2010). Mathematical Modeling: Bridging the Gap between Concept and Realization in Synthetic Biology. Journal of Biomedicine and Biotechnology, 2010. https://doi.org/10.1155/2010/541609<br> Dajcs,
+                                    J. J., Thibodeaux, B. A., Hume, E. B. H., Zheng, X., Sloop, G. D., & O’Callaghan, R. J. (2001). Lysostaphin is effective in treating methicillin-resistant Staphylococcus aureus endophthalmitis in the rabbit. Current
+                                    Eye Research, 22(6), 451–457. https://doi.org/10.1076/CEYR.22.6.451.5486<br> ST, G., AJ, L., B, T., M, B., EC, V., & D, W. (2015). Complement activation by salivary agglutinin is secretor status dependent. Biological
+                                    Chemistry, 396(1), 35–43. https://doi.org/10.1515/HSZ-2014-0200<br> Grys, T. E., Siegel, M. B., Lathem, W. W., & Welch, R. A. (2005). The StcE protease contributes to intimate adherence of enterohemorrhagic Escherichia
+                                    coli O157:H7 to host cells. Infection and Immunity, 73(3), 1295–1303. https://doi.org/10.1128/IAI.73.3.1295-1303.2005<br> FJ, B., AJ, L., K, N., EC, V., W, van’t H., JG, B., A, P., AV, N. A., & J, M. (2002). Identification
+                                    of the bacteria-binding peptide domain on salivary agglutinin (gp-340/DMBT1), a member of the scavenger receptor cysteine-rich superfamily. The Journal of Biological Chemistry, 277(35), 32109–32115. https://doi.org/10.1074/JBC.M203788200<br>                                    TCEP: A toxic flame retardant - Toxic-Free Future. (n.d.). Retrieved October 15, 2021, from https://toxicfreefuture.org/key-issues/chemicals-of-concern/tcep/<br> [PDF] Exact and efficient analytical calculation of the
+                                    accessible surface areas and their gradients for macromolecules | Semantic Scholar. (n.d.). Retrieved October 15, 2021, from https://www.semanticscholar.org/paper/Exact-and-efficient-analytical-calculation-of-the-Fraczkiewicz-Braun/e07e05e8dc59e57e11150388bceb12215d7106e7<br>                                    Jumper, J., Evans, R., Pritzel, A., Green, T., Figurnov, M., Ronneberger, O., Tunyasuvunakool, K., Bates, R., Žídek, A., Potapenko, A., Bridgland, A., Meyer, C., Kohl, S. A. A., Ballard, A. J., Cowie, A., Romera-Paredes,
+                                    B., Nikolov, S., Jain, R., Adler, J., … Hassabis, D. (2021). Highly accurate protein structure prediction with AlphaFold. Nature 2021 596:7873, 596(7873), 583–589. https://doi.org/10.1038/s41586-021-03819-2<br> DMBT1
+                                    - Deleted in malignant brain tumors 1 protein precursor - Homo sapiens (Human) - DMBT1 gene & protein. (n.d.). Retrieved October 15, 2021, from https://www.uniprot.org/uniprot/Q9UGM3<br> Geneva, I. I., Cuzzo, B., Fazili,
+                                    T., & Javaid, W. (2019). Normal Body Temperature: A Systematic Review. Open Forum Infectious Diseases, 6(4). https://doi.org/10.1093/OFID/OFZ032<br> O, S., ML, B., B, M., B, E., H, B., P, G., UH, S., & H, K. (2018).
+                                    Specificity profiling of human trypsin-isoenzymes. Biological Chemistry, 399(9), 997–1007. https://doi.org/10.1515/HSZ-2018-0107<br> Sgeirsson, B. A. ´, & Cekan, P. (2006). Microscopic rate-constants for substrate binding
+                                    and acylation in cold-adaptation of trypsin I from Atlantic cod. https://doi.org/10.1016/j.febslet.2006.07.043<br> Shan, L., Mathews, I. I., & Khosla, C. (2005). Structural and mechanistic analysis of two prolyl endopeptidases:
+                                    Role of interdomain dynamics in catalysis and specificity. PNAS March, 8(10), 2021. www.pdb.org<br> Review of Proteins & Enzymes. (n.d.). Retrieved October 15, 2021, from http://science.halleyhosting.com/sci/soph/organic/enzyme/a36.htm<br>                                    Trypsin | Biocompare. (n.d.). Retrieved October 15, 2021, from https://www.biocompare.com/pfu/11723844/soids/2254598-2272572/Enzymes/Protease_Trypsin<br> Sandholt, G. B., Stefansson, B., Scheving, R., & Gudmundsdottir,
+                                    Á. (2019). Biochemical characterization of a native group III trypsin ZT from Atlantic cod (Gadus morhua). International Journal of Biological Macromolecules, 125, 847–855. https://doi.org/10.1016/J.IJBIOMAC.2018.12.099<br>                                    Kalwant, S., & Porter, A. G. (1991). Purification and characterization of human brain prolyl endopeptidase. Biochemical Journal, 276(Pt 1), 237. https://doi.org/10.1042/BJ2760237<br> C, H., P, A., & D, N. (2004). Engineering
+                                    a thermostable human prolyl endopeptidase for antibody-directed enzyme prodrug therapy. Biochemistry, 43(20), 6293–6303. https://doi.org/10.1021/BI0361160<br> N, M., T, N., K, T., PL, W., & Y, K. (2017). Proteases,
+                                    actinidin, papain and trypsin reduce oral biofilm on the tongue in elderly subjects and in vitro. Archives of Oral Biology, 82, 233–240. https://doi.org/10.1016/J.ARCHORALBIO.2017.04.035<br> Dall, E., & Brandstetter,
+                                    H. (2016). Structure and function of legumain in health and disease. Biochimie, 122, 126–150. https://doi.org/10.1016/J.BIOCHI.2015.09.022<br> Rotari, V. I., Dando, P. M., & Barrett, A. J. (2001). Legumain Forms from
+                                    Plants and Animals Differ in Their Specificity. 382(6), 953–959. https://doi.org/10.1515/BC.2001.119<br> Bethune, M. T., & Khosla, C. (2012). Oral enzyme therapy for celiac sprue. Methods in Enzymology, 502, 241–271.
+                                    https://doi.org/10.1016/B978-0-12-416039-2.00013-6
+                                    <br> Hörmannsperger, G., Schillde, M.-A. von, & Haller, D. (2013). Lactocepin as a protective microbial structure in the context of IBD. Gut Microbes, 4(2), 152. https://doi.org/10.4161/GMIC.23444<br> Nandan, A., &
+                                    Nampoothiri, K. M. (2020). Therapeutic and biotechnological applications of substrate specific microbial aminopeptidases. Applied Microbiology and Biotechnology 2020 104:12, 104(12), 5243–5257. https://doi.org/10.1007/S00253-020-10641-9<br>                                    IS, B., N, B., YN, P., M, S., D, Y., DE, O., M, R., & E, K. (2012). Staphylolysin is an effective therapeutic agent for Staphylococcus aureus experimental keratitis. Graefe’s Archive for Clinical and Experimental Ophthalmology
+                                    = Albrecht von Graefes Archiv Fur Klinische Und Experimentelle Ophthalmologie, 250(2), 223–229. https://doi.org/10.1007/S00417-011-1822-6<br> Gökçen, A., Vilcinskas, A., & Wiesner, J. (2014). Biofilm-degrading enzymes
+                                    from Lysobacter gummosus. Http://Dx.Doi.Org/10.4161/Viru.27919, 5(3), 378–387. https://doi.org/10.4161/VIRU.27919<br> Coward, C., & Onaral, B. (2005). Computational cell biology and complexity. Introduction to Biomedical
+                                    Engineering, 833–855. https://doi.org/10.1016/B978-0-12-238662-6.50016-1<br> Iorgulescu, G. (2009). Saliva between normal and pathological. Important factors in determining systemic and oral health. Journal of Medicine
+                                    and Life, 2(3), 303. /labs/pmc/articles/PMC5052503/<br> MP, R., V, L., S, T., J, F., S, M., & H, J. (2012). The salivary scavenger and agglutinin binds MBL and regulates the lectin pathway of complement in solution
+                                    and on surfaces. Frontiers in Immunology, 3(JUL). https://doi.org/10.3389/FIMMU.2012.00205<br> SOARES, T. J., MORAES, D. P., MEDEIROS, G. C. de, SASSI, F. C., ZILBERSTEIN, B., & ANDRADE, C. R. F. de. (2015). Oral transit
+                                    time: a critical review of the literature. Arquivos Brasileiros de Cirurgia Digestiva : ABCD = Brazilian Archives of Digestive Surgery, 28(2), 144. https://doi.org/10.1590/S0102-67202015000200015<br> F, L., & C, D.
+                                    (1984). The volume of saliva in the mouth before and after swallowing. Journal of Dental Research, 63(5), 618–621. https://doi.org/10.1177/00220345840630050201<br> Seethalakshmi, C., Reddy, R. C. J., Asifa, N., & Prabhu,
+                                    S. (2016). Correlation of Salivary pH, Incidence of Dental Caries and Periodontal Status in Diabetes Mellitus Patients: A Cross-sectional Study. Journal of Clinical and Diagnostic Research : JCDR, 10(3), ZC12. https://doi.org/10.7860/JCDR/2016/16310.7351
+
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-1"></div>
+
+                </div>
+
+
+                <div class="row no_top_padding ">
+                    <div class="col-sm-5 col-4"></div>
+                    <div class="col-sm-2 col-4">
+                        <button class="btn read_more_button color-10 t-sxs text-center" type="button" data-bs-toggle="collapse" data-bs-target="#references" aria-expanded="false" aria-controls="references">
+                        References
+                      </button>
+                    </div>
+                    <div class="col-sm-5 col-4"></div>
+                </div>
+
+
+            </div>
+            <div class="col-1">
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <div class="wave_10_black"></div>
 
 
 
