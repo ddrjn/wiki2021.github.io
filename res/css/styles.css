@@ -805,4 +805,24 @@ st {
 
 .carusel_img {
     border-radius: 5%;
+    width: 65%;
+}
+
+.carusel_buttons {
+    padding-top: 5%;
+    justify-content: space-between;
+}
+
+.carusel_buttons>button {
+    padding: 0;
+    border-radius: 20%;
+    border-style: unset;
+}
+
+.carusel_buttons>button>img {
+    border-radius: 20%;
+}
+
+.car_nav_img {
+    width: 100%;
 }
