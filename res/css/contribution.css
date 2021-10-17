@@ -82,6 +82,77 @@
     /* margin-top: 1%; */
 }
 
-.ecfp-text {
+.grad-text {
     margin-top: 5%;
 }
+
+.section-grad-yell {
+    background-image: linear-gradient(#CBABC8, #EABE9B);
+}
+
+#header_yellow_img {
+    width: 13%;
+}
+
+.wave-down-contribution-yell {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #CBABC8), to(#CBABC8));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+.wave-up-contribution-yell {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #EABE9B), to(#EABE9B));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) 
+
+}
+
+
+.section-grad-morange {
+    background-image: linear-gradient(#9C7884, #FBA58E);
+}
+
+.wave-down-contribution-morange {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #9C7884), to(#9C7884));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+.wave-up-contribution-morange {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #FBA58E), to(#FBA58E));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) 
+
+}
+
+
+.section-grad-contribution-mrfp {
+    background-image: linear-gradient(#BD8481, #867481);
+}
+
+.wave-down-contribution-mrfp {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #BD8481), to(#BD8481));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+.wave-up-contribution-mrfp {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #867481), to(#867481));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) 
+
+}
+
+
