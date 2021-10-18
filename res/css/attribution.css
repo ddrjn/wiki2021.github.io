@@ -1,4 +1,44 @@
 
+/* 
+    GRADIENT ORDER
+
+    FA9C8E
+    9487BA
+
+    969BC3
+    B98DB5
+
+    B98DB5
+    EABE9B
+
+    EABE9B
+    867481
+
+    9C7884
+    FBA58E
+*/
+
+/* SECTION GRADS IN ORDER */
+.section-grad-attr-supervisors {
+    background: linear-gradient(#FA9C8E, #9487BA);
+}
+.section-grad-attr-modeling {
+    background: linear-gradient(#969BC3, #B98DB5);
+}
+.section-grad-attr-collabs {
+    background: linear-gradient(#B98DB5, #EABE9B);
+}
+.section-grad-attr-fundraising {
+    background: linear-gradient(#EABE9B, #867481);
+}
+
+
+.flex-text-aligned {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 
 .wave-down-attr-header {
     height:35px;
@@ -7,12 +47,6 @@
     -webkit-background-size: 35px 100%;
     transform: rotateX(180deg) translateY(-20px);
 }
-
-
-.section-grad-attr-supervisors {
-    background-image: linear-gradient(#FA9C8E, #9487BA);
-}
-
 
 .supervisor {
     display: flex;
@@ -28,9 +62,14 @@
     text-align: right;
 }
 
+
+/* 
+    WAVES GRADIENTS
+*/
+
 /* LAB TEAM */
 
-.wave-up-atrr-lab {
+.wave-up-attr-lab {
     height:35px;
     width:100%;
     background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #9487BA), to(#9487BA));
@@ -38,21 +77,26 @@
     transform: rotateX(180deg);
 }
 
-.lab-intro-text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.wave-down-attr-lab {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #969BC3), to(#969BC3));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
 }
 
 
-/* MODELING TEAM */
 
-.section-grad-attr-modeling {
-    background-image: linear-gradient(#B98DB5, #EABE9B);
+/* Public ENGAGEMENT TEAM */
+.wave-up-attr-pe {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #B98DB5), to(#B98DB5));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
 }
 
-
-.wave-down-attr-modeling {
+.wave-down-attr-pe {
     height:35px;
     width:100%;
     background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #B98DB5), to(#B98DB5));
@@ -60,11 +104,29 @@
     transform: rotateX(180deg) translateY(-20px);
 }
 
-/* Public ENGAGEMENT TEAM */
-.wave-up-attr-pe {
+/* Fundaising team */
+.wave-up-attr-hp {
     height:35px;
     width:100%;
     background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #EABE9B), to(#EABE9B));
     -webkit-background-size: 35px 100%;
     transform: rotateX(180deg);
 }
+
+.wave-down-attr-hp {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #EABE9B), to(#EABE9B));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+/* Wiki */
+.wave-up-attr-wiki {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #867481), to(#867481));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
