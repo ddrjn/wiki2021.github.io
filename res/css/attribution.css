@@ -1,0 +1,70 @@
+
+
+.wave-down-attr-header {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #FA9C8E), to(#FA9C8E));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+
+.section-grad-attr-supervisors {
+    background-image: linear-gradient(#FA9C8E, #9487BA);
+}
+
+
+.supervisor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.supervisor-text {
+    margin: 4%;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* LAB TEAM */
+
+.wave-up-atrr-lab {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #9487BA), to(#9487BA));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
+.lab-intro-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* MODELING TEAM */
+
+.section-grad-attr-modeling {
+    background-image: linear-gradient(#B98DB5, #EABE9B);
+}
+
+
+.wave-down-attr-modeling {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #B98DB5), to(#B98DB5));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+/* Public ENGAGEMENT TEAM */
+.wave-up-attr-pe {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #EABE9B), to(#EABE9B));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
