@@ -26,7 +26,7 @@ function preload() {
 
 
 function setup() {
-    imgsize = window.innerWidth / 80;
+    imgsize = window.innerWidth / 250;
     // imgset[0].resize(imgsize, imgsize);
     // imgset[1].resize(imgsize, imgsize);
     // imgset[2].resize(imgsize, imgsize);
@@ -60,7 +60,7 @@ function setup() {
 function windowResized() {
     var b = document.getElementById("toothcanvascontainer").clientHeight;
     resizeCanvas(window.innerWidth, b);
-    imgsize = window.innerWidth / 80;
+    imgsize = window.innerWidth / 250;
 
     for (var i = 0; i < imgsnum; i++) {
 
@@ -86,6 +86,16 @@ function draw() {
 
 
 }
+$('.img_mouseover').css({ 'position': 'relative' })
+
+function mouseMoved() {
+
+    let moveX = ((window.innerWidth / 2 - mouseX) / 15)
+    let moveY = ((height / 2 - mouseY) / 15)
+    $('.img_mouseover').css({ 'left': `${moveX}px`, 'top': `${moveY}px` })
+}
+
+
 
 
 
@@ -106,10 +116,11 @@ class floater {
         this.img = img;
         this.vector = createVector(random(-this.speed, this.speed), random(-this.speed, this.speed));
         this.pos = createVector(w, h);
-        this.imgsize = window.innerWidth / 80;
+        this.imgsize = window.innerWidth / 250;
         this.col = this.colors[int(random(6))];
         this.angle = 0;
         this.angleinc = random(-0.04, 0.04);
+        this.bamm = 1;
     }
 
     moveabout() {
@@ -138,7 +149,7 @@ class floater {
         rotate(this.angle);
         translate(-this.imgsize / 2, -this.imgsize / 2);
         if (this.bigger)
-            image(this.img, 0, 0, this.imgsize * 1.5, this.imgsize * 1.5);
+            image(this.img, 0, 0, this.imgsize * this.bamm, this.imgsize * this.bamm);
         else
             image(this.img, 0, 0, this.imgsize, this.imgsize);
 
@@ -150,6 +161,8 @@ class floater {
         var d = dist(this.pos.x, this.pos.y, x, y);
         if (d < width / 6) {
             this.bigger = true;
+            this.bamm = map(d, 0, width / 6 * 1.5, 5, 1);
+
             //stroke(this.col);
             //strokeWeight(min(width / 10 / d, 5));
 
@@ -167,7 +180,7 @@ class floater {
 
     res() {
 
-        this.imgsize = window.innerWidth / 50;
+        this.imgsize = window.innerWidth / 250;
     }
 
 
