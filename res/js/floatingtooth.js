@@ -1,5 +1,5 @@
 let imgset = new Array();
-let imgsnum = 50;
+let imgsnum = 150;
 let floaterset = new Array();
 let difn = 5;
 let cnt = 0;
@@ -10,11 +10,11 @@ function preload() {
 
 
 
-    imgset[0] = loadImage("res/img/floater/bacteria.png");
-    imgset[1] = loadImage("res/img/floater/cell.png");
-    imgset[2] = loadImage("res/img/floater/dna.png");
-    imgset[3] = loadImage("res/img/floater/tooth.png");
-    imgset[4] = loadImage("res/img/floater/tooth1.png");
+    imgset[0] = loadImage("res/img/floater/6.png");
+    imgset[1] = loadImage("res/img/floater/2.png");
+    imgset[2] = loadImage("res/img/floater/3.png");
+    imgset[3] = loadImage("res/img/floater/4.png");
+    imgset[4] = loadImage("res/img/floater/5.png");
 
 
 
@@ -26,7 +26,7 @@ function preload() {
 
 
 function setup() {
-    imgsize = window.innerWidth / 100;
+    imgsize = window.innerWidth / 80;
     // imgset[0].resize(imgsize, imgsize);
     // imgset[1].resize(imgsize, imgsize);
     // imgset[2].resize(imgsize, imgsize);
@@ -60,7 +60,7 @@ function setup() {
 function windowResized() {
     var b = document.getElementById("toothcanvascontainer").clientHeight;
     resizeCanvas(window.innerWidth, b);
-    imgsize = window.innerWidth / 100;
+    imgsize = window.innerWidth / 80;
 
     for (var i = 0; i < imgsnum; i++) {
 
@@ -93,7 +93,7 @@ class floater {
     colors = new Array();
 
 
-    speed = 2;
+    speed = 1.5;
     bigger = false;
     constructor(img, w, h) {
         this.colors[0] = color(91, 105, 170);
@@ -106,8 +106,10 @@ class floater {
         this.img = img;
         this.vector = createVector(random(-this.speed, this.speed), random(-this.speed, this.speed));
         this.pos = createVector(w, h);
-        this.imgsize = window.innerWidth / 100;
+        this.imgsize = window.innerWidth / 80;
         this.col = this.colors[int(random(6))];
+        this.angle = 0;
+        this.angleinc = random(-0.04, 0.04);
     }
 
     moveabout() {
@@ -130,10 +132,17 @@ class floater {
     }
 
     display() {
+        push();
+        translate(this.pos.x + this.imgsize / 2, this.pos.y + this.imgsize / 2);
+        this.angle += this.angleinc;
+        rotate(this.angle);
+        translate(-this.imgsize / 2, -this.imgsize / 2);
         if (this.bigger)
-            image(this.img, this.pos.x, this.pos.y, this.imgsize * 2, this.imgsize * 2);
+            image(this.img, 0, 0, this.imgsize * 1.5, this.imgsize * 1.5);
         else
-            image(this.img, this.pos.x, this.pos.y, this.imgsize, this.imgsize);
+            image(this.img, 0, 0, this.imgsize, this.imgsize);
+
+        pop();
     }
 
 
@@ -141,10 +150,10 @@ class floater {
         var d = dist(this.pos.x, this.pos.y, x, y);
         if (d < width / 6) {
             this.bigger = true;
-            stroke(this.col);
-            strokeWeight(min(width / 10 / d, 5));
+            //stroke(this.col);
+            //strokeWeight(min(width / 10 / d, 5));
 
-            line(x, y, this.pos.x + this.imgsize / 2, this.pos.y + this.imgsize / 2);
+            // line(x, y, this.pos.x + this.imgsize / 2, this.pos.y + this.imgsize / 2);
 
         } else {
             this.bigger = false;
