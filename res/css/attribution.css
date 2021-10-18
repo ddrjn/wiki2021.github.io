@@ -62,6 +62,13 @@
     text-align: right;
 }
 
+.text-last-right {
+    text-align-last: end;
+}
+
+.text-last-left {
+    text-align-last: start;
+}
 
 /* 
     WAVES GRADIENTS
