@@ -70,6 +70,12 @@
     text-align-last: start;
 }
 
+
+.img_mouseover {
+    position: relative;
+}
+
+
 /* 
     WAVES GRADIENTS
 */
