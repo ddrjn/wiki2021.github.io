@@ -1,0 +1,88 @@
+{
+    "questions": [
+
+        {
+            "question": "Normally, in a human karyotype, there are .....  pairs of chromosomes.",
+            "answer1": "22",
+            "answer2": "23",
+            "answer3": "46",
+            "answer4": "21",
+            "correct": 1
+
+        },
+        {
+            "question": "What is an enzyme?",
+            "answer1": "A chemical catalyst",
+            "answer2": "Building unit of nucleic acids",
+            "answer3": "A biological catalyst made of proteins",
+            "answer4": "A biological catalyst made of lipids",
+            "correct": 2
+
+        },
+
+        {
+            "question": "What is a plasmid?",
+            "answer1": "DNA molecule distinct from a cell's chromosomal DNA",
+            "answer2": "A circular RNA molecule",
+            "answer3": "DNA molecule that is the exact copy of a cell’s chromosomal DNA",
+            "answer4": "An organelle that regulates metabolism",
+            "correct": 0
+
+        },
+
+        {
+            "question": "How many teeth usually can be found in the mouth of a healthy adult?",
+            "answer1": "21-27",
+            "answer2": "28-32",
+            "answer3": "33-38",
+            "answer4": "39-42",
+            "correct": 1
+
+        },
+
+        {
+            "question": "What are building blocks of protein?",
+            "answer1": "Organic bases",
+            "answer2": "Nucleotides",
+            "answer3": "Fatty acids",
+            "answer4": "Amino acids",
+            "correct": 3
+
+        },
+
+        {
+            "question": "What is true about mutations?",
+            "answer1": "Occur randomly",
+            "answer2": "Always harmful for humans",
+            "answer3": "Do not occur in a human body",
+            "answer4": "Environment doesn't influence the chance of getting mutations",
+            "correct": 0
+
+        },
+
+        {
+            "question": "What is true about cloning?",
+            "answer1": "Cloning cannot be used in synthetic biology",
+            "answer2": "After a successful cloning procedure, two completely identical organisms are formed",
+            "answer3": "It is impossible to clone animals",
+            "answer4": "Insulin for diabetes treatment can be produced by cloning",
+            "correct": 3
+
+        },
+
+        {
+            "question": "What is a gene?",
+            "answer1": "A synonym for a chromosome",
+            "answer2": "A protein",
+            "answer3": "Basic unit of heredity",
+            "answer4": "All DNA in a human organism",
+            "correct": 2
+
+        }
+
+
+
+
+    ]
+
+}

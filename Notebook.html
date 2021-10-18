@@ -122,10 +122,46 @@
     <section class="section-white text-justify">
 
 
-        <div class="row">
+        <div class="row no_bottom_padding">
             <h2 class="t-xsl color-1"><b>Lab Journal</b></h2>
         </div>
-        <object data="https://2020.igem.org/wiki/images/c/c9/T--ESTONIA_TUIT--journal_part_2.pdf" type="application/pdf" width="80%" height="600wb">
+        <div class="row no_bottom_padding ">
+            <div class="col-2"></div>
+
+            <div class="col-8 row no_top_padding ">
+                <div class="btn-group justify-content-center" role="group" aria-label="Basic example">
+                    <div class="col-1"></div>
+                    <div class="col-2">
+                        <button class="btn read_more_button color-10 t-sxs text-center" type="button" onclick="changeMonth(1)">
+                July
+                    </button>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-2">
+                        <button class="btn read_more_button color-10 t-sxs text-center" type="button" onclick="changeMonth(2)">
+                August
+              </button>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-2">
+                        <button class="btn read_more_button color-10 t-sxs text-center" type="button" onclick="changeMonth(3)">
+                September
+              </button>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-2">
+                        <button class="btn read_more_button color-10 t-sxs text-center" type="button" onclick="changeMonth(4)">
+                October
+              </button>
+                    </div>
+                    <div class="col-1"></div>
+
+
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <object id="notebookpdf" data="https://2020.igem.org/wiki/images/c/c9/T--ESTONIA_TUIT--journal_part_2.pdf" type="application/pdf" width="80%" height="800wb">
          
         </object>
 
@@ -184,6 +220,41 @@
     <script src="res/js/jquery.js"></script>
     <script src="bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
     <script src="res/js/education.js"></script>
+    <script>
+        function changeMonth(m) {
+
+
+            if (m == 1) {
+                var content = document.getElementById("notebookpdf");
+                content.setAttribute("data", "https://2020.igem.org/wiki/images/3/35/T--ESTONIA_TUIT--journal_part_1.pdf");
+
+            }
+
+
+            if (m == 2) {
+                var content = document.getElementById("notebookpdf");
+                content.setAttribute("data", "https://2020.igem.org/wiki/images/c/c9/T--ESTONIA_TUIT--journal_part_2.pdf");
+
+            }
+
+
+            if (m == 3) {
+                var content = document.getElementById("notebookpdf");
+                content.setAttribute("data", "https://2020.igem.org/wiki/images/3/35/T--ESTONIA_TUIT--journal_part_1.pdf");
+
+            }
+
+            if (m == 4) {
+                var content = document.getElementById("notebookpdf");
+                content.setAttribute("data", "https://2020.igem.org/wiki/images/c/c9/T--ESTONIA_TUIT--journal_part_2.pdf");
+
+            }
+
+
+
+
+        }
+    </script>
 
 </body>
 
