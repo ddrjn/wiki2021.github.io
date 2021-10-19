@@ -1,52 +1,69 @@
 $(window).on("load", function(){
+    $('.fade_from_left').css({position: 'relative', opacity: '0', left: '-20%'});
+    $('.fade_from_right').css({position: 'relative', opacity: '0', right: '-100px'});
+    $('.fade_from_top').css({position: 'relative', opacity: '0', top: '-50px'});
+    $('.fade_from_buttom').css({position: 'relative', opacity: '0', buttom: '-50px'});
+
+
     $(window).scroll(function(){
-        let windowTop = $(window).scrollTop()
+        let windowTop = $(window).scrollTop();
         // let windowTop = $(this).scrollTop() - $(this).innerHeight()
-        let windowBottom = $(this).scrollTop() + $(this).innerHeight()
+        let windowBottom = $(this).scrollTop() + $(this).innerHeight();
         $('.fade_from_left').each(function(){
-            let objectBottom = $(this).offset().top + $(this).outerHeight()/2
-            let objectTop = $(this).offset().top
+            let objectBottom = $(this).offset().top + $(this).outerHeight()/2;
+            let objectTop = $(this).offset().top;
             
             // If object in window bound == we can see it
             if (objectBottom < windowBottom) {
                 if ($(this).css("opacity") == 0) {
-                    $(this).fadeIn(500).animate({opacity: '1', right: '0'})
+                    // $(this).css({display: 'flex'});
+                    $(this).fadeIn(500).animate({opacity: '1', left: '0'});
                 } 
             }
-            // } else if (objectTop < windowTop) {
-            //     $(this).fadeIn(500).animate({opacity: '1', right: '0'})
-            // }
-            if (windowTop >= objectBottom) {
-                // console.log(`windowTop: ${windowTop}, objectTop: ${objectBottom}`)
-                console.log("objectBottom above windowTop")
-                // if ($(this).css("opacity") == 1) {
-                //     $(this).css({opacity: '0', right: '20%'})
-                //     // $(this).fadeIn(500).animate({opacity: '1', right: '0'})
-                // } 
-            } else {
-                console.log("objectBottom under windowBottom")
-                // $(this).fadeIn(500).animate({opacity: '0', right: '20%'})
+        });
+
+        $('.fade_from_right').each(function(){
+            let objectBottom = $(this).offset().top + $(this).outerHeight()/2;
+            let objectTop = $(this).offset().top;
+            
+            // If object in window bound == we can see it
+            if (objectBottom < windowBottom) {
+                if ($(this).css("opacity") == 0) {
+                    // $(this).css({display: 'flex'});
+                    $(this).fadeIn(500).animate({opacity: '1', right: '0'});
+                } 
             }
-        })
+        });
+
+        $('.fade_from_top').each(function(){
+            let objectBottom = $(this).offset().top + $(this).outerHeight()/2;
+            let objectTop = $(this).offset().top;
+            
+            // If object in window bound == we can see it
+            if (objectBottom < windowBottom) {
+                if ($(this).css("opacity") == 0) {
+                    $(this).fadeIn(500).animate({opacity: '1', top: '0'});
+                } 
+            }
+        });
+
+        $('.fade_from_bottom').each(function(){
+            let objectBottom = $(this).offset().top + $(this).outerHeight()/2;
+            let objectTop = $(this).offset().top;
+            
+            // If object in window bound == we can see it
+            if (objectBottom < windowBottom) {
+                if ($(this).css("opacity") == 0) {
+                    $(this).fadeIn(500).animate({opacity: '1', top: '0'});
+                } 
+            }
+        });
+
+
+
+
+
+
     }).scroll()
-})
+});
 
-
-
-    // $(window).scroll(function(){
-    //     let windowBottom = $(this).scrollTop() + $(this).innerHeight()
-    //     $('.fade_on_scroll').each(function(){
-    //         let objectBottom = $(this).offset().top + $(this).outerHeight()
-
-    //         // If object in window bound == we can see it
-    //         if (objectBottom < windowBottom) {
-    //             if ($(this).css("opacity") == 0) {
-    //                 $(this).fadeTo(500,1)
-    //             }
-    //         } else {
-    //             if ($(this).css("opacity") == 1) {
-    //                 $(this).fadeTo(500, 0)
-    //             }
-    //         }
-    //     })
-    // }).scroll()

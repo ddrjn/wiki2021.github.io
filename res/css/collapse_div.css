@@ -1,0 +1,21 @@
+.box {
+	display: block;
+	background: red;
+	width: 200px;
+	height: 200px;
+	opacity: 1;
+}
+
+.box-hidden {
+	display: none;
+}
+
+/* ensure box is displayed block during the transition  */
+.box-transition.box-hidden {
+	display: block;
+	opacity: 0;
+}
+
+.box-transition {
+	transition: opacity 1s ease;
+}

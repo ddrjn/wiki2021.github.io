@@ -78,27 +78,6 @@
 }
 
 
-/* Fade on scroll test */
-.fade_on_scroll {
-    position: relative;
-    opacity: 0;
-}
-
-.fade_from_left {
-    position: relative;
-    /* display: none; */
-    /* visibility: hidden; */
-    opacity: 0;
-    right: 20%;
-}
-
-.fade_from_right {
-    position: relative;
-    opacity: 0;
-    left: 20%;
-}
-
-
 /* 
     WAVES GRADIENTS
 */
