@@ -26,12 +26,16 @@ function preload() {
 
 
 document.getElementsByClassName("navbar-toggler")[0].addEventListener("click", function() {
-    setTimeout(windowResized, 500);
+    setTimeout(function() {
+        windowResized();
+    }, 500);
 
 });
 
 document.getElementsByClassName("navbar-collapse")[0].addEventListener("click", function() {
-    setTimeout(windowResized, 500);
+    setTimeout(function() {
+        windowResized();
+    }, 500);
 
 });
 
