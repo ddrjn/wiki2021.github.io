@@ -25,6 +25,16 @@ function preload() {
 }
 
 
+document.getElementsByClassName("navbar-toggler")[0].addEventListener("click", function() {
+    setTimeout(windowResized, 500);
+
+});
+
+document.getElementsByClassName("navbar-collapse")[0].addEventListener("click", function() {
+    setTimeout(windowResized, 500);
+
+});
+
 function setup() {
     imgsize = window.innerWidth / 250;
     // imgset[0].resize(imgsize, imgsize);
@@ -58,6 +68,11 @@ function setup() {
 
 
 function windowResized() {
+    console.log("triggered");
+    var a = document.getElementById("toothcanvascontainer").getBoundingClientRect().top + document.documentElement.scrollTop;
+    document.getElementById("dradadadada").style.position = "absolute";
+    document.getElementById("dradadadada").style.top = `${a}px`;
+    document.getElementById("dradadadada").style.zIndex = "0";
     var b = document.getElementById("toothcanvascontainer").clientHeight;
     resizeCanvas(window.innerWidth, b);
     imgsize = window.innerWidth / 250;
