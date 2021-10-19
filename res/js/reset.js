@@ -1,7 +1,9 @@
-window.onload = function() {
-
-    document.getElementById("HQ_page").id = "IDONTNEEDYOURCSS";
-    document.getElementById("bodyContent").id = "IDONTNEEDYOURCSS1";
-    document.getElementById("mw-content-text").id = "IDONTNEEDYOURCSS2";
-    document.getElementsByClassName("mw-content-ltr")[0].classList.remove("mw-content-ltr");
-}
+$('.igem_content_wrapper').contents().unwrap();
+$('.igem_column_wrapper').children("p.second").unwrap();
+$('.igem_column_wrapper').children("p.first").remove()
+$('.igem_column_wrapper').contents().unwrap();
+$('#content').contents().unwrap();
+$('#bodyContent').contents().unwrap();
+$('#mw-content-text').contents().unwrap();
+$('#globalWrapper').contents().unwrap();
+$('#HQ_page').contents().unwrap();
