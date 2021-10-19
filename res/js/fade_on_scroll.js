@@ -1,12 +1,10 @@
 $(window).on("load", function(){
-
-
     $(window).scroll(function(){
         let windowTop = $(window).scrollTop()
         // let windowTop = $(this).scrollTop() - $(this).innerHeight()
         let windowBottom = $(this).scrollTop() + $(this).innerHeight()
         $('.fade_from_left').each(function(){
-            let objectBottom = $(this).offset().top + $(this).outerHeight()
+            let objectBottom = $(this).offset().top + $(this).outerHeight()/2
             let objectTop = $(this).offset().top
             
             // If object in window bound == we can see it
