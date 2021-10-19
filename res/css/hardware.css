@@ -1,0 +1,52 @@
+
+/* 
+    Gradients
+*/
+
+.section-grad-hw-overview {
+    background-image: linear-gradient(#696B7B, #888EBA, #696B7B);
+}
+
+.section-grad-hw-explanation {
+    background-image: linear-gradient(#696B7B, #A770A2, #696B7B);
+}
+
+
+.flex-text-aligned {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-last-right {
+    text-align-last: end;
+}
+
+.text-last-left {
+    text-align-last: start;
+}
+
+/* WAVES */
+
+.wave-up-hw {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #696B7B), to(#696B7B));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
+.wave-down-hw {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #696B7B), to(#696B7B));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+
+/* Hardware list */
+.list-hw > li::marker {
+    content: "- ";
+}
+
