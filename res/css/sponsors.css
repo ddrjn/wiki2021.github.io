@@ -1,0 +1,36 @@
+.section-grad-sponsors-intro {
+    background-image: linear-gradient(#867481, #888EBA);
+    /* background-image: linear-gradient(#696B7B, #A770A2, #696B7B); */
+}
+
+.flex-text-aligned {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-last-right {
+    text-align-last: end;
+}
+
+.text-last-left {
+    text-align-last: start;
+}
+
+
+
+.wave-up-sponsors {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #888EBA), to(#888EBA));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
+.wave-down-sponsors {
+    height:35px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #867481), to(#867481));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
