@@ -1,5 +1,5 @@
 $(window).on("load", function(){
-    $('.fade_from_static').css({position: 'relative', opacity: '0'});
+    $('.fade_from_static').css({opacity: '0'});
     $('.fade_from_left').css({position: 'relative', opacity: '0', left: '-20%'});
     $('.fade_from_right').css({position: 'relative', opacity: '0', right: '-100px'});
     $('.fade_from_top').css({position: 'relative', opacity: '0', top: '-50px'});

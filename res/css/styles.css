@@ -1021,3 +1021,7 @@ st {
 .text_m_top {
     margin-top: 5%;
 }
+
+.no_top_margin {
+    margin-top: 0;
+}
