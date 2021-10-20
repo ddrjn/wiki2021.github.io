@@ -217,6 +217,36 @@ p {
     }
 }
 
+@keyframes wrong_escape {
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes correct_escape {
+    100% {
+        background-color: green;
+    }
+}
+
+@keyframes red_to_white {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes green_to_white {
+    0% {
+        background-color: green;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
 .carousel__cell {
     position: absolute;
     width: 100%;
@@ -318,4 +348,8 @@ p {
     background-image: url("../img/education and communication/Interactive education background.svg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.salsaletters {
+    display: none;
 }
