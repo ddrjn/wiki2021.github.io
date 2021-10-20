@@ -111,15 +111,29 @@
         </div>
 
 
+
     </section>
 
     <div class="wave-up"></div>
     <section class="section-grad">
+        <div class="row text-center no_bottom_padding">
+            <div class="col-2 col-md-4"></div>
+            <div class="col-8 col-md-4">
+                <div class="btn-group text-center" role="group" aria-label="links">
+                    <a href="#startgameid" class="btn read_more_button t-sxs color-10 text-center" type="button">Escape&nbsp;Room</a>
+                    <a href="#quizsectionid" class="btn read_more_button t-sxs color-10 text-center" type="button">Kahoot	&nbsp;Quiz</a>
+
+                </div>
+            </div>
+            <div class="col-2 col-md-4"></div>
+        </div>
         <div class="row no_bottom_padding">
+
             <div class="col-1"></div>
             <div class="col-10">
                 <p class="t-xxs text-justify">
-                    <b class="t-l">Escape room rules
+
+                    <b class="t-l" id="startgameid">Escape room rules
                         </b>
 
                 </p>
@@ -128,7 +142,7 @@
         </div>
 
 
-        <div class="row ">
+        <div class="row text-center">
             <div class="col-1"></div>
             <div class="col-7">
                 <p class="t-xxs text-justify ilh">
@@ -145,11 +159,64 @@
             </div>
             <div class="col-1"></div>
         </div>
+        <div class="row text-center no_top_padding">
+            <div class="col-5"></div>
+            <div class="col-2">
+
+                <button class="read_more_button t-xs color-10" onclick="startEscapeRoom()">Start Game</button>
+            </div>
+            <div class="col-5"></div>
+        </div>
 
     </section>
     <div class="wave-4-10"></div>
 
-    <section class="section-white" style="height: 400px;">
+    <section class="escape_room_section" id="escape_room_sect">
+
+        <div class="row no_bottom_padding no_top_padding" id="escape_room_div" style="display: none;">
+            <div class="col-md-3 col-12 color-1 text-center" style="padding-left: 2%;">
+                <p class="t-l " id="levelIndicator">
+                    TASK 1
+
+                </p>
+                <p class="t-sss text-justify" id="levelDescription">
+
+                    Welcome to Dr. Smile’s dentistry cabinet. We are glad you approached us. Let us move on to examine teeth. As soon as we identify the sick teeth we will search for solutions to the problem. You will also help the dentist come up with an innovative solution.
+                    If not, then he might have to EXTRACT THE TOOTH! Be attentive and try to find ways to avoid tooth extraction, through doing tasks and getting closer to the answer! (Look around the room and find an object in the room that might be
+                    a funny representation of identifying the “sick” tooth.)
+
+
+                </p>
+
+                <input type="text" class="form-control t-sxs" placeholder="Enter Letter" aria-label="Enter Number" disabled aria-describedby="NUMBER" id="numberInput">
+                <div class="text-center">
+                    <button class="btn btn-outline-secondary t-sxs" type="button" id="numberButton" onclick="submitter()" disabled>Submit</button>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-7 col-12" id="escapeCanvascontainer">
+
+            </div>
+
+
+            <div class="col-md-2 col-12 ">
+                <p class="t-xsl color-1"><b class="salsaletters">S</b></p>
+                <p class="t-xsl color-1 "><b class="salsaletters">A</b></p>
+                <p class="t-xsl color-1 "><b class="salsaletters">L</b></p>
+                <p class="t-xsl color-1 "><b class="salsaletters">S</b></p>
+                <p class="t-xsl color-1 "><b class="salsaletters">A</b></p>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
 
 
 
@@ -161,7 +228,7 @@
     <div class="wave_10_4"></div>
 
 
-    <section class="grad-4-8-4">
+    <section class="grad-4-8-4" id="quizsectionid">
         <div class="row no_bottom_padding">
             <div class="col-1"></div>
             <div class="col-10">
@@ -292,18 +359,21 @@
             <div class="col-1"></div>
 
         </div>
+
+
+        <div>
+            <canvas id="lighterscanvas"></canvas>
+        </div>
     </section>
 
 
 
-    <div class="wave_2_10">
+    <div class="wave-down">
     </div>
 
 
 
-    <div>
-        <canvas id="lighterscanvas"></canvas>
-    </div>
+
 
 
 
@@ -355,7 +425,8 @@
     <script src="bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
     <script src="res/js/p5.js"></script>
     <script src="res/js/education_special.js"></script>
-    <script src="res/js/header_move_mouseover.js"></script>
+
+    <script src="res/js/escape_room.js"></script>
 
 </body>
 

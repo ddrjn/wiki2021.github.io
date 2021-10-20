@@ -70,16 +70,12 @@ function answer(params) {
 function preload() {
     questionset = loadJSON("res/info/quiz_questions.json", letsgo);
     // questionset = loadJSON("res/info/quiz.json", letsgo);
-
-
-}
-
-
-function setup() {
-
-
+    escape_preload();
 
 }
+
+
+
 
 function letsgo(a) {
 
