@@ -100,7 +100,7 @@
     </div>
     <section class="section-white-top" id="toothcanvascontainer">
         <img src="res/img/model/Modelling.png" alt="" class="img-fluid img_mouseover">
-        <div class="education-intro text-center color-1">
+        <div class="education-intro text-center color-1 fade_from_bottom">
             <img src="res/img/introtext_box.svg" alt="" class="img-responsive">
             <div class="education-intro-text">
                 <p class="t-s">
@@ -110,43 +110,43 @@
                 </p>
             </div>
         </div>
-
-
     </section>
 
-
-
     <div class="wave-up"></div>
+
     <section class="section-grad">
-
-        <div class="row no_bottom_padding">
-            <div class="col-1"></div>
-            <div class="col-10">
-                <p class="t-xxs text-justify">
-                    <b class="t-l">Introduction
-                    </b><br><br>First, we applied Multiple Sequence Alignment (MSA) to find similarities between the repetitive domains in the SALSA protein. (Ranganathan et al. 2019) (Supplementary material 1: Supplementary MSA).
-                    We used the solvent-accessible surface area (SASA) method for the domains sequences’ alignment to classify the SALSA’s amino acid residues as hidden from or exposed to the solvent and thus also the protease (Supplementary material
-                    2: Supplementary SASA 1, SASA 2). These predictions helped us to find accessible sites to narrow down the list of candidate protease target sequences. (Ali et al. 2014) Following the MSA and SASA, several systems of ordinary differential
-                    equations were implemented (Hughes et al. 2011). First, to analyze the SALSA concentration oscillations in the mouth. Secondly, to simulate the activity of the candidate proteases. And thirdly, to model the protease neutralization
-                    and diffusion in the saliva<br><br><br>
-
+        <div class="container">
+            <div class="row">
+                <p class="text-justify t-l color-10 fade_from_top">
+                    <b> Introduction </b>
                 </p>
-
-                <p class="t-xxs text-justify">
-                    <b class="t-l">Analysis of solvent accessibility and potential target sequences</b><br><br> The MSA approach was useful to screen the regions critical for dental agglutination of bacteria: SRCR 1-13 and SID domains of the SALSA protein.
-                    For this purpose, we utilized Clustal Omega software (Madeira et al. 2019) and SALSA sequence obtained from Uniprot (Uniprot, n.d.) database. The MSA revealed that the bacteria binding site along with the Ca2+ cofactor binding site
-                    and hydroxyapatite binding site are conserved in all SRCR 1-13 domains (Supplementary alignment 1). The SID domains appear to be less conserved (Supplementary alignment 2). SALSA three-dimensional structure (Jumper et al. 2021) was
-                    used in the GetArea software for the SASA application (Fraczkiewicz & Braun 1998), which analyzes SALSA residues’ solvent accessibility (RSA) (Supplementary material 2: Supplementary SASA 1, SASA 2).
+                <div class="text_m_top">
+                    <p class="t-xxs text-justify fade_from_left">
+                        First, we applied Multiple Sequence Alignment (MSA) to find similarities between the repetitive domains in the SALSA protein. (Ranganathan et al. 2019) (Supplementary material 1: Supplementary MSA).
+                        We used the solvent-accessible surface area (SASA) method for the domains sequences’ alignment to classify the SALSA’s amino acid residues as hidden from or exposed to the solvent and thus also the protease (Supplementary material
+                        2: Supplementary SASA 1, SASA 2). These predictions helped us to find accessible sites to narrow down the list of candidate protease target sequences. (Ali et al. 2014) Following the MSA and SASA, several systems of ordinary differential
+                        equations were implemented (Hughes et al. 2011). First, to analyze the SALSA concentration oscillations in the mouth. Secondly, to simulate the activity of the candidate proteases. And thirdly, to model the protease neutralization
+                        and diffusion in the saliva
+                    </p>
+                </div>
+                <p class="text-justify t-l color-10 fade_from_top">
+                    <b> Analysis of solvent accessibility and potential target sequences </b>
                 </p>
-
-
-                <p class="t-xxs text-justify">
+                <div class="text_m_top">
+                    <p class="t-xxs text-justify color-10 fade_from_right">
+                        The MSA approach was useful to screen the regions critical for dental agglutination of bacteria: SRCR 1-13 and SID domains of the SALSA protein.
+                        For this purpose, we utilized Clustal Omega software (Madeira et al. 2019) and SALSA sequence obtained from Uniprot (Uniprot, n.d.) database. The MSA revealed that the bacteria binding site along with the Ca2+ cofactor binding site
+                        and hydroxyapatite binding site are conserved in all SRCR 1-13 domains (Supplementary alignment 1). The SID domains appear to be less conserved (Supplementary alignment 2). SALSA three-dimensional structure (Jumper et al. 2021) was
+                        used in the GetArea software for the SASA application (Fraczkiewicz & Braun 1998), which analyzes SALSA residues’ solvent accessibility (RSA) (Supplementary material 2: Supplementary SASA 1, SASA 2).
+                    </p>
+                </div>
+                <p class="t-xxs text-justify fade_from_left">
                     Afterwards, MSA of SALSA regions was analysed considering RSA. It was revealed that all bacteria-binding sites in the SRCR domains each contain 7 residue types with maximal accessibility for a protease: Glycine (G),Asparagine (N),Proline (P),Glutamine
                     (Q),Arginine (R),Serine (S),Threonine (T) (Supplementary alignment 3) and every SID contains 3 residue types with maximal accessibility: Glutamic Acid (E),Proline (P), Serine (S) (Supplementary alignment 4).
                 </p>
 
+                </div>
             </div>
-            <div class="col-1"></div>
         </div>
     </section>
 
@@ -160,17 +160,17 @@
         <div class="row no_bottom_padding">
             <div class="col-1"></div>
             <div class="col-10 color-1">
-                <p class="t-xxs text-justify">
-                    <b class="t-l">Search for potential proteases
-                    </b><br><br>Candidate protease discovery was done with the MEROPS protease database (Rawlings et al. 2013). Experimentally verified SALSA peptidases and other candidates from the MEROPS database were analyzed with
+                <p class="t-l text-justify color-1 fade_from_top"> 
+                    <b>Search for potential proteases</b> 
+                </p>
+                <p class="t-xxs text-justify fade_from_left">
+                    Candidate protease discovery was done with the MEROPS protease database (Rawlings et al. 2013). Experimentally verified SALSA peptidases and other candidates from the MEROPS database were analyzed with
                     respect to their specificity to the accessible sequences, safe dosage and possible toxic effects, and possible safe neutralizer. Further, candidate proteases’ cleaving efficiency (Michaelis constant, turnover number and optimal salivary
                     conditions), and feasibility (storage conditions, estimated cost and existing applications) were researched. Specificity, toxicity and neutralization possibilities are important to eliminate proteases that can not be utilized for medical
                     purposes. The parameters from literature were gathered together in Table 1 and Table 2.
-                    <br><br><br>
-
                 </p>
 
-                <table class="col-1 table table-hover table-bordered  t-xxs background-9 model-tables">
+                <table class="col-1 table table-hover table-bordered t-xxs background-9 model-tables fade_from_static">
                     <thead>
                         <tr>
                             <th scope="col"></th>
@@ -255,7 +255,7 @@
                 </table>
 
 
-                <p class="t-sxs text-justify">
+                <p class="t-sxs text-justify fade_from_top">
 
                     Table 1. SALSA candidate proteases’ specificity, toxicity and neutralization options. Specificity data is based on the amino acids sequences targeted by the protease. Toxicity data is based on therapeutic applications. For protease neutralization, the
                     least toxic options were analyzed.<br><br>
@@ -263,8 +263,7 @@
 
                 </p>
 
-
-                <p class="t-xxs text-justify">
+                <p class="t-xxs text-justify fade_from_left">
                     After the initial research, trypsin and prolyl peptidase were found to be the most suitable candidates for SALSA cleavage. We found that trypsin from the Atlantic cod was previously tested in a product called ColdZyme (Huijghebaert et al., 2021). Later
                     investigation showed different advantages of the Atlantic cod trypsin including high catalytic efficiency and low cost. To conclude the selection for the most optimal protease for our project, we specifically analysed the efficiency
                     of two trypsin variants and prolyl peptidase. The kinetic constants that can be found in Table 2 were later used for the ODE model of SALSA proteolytic degradation. The salivary pH was found in the study by Seethalakshmi et al (2016),
@@ -272,11 +271,8 @@
 
                 </p>
 
-
-
-                <table class="col-1 table table-hover table-bordered  t-xxs background-9 model-tables">
+                <table class="col-1 table table-hover table-bordered t-xxs background-9 model-tables fade_from_static">
                     <thead>
-
                         <tr>
                             <th scope="col">Candidate</th>
                             <th scope="col">Substrate cleaved to measure kinetic parameters</th>
@@ -311,28 +307,12 @@
                             <td>@twitter</td>
                             <td>dfs</td>
                             <td>dfs</td>
-
                         </tr>
-
-
                     </tbody>
                 </table>
-
-
-
             </div>
             <div class="col-1"></div>
-
-
-
         </div>
-
-
-
-
-
-
-
     </section>
 
     <div class="wave_10_4"></div>
@@ -340,8 +320,8 @@
     <section class="grad-4-8">
         <div class="row ">
             <div class="col-2"></div>
-            <div class="col-8 text-center">
-                <div id="grafik_carusel" class="carousel slide" data-bs-ride="carousel">
+            <div class="col-8 text-center ">
+                <div id="grafik_carusel" class="carousel slide fade_from_static" data-bs-ride="carousel" >
 
 
 
@@ -369,9 +349,9 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <p class="t-xs  p-2 color-10"> Click on the graph to see the model’s details
+                <p class="t-xs  p-2 color-10 fade_from_bottom"> Click on the graph to see the model’s details
                 </p>
-                <div class="carusel_buttons row">
+                <div class="carusel_buttons row fade_from_bottom">
                     <div class="col-1"></div>
                     <button class="col-2 " data-bs-target="#grafik_carusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Graph 1"><img class = "car_nav_img img-fluid rounded-team" src="res/img/model/fig1.png" alt=""> </button>
                     <button class="col-2" data-bs-target="#grafik_carusel" data-bs-slide-to="1" aria-label="Graph 2"><img class = "car_nav_img img-fluid rounded-team" src="res/img/model/fig2.png" alt=""></button>
@@ -391,10 +371,13 @@
 
             <div class="col-1"></div>
             <div class="col-10 text-center">
-                <p class="t-xxs text-justify">
-                    <b class="t-l">SALSA oral fluctuations model
-                    </b><br><br>The ODE models allow the easiest representation of dynamic natural phenomena. Their relatively robust and modular nature allows us to implement and modify them according to our specific conditions. The
-                    first ODE model describes the natural oral fluctuations(dS(t)) of SALSA that was reproduced as a constant SALSA production (a) with frequent (t/45 ∈ N) SALSA removal (a((v
+                <p class="text-justify t-xxs color-10 fade_from_top">
+                    <b>SALSA oral fluctuations model </b>
+                </p>
+                <p class="t-xxs text-justify color-10 fade_from_left">
+                   The ODE models allow the easiest representation of dynamic natural phenomena. Their relatively robust and modular nature allows us to implement and modify them according to our specific conditions. The
+                    first ODE model describes the natural oral fluctuations(dS(t)) of SALSA that was reproduced 
+                    as a constant SALSA production (a) with frequent (t/45 ∈ N) SALSA removal (a((v
                     <st>0</st> - v
                     <st>1</st>) /v
                     <st>0</st>) due to involuntary swallowing calculated as production rate (a) multiplied to the ratio of swallowed (v
@@ -402,44 +385,51 @@
                     <st>1</st>) and total saliva ( v
                     <st>0</st>) ratio.
                 </p>
-                <p class="t-xxs text-justify">
+                <p class="t-xxs text-justify fade_from_right">
                     as production rate (a) multiplied to the ratio of swallowed (v
                     <st>0</st>> - v
                     <st>1</st>) and total saliva ( v
                     <st>0</st>) ratio.
                 </p>
 
-                <p class="t-xxs text-justify">
+                <p class="t-xxs text-justify fade_from_right">
                     {dS(t) = a - a(v
                     <st>0</st>-v
                     <st>1</st>/v
                     <st>0</st>), if t/0.75 ∈ N
                 </p>
 
-                <p class="t-xxs text-justify">
+                <p class="t-xxs text-justify fade_from_right">
                     {dS(t) = a , if t/0.75 ∉ N
                 </p>
 
 
-                <p class="t-xxs text-justify">
-                    The involuntary swallowing period was estimated to be 0.75 min. This time value was derived from spontaneous swallow frequency (1.32 times/min) that was stated by Afkari S., 2007. (Afkari 2007)
+                <p class="t-xxs text-justify fade_from_left">
+                    The involuntary swallowing period was estimated to be 0.75 min. This time value was derived 
+                    from spontaneous swallow frequency (1.32 times/min) that was stated by Afkari S., 2007. 
+                    (Afkari 2007)
 
                 </p>
 
 
-                <p class="t-xxs text-justify">
-                    The SALSA production rate was obtained by multiplication of unstimulated saliva flow rate (0.3-0.4 ml/min) with SALSA salivary concentration (0.5 ug/ml). It was calculated to be 0.15-0.2 μg/min. This was converted to 0.44118-0.58824 pmol/min with division
-                    by SALSA molecular weight (340 kDa) (Iorgulescu 2009 , Reichhardt 2012). The time needed for saliva swallowing is estimated to be 1 second (Soares et al. 2015).
+                <p class="t-xxs text-justify fade_from_right">
+                    The SALSA production rate was obtained by multiplication of unstimulated saliva flow rate 
+                    (0.3-0.4 ml/min) with SALSA salivary concentration (0.5 ug/ml). It was calculated to be 
+                    0.15-0.2 μg/min. This was converted to 0.44118-0.58824 pmol/min with division
+                    by SALSA molecular weight (340 kDa) (Iorgulescu 2009 , Reichhardt 2012). The time needed 
+                    for saliva swallowing is estimated to be 1 second (Soares et al. 2015).
 
                 </p>
 
 
-                <p class="t-xxs text-justify">
-                    SALSA after/before swallowing ratio is estimated to be 0.72 by division of saliva volume after swallowing (0.77 ± 0.23 ml) by saliva volume before swallowing (1.07 ± 0.39 ml). (Lagerlöf & Dawes 1984)
-                    <br><br>
+                <p class="t-xxs text-justify fade_from_left">
+                    SALSA after/before swallowing ratio is estimated to be 0.72 by division of saliva volume 
+                    after swallowing (0.77 ± 0.23 ml) by saliva volume before swallowing (1.07 ± 0.39 ml). 
+                    (Lagerlöf & Dawes 1984)
+                    <!-- <br><br> -->
                 </p>
 
-                <table class="col-1 table table-hover table-bordered  t-xxs background-transparent model-tables">
+                <table class="col-1 table table-hover table-bordered t-xxs background-transparent model-tables fade_from_static">
                     <thead>
 
                         <tr>
@@ -462,14 +452,14 @@
 
                     </tbody>
                 </table>
-                <p class="t-sxs text-justify">
+                <p class="t-sxs text-justify fade_from_top">
                     <b> Table 5.</b> SALSA natural oral fluctuation data.
 
 
                     <br><br>
                 </p>
 
-                <p class="t-xxs text-justify">
+                <p class="t-xxs text-justify fade_from_left">
                     SALSA natural oral fluctuation model estimates the equilibrium amount of SALSA, reached after tooth brushing and spitting and kept until the next tooth brushing to approximately - 0.7393 pmol. Therefore, the approximate concentration of SALSA is estimated
                     to be 0.739 pmol/ml or 739 pmol/l (pM), as the average volume of saliva in the oral cavity is 1 ml (Lagerlöf & Dawes 1984).
 
@@ -481,8 +471,8 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-8">
-                        <img src="res/img/model/fig1.png" alt="" class="img-fluid" id="grafik1">
-                        <p class="t-sxs text-justify">
+                        <img src="res/img/model/fig1.png" alt="" class="img-fluid fade_from_right" id="grafik1">
+                        <p class="t-sxs text-justify fade_from_top">
                             <b> Figure 1. </b> Model of the natural fluctuations of SALSA protein. Time 0 indicates the time of tooth brushing. Fluctuations are caused by involuntary swallowing (approx. every 45 seconds) *. Maximal and minimal concentrations
                             are 1070 and 739 pM, respectively.
 
@@ -490,36 +480,38 @@
                         </p>
                         <div class="col-2"></div>
                     </div>
-
-
-
-
-
                 </div>
                 <div class="col-1"></div>
             </div>
     </section>
 
-
     <div class="wave_8_10"></div>
+
     <section class="section-white">
 
         <div class="row">
             <div class="col-1"></div>
             <div class="col-10 text-center">
-                <p class="text-justify color-1 t-xxs">
-
-                    <b class="t-l">SALSA proteolytic degradation model</b><br><br> To simulate the proteolytic degradation of SALSA, we used Michaelis-Menten kinetic parameters for different proteases (Table 3). Michaelis-Menten model is used to simulate
-                    one-substrate enzyme-catalyzed reaction as turnover number (kcat), enzyme (E) and substrate concentrations’ (Sn) multiplication, divided by the sum of Michaelis-Menten constant (KM) and substrate concentration (S). (Doran 2013) We
-                    considered SALSA being successfully removed when less than 5% of SALSA had remained undegraded. The change in the protein concentration (dS) was calculated as the difference between constant production SALSA (a) and it’s continuous
-                    proteolytic degradation in-between involuntary swallowing (t ∈ [0,0.75] ). For the proteolytic degradation equation, we used protease efficiency (p) relative to salivary conditions (pH 6.7-7.3, 30-37 ͒C) (Table 3) (Seethalakshmi et
-                    al. 2016),(Geneva et al., 2019)
-
+                <p class="t-l text-justify color-1 fade_from_top">
+                    <b>SALSA proteolytic degradation model</b>
                 </p>
-                <img src="res/img/model/formula1.png" alt="" class="img-fluid">
+                <p class="text-justify color-1 t-xxs fade_from_left">
+                    To simulate the proteolytic degradation of SALSA, we used Michaelis-Menten kinetic parameters 
+                    for different proteases (Table 3). Michaelis-Menten model is used to simulate
+                    one-substrate enzyme-catalyzed reaction as turnover number (kcat), enzyme (E) and substrate 
+                    concentrations’ (Sn) multiplication, divided by the sum of Michaelis-Menten constant (KM) and substrate concentration (S). (Doran 2013) We
+                    considered SALSA being successfully removed when less than 5% of SALSA had remained undegraded.
+                    The change in the protein concentration (dS) was calculated as the difference between constant 
+                    production SALSA (a) and it’s continuous
+                    proteolytic degradation in-between involuntary swallowing (t ∈ [0,0.75] ). For the proteolytic
+                    degradation equation, we used protease efficiency (p) relative to salivary conditions 
+                    (pH 6.7-7.3, 30-37 ͒C) (Table 3) (Seethalakshmi et
+                    al. 2016),(Geneva et al., 2019)
+                </p>
+                <img src="res/img/model/formula1.png" alt="" class="img-fluid fade_from_right">
 
 
-                <p class="text-justify color-1 t-xxs">
+                <p class="text-justify color-1 t-xxs fade_from_left">
                     After the model simulation, we found that the effective concentrations of each candidate protease to be used are 1.288 uM for Human trypsin 2, 0.041 uM for Atlantic cod trypsin, and 4.29 uM for prolyl peptidase. This concentration is enough to degrade
                     95% of the average SALSA concentration (960 pM) in the oral cavity during the time in-between swallowing (0.75 min) (Figure 3).
 
@@ -527,8 +519,8 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-8">
-                        <img src="res/img/model/fig2.png" alt="" class="img-fluid" id="grafik2">
-                        <p class="t-sxs text-justify color-1 ">
+                        <img src="res/img/model/fig2.png" alt="" class="img-fluid fade_from_right" id="grafik2">
+                        <p class="t-sxs text-justify color-1 fade_from_top">
                             <b> Figure 2. </b> SALSA proteolytic degradation by three candidate proteases at their effective dose (capable of degrading >95% of total SALSA amount during 0.75 minutes).
 
                             <br><br>
@@ -536,67 +528,46 @@
                         <div class="col-2"></div>
                     </div>
 
-                    <p class="t-xxs text-justify color-1 ">
+                    <p class="t-xxs text-justify color-1 fade_from_left">
                         According to our proteolytic degradation model, the most efficient protease is the Atlantic cod trypsin, despite its low activity in salivary conditions. We need the smallest amount of this protease to degrade SALSA protein, which minimizes the risks
                         of toxic effects of proteases in the human body.
 
                     </p>
-
-
-
-
                 </div>
                 <div class="col-1"></div>
-
             </div>
-
-
-
-
-
-
     </section>
-
-
 
     <div class="wave_10_8"></div>
 
     <section class="grad-8-2">
-
         <div class="row no_top_padding text-center">
-
             <div class="col-1">
             </div>
             <div class="col-10">
-
-
-                <p class="t-xxs  color-10 ">
-                    <b class="t-l">Neutralizing the protease activity and proteases elimination
-                    </b><br><br>
-                    <p class="text-justify">
-                        To simulate effective inhibition of the proteases by neutralizers (I), ODE formulas were used. Inhibition (dE) was considered successful when less than 5% of the protease was still active. Simulation is based on subtraction of the associated protease
-                        (E) and I (-kaIE) from dissociated EI (kdEI), supplied by neutralizer availability (dI) and EIformation (dEI). Such process occurs in-between involuntary swallowing (t ∈ [0,0.75])
-                    </p>
-
-
+                <p class="t-xxs t-l color-10 fade_from_top">
+                    <b> Neutralizing the protease activity and proteases elimination </b>
+                </p>
+                <p class="text-justify color-10 t-xxs fade_from_left">
+                    To simulate effective inhibition of the proteases by neutralizers (I), ODE formulas were used. Inhibition (dE) was considered successful when less than 5% of the protease was still active. Simulation is based on subtraction of the associated protease
+                    (E) and I (-kaIE) from dissociated EI (kdEI), supplied by neutralizer availability (dI) and 
+                    EIformation (dEI). Such process occurs in-between involuntary swallowing (t ∈ [0,0.75])
                 </p>
 
-
-
-                <p class="t-xxs text-justify color-10">
+                <p class="t-xxs text-justify color-10 fade_from_right">
                     dE(t) = -kaIE+kdEI, t ∈ [0,0.75]
 
                 </p>
-                <p class="t-xxs text-justify color-10">
+                <p class="t-xxs text-justify color-10 fade_from_right">
                     dI(t) = -kaIE+kdEI, t ∈ [0,0.75]
 
                 </p>
-                <p class="t-xxs text-justify color-10">
+                <p class="t-xxs text-justify color-10 fade_from_right">
                     dEI(t) = kaIE-kdEI, t ∈ [0,0.75]
 
                 </p>
 
-                <p class="t-xxs text-justify color-10">
+                <p class="t-xxs text-justify color-10 fade_from_left">
                     ka and kd constants were unavailable for the Atlantic cod trypsin, and therefore protease inhibition was modeled for its closest relative with available constants - Human trypsin 2. For the neutralizer-induced candidate protease inactivation Human trypsin
                     2 effective concentration was estimated to be 1.88 uM and inhibitor α1-antitrypsin concentration of 1.288 uM.
 
@@ -605,40 +576,36 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-8">
-                        <img src="res/img/model/fig3.png" alt="" class="img-fluid" id="grafik3">
+                        <img src="res/img/model/fig3.png" alt="" class="img-fluid fade_from_right" id="grafik3">
 
-                        <p class="t-sxs text-justify color-10 ">
-                            <b> Figure 3. </b> Inactivation of the Human trypsin 2 (blue line) by the α1-antitrypsin (orange line) and increase in inhibited Human trypsin 2 proteases (yellow line).
+                        <p class="t-sxs text-justify color-10 fade_from_top">
+                            <b> Figure 3. </b> Inactivation of the Human trypsin 2 (blue line) by the 
+                            α1-antitrypsin (orange line) and increase in inhibited Human trypsin 2 proteases 
+                            (yellow line).
 
-                            <br><br>
                         </p>
                     </div>
                     <div class="col-2"></div>
                 </div>
 
-
-
-                <p class="t-xxs text-justify color-10">
-                    Neutralized candidate protease is eliminated (dS(t)) by the frequent ( t/45 ∈ N) swallowing ( a(v0-v1/v0)) multiplied by the concentration (S) of the protease and to the ratio of the swallowed (v0-v1): whole saliva (v0) which is present in the oral cavity.
-
-
+                <p class="t-xxs text-justify color-10 fade_from_left">
+                    Neutralized candidate protease is eliminated (dS(t)) by the frequent ( t/45 ∈ N) swallowing 
+                    ( a(v0-v1/v0)) multiplied by the concentration (S) of the protease and to the ratio of the 
+                    swallowed (v0-v1): whole saliva (v0) which is present in the oral cavity.
                 </p>
 
-
-                <p class="t-xxs text-justify color-10">
-
+                <p class="t-xxs text-justify color-10 fade_from_right">
                     {dS(t) = - S(v0-v1/v0), if t/45 ∈ N
-
                 </p>
 
-                <p class="t-xxs text-justify color-10">
+                <p class="t-xxs text-justify color-10 fade_from_right">
                     {dS(t) = 0 , if t/45 ∉ N
 
 
 
                 </p>
 
-                <p class="t-xxs text-justify color-10">
+                <p class="t-xxs text-justify color-10 fade_from_left">
                     The time of neutralized candidate protease elimination was calculated to be approximately 6.75 minutes (Figure 4).
 
 
@@ -648,9 +615,9 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-8">
-                        <img src="res/img/model/fig4.png" alt="" class="img-fluid" id="grafik4">
+                        <img src="res/img/model/fig4.png" alt="" class="img-fluid fade_from_right" id="grafik4">
 
-                        <p class="t-sxs text-justify color-10 ">
+                        <p class="t-sxs text-justify color-10 fade_from_top">
                             <b> Figure 4. </b> Neutralized candidate protease elimination, due to swallowing.
 
                             <br><br>
@@ -679,19 +646,18 @@
             </div>
             <div class="col-10">
 
+                <p class="t-l color-1 text-justify fade_from_top">
+                    <b>
+                        Conclusion: 
+                    </b>
+                </p>
 
-
-                <p class="t-xxs  color-1 text-justify">
-                    <b class="t-l">Conclusion: 
-
-                    </b><br><br> We utilized several modelling techniques to conduct the research on the most effective, compatible and feasible proteases for the SALSA protein degradation. We were also successful in simulating the
+                <p class="t-xxs color-1 text-justify fade_from_top">
+                    We utilized several modelling techniques to conduct the research on the most effective, compatible and feasible proteases for the SALSA protein degradation. We were also successful in simulating the
                     fluctuations of the protein in the oral cavity after brushing or enzymatic cleavage and calculated its amount before and after swallowing. Using the determined concentration, we found the optimal quantity of candidate proteases. Atlantic
                     cod trypsin showed the most promising efficiency in cutting the SRCR domains in SALSA at minimal concentration. This negligible amount of Atlantic cod trypsin protease ( 0.041uM) should not be toxic for the organism, which we also
                     discussed with Professor Seppo Meri. His deep knowledge of immune signalling explained the risks and benefits of our product and helped us design and develop it. (see Integrated Human Practices for more details). However, we still
                     considered and modelled trypsin proteases inactivation by the relatively safe and non-toxic α1-antitrypsin inhibitor.
-
-
-
                 </p>
 
 
@@ -830,7 +796,9 @@
     <script src="res/js/p5.js"></script>
     <script src="res/js/jquery.js"></script>
     <script src="bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
-    <script src="res/js/floatingtooth.js"></script>
+    <!-- <script src="res/js/floatingtooth.js"></script> -->
+    <script src="res/js/fade_on_scroll.js"></script>
+
 
 
 </body>

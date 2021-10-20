@@ -967,8 +967,6 @@ st {
     color: white !important;
 }
 
-
-}
 .section-5-8 {
     background-image: linear-gradient(#867481, #FBA58E);
     color: white !important;
@@ -1002,4 +1000,24 @@ st {
 }
 .btn-correct {
     background-color: green;
+}
+
+/* Text align in flexbox */
+
+.img-text-aligned {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-last-right {
+    text-align-last: end;
+}
+
+.text-last-left {
+    text-align-last: start;
+}
+
+.text_m_top {
+    margin-top: 5%;
 }

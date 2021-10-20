@@ -12,19 +12,6 @@
 }
 
 
-.flex-text-aligned {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.text-last-right {
-    text-align-last: end;
-}
-
-.text-last-left {
-    text-align-last: start;
-}
 
 /* WAVES */
 
