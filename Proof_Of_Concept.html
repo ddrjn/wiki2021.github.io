@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" data-target="" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> PROOF OF CONCEPT </title>
-    <link rel="stylesheet" type="text/css" href="bootstrap-5.1.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="res/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="res/css/proof_of_concept.css">
+    <link rel="stylesheet" type="text/css" href="https://2021.igem.org/Team:Estonia_TUIT/Bootstrapcss?action=raw&ctype=text/css">
+    <link rel="stylesheet" type="text/css" href="https://2021.igem.org/Team:Estonia_TUIT/styles?action=raw&ctype=text/css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="res/css/proof_of_concept.css"> -->
 
 </head>
 
@@ -95,76 +96,272 @@
     </nav>
 
 
-
     <div id="toothcanvascontainertop">
 
     </div>
     <section class="section-white-top" id="toothcanvascontainer">
-        <img src="res/img/parts/Parts_header.png" alt="" class="img-fluid img_mouseover">
-        <div class="education-intro text-center color-1">
+        <img src="res/img/model/Modelling.png" alt="" class="img-fluid img_mouseover">
+        <div class="education-intro text-center color-1 fade_from_bottom">
             <img src="res/img/introtext_box.svg" alt="" class="img-responsive">
             <div class="education-intro-text">
                 <p class="t-s">
-                    For the experimental part of our project, we aimed to develop a high-throughput 
-                    method in yeast to engineer proteases with distinct specificity and later to use the 
-                    method to obtain a protease that would specifically cleave the SALSA protein.
+                    For the experimental part of our project, we aimed to develop a high-throughput method in yeast to engineer proteases with distinct specificity and later to use the method to obtain a protease that would specifically cleave the SALSA protein.
+
+
+
                 </p>
             </div>
         </div>
     </section>
-    
 
+    <div class="wave-up"></div>
 
-    <section class="section-grad-poc-intro">
+    <section class="section-grad">
         <div class="container">
-            <div class="row">
-                <div class="poc-intro-text color-10">
-                    <p class="text-justify t-l ">
-                        <b> Introduction </b>
+            <div class="row text-center">
+                <p class="text-justify t-l color-10 fade_from_top">
+                    <b> Introduction </b>
+                </p>
+                <div class="text_m_top">
+                    <p class="t-xxs text-justify fade_from_left ">
+                        For this, we constructed a synthetic transcription factor where the DNA binding and activation domains are separated by an unstructured linker that contains a potential protease cleavage site. The synthetic transcription factor activates the expression
+                        of Sic1ΔN to inhibit yeast growth. However, when a protease cleaves the linker sequence, the two domains of the transcription factor are separated, the inhibitor is not expressed and the cells grow normally.
                     </p>
-                    <p class="text-justify t-xxs">
-                        An important part of our project is the development of a method that enables 
-                        high-throughput screening of protease activity towards a target sequence. For 
-                        this, we constructed a synthetic transcription factor where the DNA binding and 
-                        activation domains are separated by an unstructured linker that contains a 
-                        potential protease cleavage site. The synthetic transcription factor activates 
-                        the expression of Sic1dN - a protein that inhibits cell cycle progression and yeast
-                         growth. However, when a protease cleaves the linker sequence, the two domains of 
-                         the transcription factor are separated, the inhibitor is not expressed and the 
-                         cells grow normally.
+
+                    <p class="t-xxs text-left fade_from_left ">
+
                     </p>
                 </div>
+                <p class="text-justify t-l color-10 fade_from_top">
+                    <b> Overexpression of Sic1ΔN arrests yeast growth
+                    </b>
+                </p>
+                <div class="text_m_top">
+                    <p class="t-xxs text-justify color-10 fade_from_right">
+
+                        We first set out to test the inhibition of yeast growth by inducing the expression of Sic1ΔN. Sic1 is an inhibitor of the master cell cycle regulator, Cdk1, that is targeted for degradation via phosphorylation of its N terminus, enabling cells to enter
+                        S phase (Kõivomägi et al., 2011). Previous studies have found that mutation of the phosphorylation sites in Sic1 leads to stabilization of Sic1 and a delay in cell cycle progression (Cross et al., 2007) (Figure 1).
+
+                    </p>
+                </div>
+                <p class="t-xxs text-justify fade_from_left">
+                    We first tested whether Sic1, where the degradation motifs in the N terminus have been removed (Sic1ΔN), is capable of triggering efficient cell cycle arrest when overexpressed. For this, we cloned the coding sequence for Sic1 residues 90-284 to an expression
+                    vector with the LexA-dependent promoter. This expression cassette was transformed to a yeast strain expressing an estradiol-regulated synthetic transcription factor that regulates the LexA promoter (Ottoz et al., 2014).
+
+
+                </p>
+
+                <p class="t-xxs text-justify fade_from_right">
+                    To characterize the effect of Sic1ΔN expression on growth rate, we activated the LexA promoter at different levels using a range of estradiol concentrations. These experiments revealed a dose-dependent effect of Sic1ΔN on the growth rate. Therefore, using
+                    Sic1ΔN as a reporter gene allows to translate the activity of the transcription factor to growth rate. Importantly, this indicates that the setup can also be used to monitor the level of the transcription factor, enabling us to use
+                    it as a readout for the protease activity towards the transcription factor.
+
+                </p>
+
+                <img src="res/img/model/fig1.png" alt="" class="img-fluid poc_pad fade_from_top">
+                <p class="t-sxs text-justify fade_from_right">
+                    <b>Figure 1. Dosing of transcription factor activity to growth rate via expression of Sic1ΔN.</b> (A) The scheme of Sic1, showing the phosphorylation sites in the N terminus, necessary for Sic1 degradation, and the C-terminal part
+                    used in Sic1ΔN that inhibits Cdk1. (B) Induced overexpression of Sic1ΔN leads to dosage-dependent suppression of yeast growth.
+
+                </p>
+
+
+                <img src="res/img/model/fig1.png" alt="" class="img-fluid poc_pad fade_from_top">
+
             </div>
         </div>
+        </div>
     </section>
+
+
+
+    <div class="wave-4-10">
+    </div>
 
     <section class="section-white">
-        <div class="container">
-            <div class="row">
-                <div class="poc-text-2 color-1">
-                    <p class="text-justify t-xxs">
-                        As a proof-of-concept for this method, we first tested it with TEV protease, 
-                        as it has a very specific cleavage sequence.
-                    </p>
-                    
-                </div>
+
+        <div class="row no_bottom_padding text-center">
+            <div class="col-1"></div>
+            <div class="col-10 color-1">
+                <p class="t-l text-justify color-1 fade_from_top">
+                    <b>The toxicity of proteases </b><br><br>
+                </p>
+                <p class="t-xxs text-justify fade_from_left">
+                    Our protease engineering method potentially allows simultaneous screening of the proteases’ activity towards the target sequence in the LexA-linker-VP16 transcription factor and its activity towards essential cellular proteins. Overexpression of a protease
+                    with high activity and broad specificity is expected to have a negative effect on cell growth due to cleavage of cellular proteins. This would result in these cells gradually dropping out in the competitive growth assay, with the fastest
+                    dividing cells containing a protease that efficiently cleaves the LexA-linker-VP16 transcription factor to suppress Sic1ΔN expression, but does not cleave additional targets that would decrease the cell’s fitness.
+
+                </p>
+
+
+                <p class="t-xxs text-justify fade_from_right">
+                    To test our experimental setup, we first use TEV protease as the model enzyme, as it is highly studied and has a distinct cleavage site. To control the expression of the protease, we cloned TEV protease in an expression vector with GAL1 promoter that
+                    is inactive in glucose-containing medium, but highly expressed in galactose-containing medium.
+
+                </p>
+
+
+                <p class="t-xxs text-justify fade_from_left">
+                    The TEV expression plasmid was transformed to yeast and the effect of protease expression on cell viability was studied by comparing the yeast growth in the presence or absence of galactose. The assay showed that overexpression of TEV protease does not
+                    cause a growth defect. Due to the high specificity of TEV protease, this result could be expected, but it is a critical step in the high-throughput screening process involving proteases with very different substrate specificities.
+
+
+                </p>
+
+                <img src="res/img/model/fig1.png" alt="" class="img-fluid side-padding-s fade_from_top">
+
+
+
+
             </div>
+            <div class="col-1"></div>
         </div>
     </section>
 
+    <div class="wave_10_4"></div>
+
+    <section class="grad-4-8">
+
+        <div class="row no_bottom_padding text-center">
+            <div class="col-1"></div>
+            <div class="col-10 color-10">
+                <p class="t-l text-justify color-10 fade_from_top">
+                    <b>The synthetic transcription factor containing protease site is functional
+                    </b><br><br>
+                </p>
+                <p class="t-xxs text-justify fade_from_left">
+                    The final component of our protease activity screening assay is a synthetic transcription factor that contains the desired sequence for proteolytic targeting between the LexA DNA binding domain and the VP16 activation domain. We first needed to verify
+                    whether the transcription factor is able to efficiently activate Sic1ΔN expression from the LexA-dependent promoter. For this, the transcription factor was cloned to an expression cassette with GAL1 promoter and transformed to yeast
+                    that contains the Sic1ΔN reporter cassette.
+
+                </p>
+
+
+                <p class="t-xxs text-justify fade_from_right">
+                    For comparison, we used the estradiol-controlled transcription factor as above (Ottoz et al., 2014). Inducing the expression of the LexA-linker-VP16 transcription factor by addition of galactose results in a growth arrest of a similar efficiency as that
+                    triggered by the estradiol-regulated transcription factor. This experiment verifies that the created transcription factor is functional and indicates that the setup is flexible in terms of the sequence inserted between the transcription
+                    factor domains as the protease target sequence. Importantly, no growth defect was observed when the LexA-linker-VP16 expression was induced in cells that did not contain the Sic1ΔN reporter cassette, confirming the mechanism of the
+                    effect.
+
+                </p>
+
+
+
+                <img src="res/img/model/fig1.png" alt="" class="img-fluid poc_pad fade_from_top">
+
+
+
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+
+
+        <div class="row no_bottom_padding text-center">
+            <div class="col-1"></div>
+            <div class="col-10 color-10 text-center">
+                <p class="t-l text-justify color-10 fade_from_top">
+                    <b>Protease-driven inactivation of transcription factor rescues yeast growth
+
+                    </b><br><br>
+                </p>
+                <p class="t-xxs text-justify fade_from_left">
+                    As a proof-of-concept for this method, we first tested it with TEV protease, as it has a very specific cleavage sequence. For this, we used a LexA-linker-VP16 transcription factor, where the TEV cleavage site (ENLYFQS) was introduced to the linker. All
+                    three components of the assay (Figure 2) were transformed to yeast, followed by monitoring of yeast growth. Importantly, addition of the TEV protease rescued the growth arrest caused by LexA-linker-VP16-mediated expression of Sic1ΔN,
+                    presumably due to inactivation of the transcription factor by separating the DNA binding and activation domains. Next steps include validation of the cleavage of the transcription factor by TEV using Western Blot.
+
+                </p>
+                <img src="res/img/model/fig1.png" alt="" class="img-fluid poc_pad fade_from_top">
+
+                <p class="t-xxs text-justify fade_from_right">
+                    <b>Figure 2.</b> Transcriptional units in the yeast protease activity assay.<br><br>
+                </p>
+
+                <p class="t-xxs text-justify fade_from_left">
+                    This provides a key proof-of-principle for the method. The method can next be used with a library of proteases or alternatively a library of linker sequences as a pooled input, allowing for selection of efficient cleavage pairs in a competitive growth
+                    assay in a high-throughput manner.
+
+                </p>
+
+
+                <p class="t-xxs text-justify fade_from_left">
+                    Next we aim to implement the method using trypsin and prolyl peptidase, as suggested by our modelling results. These proteases will be tested both as unmodified enzymes and also as fusions with the SRCR-binding peptide from S. mutans. The peptide is expected
+                    to dock the protease to the transcription factor, increasing the local concentration and driving the specific proteolytic cleavage. Further, we will create a library of protease mutants using error-prone PCR to find proteases with
+                    altered active site specificity to obtain an enzyme that is optimal for targeting the SALSA protein.
+
+                </p>
+
+
+                <img src="res/img/model/fig1.png" alt="" class="img-fluid pad-6 fade_from_top">
+
+
+
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+
+        <div class="row no_top_padding no_bottom_padding">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="collapse" id="references">
+
+                    <p class="color-10 t-sxs">
+
+                        Cross, F.R., Schroeder, L., and Bean, J.M. (2007). Phosphorylation of the Sic1 Inhibitor of B-Type Cyclins in Saccharomyces cerevisiae Is Not Essential but Contributes to Cell Cycle Robustness. Genetics 176, 1541.<br><br> Kõivomägi,
+                        M., Valk, E., Venta, R., Iofik, A., Lepiku, M., Balog, E.R.M., Rubin, S.M., Morgan, D.O., and Loog, M. (2011). Cascades of multisite phosphorylation control Sic1 destruction at the onset of S phase. Nature 480, 128–131.<br><br>                        Ottoz, D.S.M., Rudolf, F., and Stelling, J. (2014). Inducible, tightly regulated and growth condition-independent transcription factor in Saccharomyces cerevisiae. Nucleic Acids Res. 42, e130.<br><br>
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-1"></div>
+
+        </div>
+
+        <div class="row no_top_padding ">
+            <div class="col-sm-5 col-4"></div>
+            <div class="col-sm-2 col-4">
+                <button class="btn read_more_button color-10 t-sxs text-center" type="button" data-bs-toggle="collapse" data-bs-target="#references" aria-expanded="false" aria-controls="references">
+                References
+              </button>
+            </div>
+            <div class="col-sm-5 col-4"></div>
+        </div>
+
+
+
+
+    </section>
 
 
     <footer class="p-2 bg-dark text-white text-center position-relative ">
         <div class="container-fluid">
             <div class="d-sm-flex align-items-center row">
-                <div class="col-md-6 ">
-                    <img class="img-fluid" src="res/img/res9.svg" alt="">
+                <div class="col-md-1 ">
+                </div>
+                <div class="col-md-1 ">
+                    <img class="img-fluid" src="https://2021.igem.org/wiki/images/7/7a/T--ESTONIA_TUIT--footer--1.png" alt="">
+                </div>
+                <div class="col-md-1 ">
+                    <img class="img-fluid" src="https://2021.igem.org/wiki/images/9/9c/T--ESTONIA_TUIT--footer--2.png" alt="">
+                </div>
+                <div class="col-md-1 ">
+                    <img class="img-fluid" src="https://2021.igem.org/wiki/images/8/86/T--ESTONIA_TUIT--footer--3.png" alt="">
+                </div>
+                <div class="col-md-1 ">
+                    <img class="img-fluid" src="https://2021.igem.org/wiki/images/5/58/T--ESTONIA_TUIT--footer--4.png" alt="">
+                </div>
+                <div class="col-md-1 ">
+                    <img class="img-fluid" src="https://2021.igem.org/wiki/images/3/3c/T--ESTONIA_TUIT--footer--5.png" alt="">
                 </div>
 
-                <div class="col-md-3 ">
+                <div class="col-md-1 ">
                 </div>
 
-                <div class="col-md-3 ">
+                <div class="col-md-4 text-center">
 
                     <div class="contact-us-container">
 
@@ -198,12 +395,13 @@
     </footer>
 
 
-    <script src="res/js/p5.js"></script>
+    <script src="https://2021.igem.org/Team:Estonia_TUIT/P5js?action=raw&ctype=text/javascript"></script>
     <script src="res/js/jquery.js"></script>
     <script src="bootstrap-5.1.1-dist/js/bootstrap.bundle.js"></script>
     <script src="res/js/floatingtooth.js"></script>
+    <script src="res/js/fade_on_scroll.js"></script>
 
-    
+
 
 
 </body>

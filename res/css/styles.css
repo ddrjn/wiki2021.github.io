@@ -403,7 +403,7 @@ footer>.container-fluid>.row {
 }
 
 .background-10 {
-    color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .rounded-team {
@@ -506,7 +506,9 @@ footer>.container-fluid>.row {
     box-shadow: 4px 4px 1vw 1vw rgba(134, 116, 129, 1);
 }
 
+
 /* HARDWARE STYLE BUTTON */
+
 .read_more_button_blue {
     background-color: #888EBA;
     color: white !important;
@@ -571,6 +573,17 @@ footer>.container-fluid>.row {
 .side-padding-s {
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.side-padding-m {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.poc_pad {
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .margin-3 {
@@ -1049,4 +1062,1314 @@ st {
 
 .no_top_margin {
     margin-top: 0;
+}
+
+
+/* 
+    GRADIENT ORDER
+
+    FA9C8E
+    9487BA
+
+    969BC3
+    B98DB5
+
+    B98DB5
+    EABE9B
+
+    EABE9B
+    867481
+
+    9C7884
+    FBA58E
+*/
+
+
+/* SECTION GRADS IN ORDER */
+
+.section-grad-attr-supervisors {
+    background: linear-gradient(#FA9C8E, #9487BA);
+}
+
+.section-grad-attr-modeling {
+    background: linear-gradient(#969BC3, #B98DB5);
+}
+
+.section-grad-attr-collabs {
+    background: linear-gradient(#B98DB5, #EABE9B);
+}
+
+.section-grad-attr-fundraising {
+    background: linear-gradient(#EABE9B, #867481);
+}
+
+.section-grad-attr-experts {
+    background: linear-gradient(#9C7884, #FBA58E);
+}
+
+.flex-text-aligned {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wave-down-attr-header {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #FA9C8E), to(#FA9C8E));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+.supervisor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.supervisor-text {
+    margin: 4%;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-last-right {
+    text-align-last: end;
+}
+
+.text-last-left {
+    text-align-last: start;
+}
+
+.img_mouseover {
+    position: relative;
+}
+
+
+/* 
+    WAVES GRADIENTS
+*/
+
+
+/* LAB TEAM */
+
+.wave-up-attr-lab {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #9487BA), to(#9487BA));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
+.wave-down-attr-lab {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #969BC3), to(#969BC3));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+
+/* Public ENGAGEMENT TEAM */
+
+.wave-up-attr-pe {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #B98DB5), to(#B98DB5));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
+.wave-down-attr-pe {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #B98DB5), to(#B98DB5));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+
+/* Fundaising team */
+
+.wave-up-attr-hp {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #EABE9B), to(#EABE9B));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
+.wave-down-attr-hp {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #EABE9B), to(#EABE9B));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+
+/* Wiki */
+
+.wave-up-attr-wiki {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #867481), to(#867481));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
+.wave-down-attr-wiki {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #9C7884), to(#9C7884));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+
+/* sponsors */
+
+.section-grad-sponsors-intro {
+    background-image: linear-gradient(#867481, #888EBA);
+    /* background-image: linear-gradient(#696B7B, #A770A2, #696B7B); */
+}
+
+.flex-text-aligned {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-last-right {
+    text-align-last: end;
+}
+
+.text-last-left {
+    text-align-last: start;
+}
+
+.wave-up-sponsors {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #888EBA), to(#888EBA));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
+.wave-down-sponsors {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #867481), to(#867481));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+
+/* poc */
+
+.section-grad-poc-intro {
+    background-image: linear-gradient(#9C7884, #FBA58E);
+}
+
+
+/* parts */
+
+.wave-down-parts {
+    /* margin-bottom: -5%; */
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #867481), to(#867481));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+.section-grad-parts {
+    background-image: linear-gradient(#867481, #EABE9B, #867481);
+}
+
+
+/* .left {
+    background: url('../img/parts/Parts_left.svg') no-repeat;
+}
+
+.right {
+    background: url('../img/parts/Parts_right.svg') no-repeat;
+} */
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.parts-table>thead {
+    background-color: #BD8481;
+    color: white;
+}
+
+.parts-table>tbody {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #867481;
+}
+
+.parts-table {
+    border-color: #867481;
+    /* border-radius: 50px; */
+}
+
+
+/* Table borders */
+
+
+/* .parts-table tr:first-child th:first-child {
+    border-top-left-radius: 6px;
+}
+
+.parts-table tr:first-child th:last-child {
+    border-top-left-radius: 6px;
+}
+
+.parts-table tr:last-child td:first-child {
+    border-top-left-radius: 6px;
+}
+
+.parts-table tr:last-child td:last-child {
+    border-top-left-radius: 6px;
+} */
+
+.img-move {}
+
+.left {
+    background-position: 40% 0;
+    /* background-position-x: 5%; */
+    background-repeat-x: no-repeat;
+    background-image: url("../img/parts/Parts_left_edited.svg");
+}
+
+.right {
+    background-position: 40% 0;
+    background-repeat-x: no-repeat;
+    background-image: url("../img/parts/Parts_right_edited.svg");
+}
+
+
+/* inclusivity */
+
+.section-grad-inclusivity {
+    background-image: linear-gradient(#867481, #FBA58E);
+    color: white !important;
+}
+
+
+/* Waves between sections */
+
+
+/* ################################ */
+
+.wave-up-inclusivity {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #867481), to(#867481));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+.wave-down-inclusivity {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #FBA58E), to(#FBA58E));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
+
+/* ################################ */
+
+
+/* introduction container */
+
+.inclusivity-intro {
+    position: relative;
+}
+
+
+/* Introduction text */
+
+.inclusivity-intro-container {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+
+/* inclusivity-intro-container */
+
+.inclusivity-intro-text p {
+    font-size: 1.8vw;
+    width: 80%;
+    /* margin-left: 5%; */
+    margin: 0 auto;
+    color: #72646e;
+    text-align: right;
+}
+
+
+/* .inclusivity-intro-container {
+    display: flex;
+
+} */
+
+#inclusivityIntroImage {
+    width: 15%;
+    margin-left: 10%;
+}
+
+.inclusivity-three-lang {
+    display: flex;
+}
+
+.three-lang-text {
+    justify-content: center;
+    /* width: 70%; */
+    font-size: 1.4vw;
+    margin: 6%;
+}
+
+
+/* #dveHujni {
+    width: 25%;
+} */
+
+@media screen and (max-width: 992px) {
+    .three-lang-text {
+        font-size: 2.1vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ithree-lang-text {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .three-lang-text {
+        font-size: 3.2vw;
+    }
+}
+
+#protocols {
+    height: auto;
+    margin: 0 auto;
+}
+
+.three-lang-add {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.three-lang-add p {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.lab-course-gradient {
+    background: url('https://2021.igem.org/wiki/images/a/a3/T--ESTONIA_TUIT--inclusivitty-bact-background.png') no-repeat center, linear-gradient(#969BC3, #B98DB5);
+    /* background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: linear-gradient(#969BC3, #B98DB5); */
+}
+
+#labTeamImg {
+    width: 40%;
+    margin: 3%;
+}
+
+.lab-course-container {
+    display: flex;
+}
+
+.lab-course-text {
+    /* margin: 3%; */
+    margin-top: 10%;
+    color: white;
+    text-align: left;
+}
+
+#labHeader {
+    /* margin-top: 4%; */
+    color: white;
+}
+
+.wave-up-inclusivity-lab {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #969BC3), to(#969BC3));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+
+/* hp */
+
+.hp-grad-1 {
+    background-image: linear-gradient( #867481, #EABE9B, #867481);
+    color: white !important;
+}
+
+.hp-grad-2 {
+    background-image: linear-gradient( #867481, #CBABC8, #867481);
+    color: white !important;
+}
+
+.hp-wave-1 {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(#867481), color-stop(0.49, #867481), color-stop(0.51, #fff), to(#fff));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
+.hp-wave-2 {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(#fff), color-stop(0.49, #fff), color-stop(0.51, #867481), to(#867481));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
+.text-align-left {
+    text-align: start;
+}
+
+.text-align-right {
+    text-align: end;
+}
+
+.hp-implemented-1 {
+    -webkit-text-stroke-width: 0.15vw;
+    -webkit-text-stroke-color: #696B7B;
+    color: white;
+}
+
+.hp-consultation-1 {
+    /* -webkit-text-stroke-width: 0.15vw; */
+    /* -webkit-text-stroke-color: #696B7B; */
+    color: #867481;
+}
+
+.hp-implemented-2 {
+    -webkit-text-stroke-width: 0.10vw;
+    -webkit-text-stroke-color: #696B7B;
+    color: #EABE9B;
+}
+
+.pad-sm {
+    padding: 5%;
+}
+
+.pad-1 {
+    padding: 1%;
+}
+
+.pad-2 {
+    padding: 2%;
+}
+
+.pad-3 {
+    padding: 3%;
+}
+
+.pad-4 {
+    padding: 4%;
+}
+
+.pad-5 {
+    padding: 5%;
+}
+
+.pad-6 {
+    padding: 6%;
+}
+
+.pad-8 {
+    padding: 8%;
+}
+
+.pad-ver-arr {
+    padding-bottom: 33%;
+    padding-left: 33%;
+    padding-right: 33%;
+}
+
+.pad-ver-arr2 {
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-bottom: 5%;
+}
+
+.pad-ver-arr3 {
+    padding-left: 41%;
+    padding-right: 41%;
+}
+
+.pad-ver-arr4 {
+    padding-left: 33%;
+    padding-right: 33%;
+    position: relative;
+    left: 9.5%;
+}
+
+.pad-ver-arr5 {
+    padding-left: 33%;
+    padding-right: 33%;
+    position: relative;
+    top: -1.5vw;
+    right: 1vw;
+}
+
+.pad-ver-arr6 {
+    padding-left: 33%;
+    padding-right: 33%;
+    position: relative;
+    top: -11.5vw;
+}
+
+.moveup5 {
+    padding-left: 3%;
+    padding-right: 3%;
+    position: relative;
+    top: -10vw;
+}
+
+.hparrows {
+    position: absolute;
+}
+
+.hp-btn-1 {
+    color: white;
+    background-image: linear-gradient(to top right, #867481, #EABE9B);
+    border-radius: 25px;
+    width: 100%;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0.3vw;
+}
+
+.hp-btn-1:hover {
+    color: #867481!important;
+    border-color: #867481;
+    box-shadow: 4px 4px 1vw 1vw #867481;
+}
+
+.hp-btn-2 {
+    color: #696B7B;
+    background-color: white;
+    border-radius: 25px;
+    width: 100%;
+    border-color: #EABE9B;
+    border-style: solid;
+    border-width: 0.3vw;
+}
+
+.hp-btn-2:hover {
+    background-color: #696B7B;
+    color: #EABE9B!important;
+    border-color: #696B7B;
+    box-shadow: 4px 4px 1vw 1vw #867481;
+}
+
+.hp-btn-3 {
+    color: white;
+    background-image: linear-gradient(to top right, #867481, rgba(0, 0, 0, 0));
+    border-radius: 15px;
+    width: 100%;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0.3vw;
+}
+
+.hp-btn-3:hover {
+    color: #fff!important;
+    background-image: linear-gradient(to bottom left, #867481, rgba(0, 0, 0, 0));
+    border-color: #867481;
+    box-shadow: 4px 4px 1vw 1vw #867481;
+}
+
+.feedbackbutton:hover {
+    color: #fff!important;
+}
+
+.no_bottom_margin {
+    margin-bottom: 0px;
+}
+
+.t-ssl {
+    font-size: 4.8vw;
+}
+
+.t-ul {
+    font-size: 5.8vw;
+}
+
+.marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.marquee span {
+    display: inline-block;
+    /* padding-left: 100%; */
+    animation: marqueee 5s linear infinite;
+}
+
+@keyframes marqueee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100vw, 0);
+    }
+}
+
+.marquee-1 {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.marquee-1 span {
+    display: inline-block;
+    /* padding-left: 100%; */
+    animation: marqueee-1 5s linear infinite;
+}
+
+@keyframes marqueee-1 {
+    0% {
+        transform: translate(-100vw, 0);
+    }
+    100% {
+        transform: translate(0vw, 0);
+    }
+}
+
+#twoarrows {
+    position: relative;
+    top: -6vw;
+}
+
+.jirni {
+    font-family: jirni;
+}
+
+.hp-grad-needable {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #867481, rgba(0, 0, 0, 0));
+    color: white !important;
+}
+
+#hardwareButton {
+    position: relative;
+    top: -12vw;
+}
+
+#sprayspray {
+    position: relative;
+    top: -12vw;
+}
+
+.circ-hover-shadow1:hover {
+    border-radius: 50%;
+    transform: scale(1.3);
+}
+
+
+/* hardware */
+
+
+/* 
+    Gradients
+*/
+
+.section-grad-hw-overview {
+    background-image: linear-gradient(#696B7B, #888EBA, #696B7B);
+}
+
+.section-grad-hw-explanation {
+    background-image: linear-gradient(#696B7B, #A770A2, #696B7B);
+}
+
+
+/* WAVES */
+
+.wave-up-hw {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #696B7B), to(#696B7B));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
+.wave-down-hw {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #696B7B), to(#696B7B));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+
+/* Hardware list */
+
+.list-hw>li::marker {
+    content: "- ";
+}
+
+
+/* education */
+
+
+/* Education page */
+
+
+/* INTRODUCTION */
+
+
+/* ################################ */
+
+
+/* Main section gradient */
+
+.section-white-edu {
+    background-image: url("https://2021.igem.org/wiki/images/f/f2/T--ESTONIA_TUIT--education-comm-background.png");
+    background-repeat: no-repeat;
+    background-position-x: 7vw;
+    background-size: cover;
+}
+
+.section-grad-education {
+    background-image: linear-gradient(#867481, #FBA58E);
+    color: white !important;
+}
+
+
+/* introduction container */
+
+.education-intro {
+    position: relative;
+    margin-top: 10%;
+}
+
+
+/* Introduction text */
+
+.education-intro-text {
+    position: absolute;
+    top: 9%;
+    left: 0;
+    width: 100%;
+}
+
+.education-intro-text p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ################################ */
+
+
+/* WORKSHOPS */
+
+
+/* ################################ */
+
+.education-icons {
+    /* width: 80%; */
+    margin: 0 auto;
+}
+
+.icons-kostilj {
+    width: 80%;
+}
+
+.svg-invert-on-hover:hover {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+.hover-div:hover {
+    box-shadow: 4px 4px 140px 100px rgba(91, 105, 170, 0.9);
+}
+
+
+/* ################################ */
+
+
+/* Waves between sections */
+
+
+/* ################################ */
+
+.wave-up-education {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #867481), to(#867481));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+.wave-down-education {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #FBA58E), to(#FBA58E));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
+
+/* ################################ */
+
+
+/* Public events */
+
+
+/* ################################ */
+
+.workshop-wave {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.cls-1 {
+    fill: none;
+}
+
+.cls-1,
+.cls-2 {
+    stroke: #000;
+    stroke-miterlimit: 10;
+}
+
+.cls-2 {
+    fill: #fff;
+}
+
+.cls-1 {
+    fill: #fff;
+    stroke: #867481;
+    stroke-miterlimit: 10;
+    transition: 0.8s;
+}
+
+
+/* Modals */
+
+
+/* General class to target all modals */
+
+
+/* Circle hover */
+
+
+/* 
+Чисто ДЕМО. Потом можем тут какой ниюудь ревльно красивый ээфект сделать типо градиент снизу.
+*/
+
+.modal-circle:hover {
+    fill: #5B69AA;
+}
+
+.cls-2:hover {
+    fill: #888EBA;
+}
+
+.workshop {
+    color: #696B7B;
+}
+
+p {
+    margin-bottom: 0!important;
+}
+
+@media screen and (max-width: 992px) {
+    .workshop {
+        font-size: 1.8vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .workshop {
+        font-size: 2.1vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .workshop {
+        font-size: 2.8vw;
+    }
+}
+
+.workshop {
+    font-size: 1.5vw;
+}
+
+#defaultCanvas0 {
+    display: none;
+}
+
+
+/* ################################ */
+
+.scene {
+    width: 100%;
+    height: 100%;
+    perspective: 10000px;
+}
+
+.carouseledu {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 25vw;
+    transform-style: preserve-3d;
+    animation: spincarusel 15s linear infinite;
+    /*transform: translateZ(-86vw) rotateY(-160deg);*/
+}
+
+.carouseledu:hover {
+    animation-play-state: paused;
+}
+
+@keyframes spincarusel {
+    100% {
+        -webkit-transform: translateZ(-43vw) rotateY(-360deg);
+        transform: translateZ(-43vw) rotateY(-360deg);
+    }
+}
+
+@keyframes wrong_escape {
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes correct_escape {
+    100% {
+        background-color: green;
+    }
+}
+
+@keyframes red_to_white {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes green_to_white {
+    0% {
+        background-color: green;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+.carousel__cell {
+    position: absolute;
+    width: 100%;
+    left: 10px;
+    top: 10px;
+}
+
+.carusel_img_edu {
+    width: 40%;
+    height: 50%;
+}
+
+.carusel_img_edu:hover {
+    border-radius: 50%;
+    box-shadow: 4px 4px 5vw 5vw rgba(203, 171, 200, 0.9);
+    transform: scale(1.5);
+}
+
+.carousel__cell:nth-child(1) {
+    transform: rotateY( 0deg) translateZ(43vw);
+}
+
+.carousel__cell:nth-child(2) {
+    transform: rotateY( 60deg) translateZ(43vw);
+}
+
+.carousel__cell:nth-child(3) {
+    transform: rotateY( 120deg) translateZ(43vw);
+}
+
+.carousel__cell:nth-child(4) {
+    transform: rotateY(180deg) translateZ(43vw);
+}
+
+.carousel__cell:nth-child(5) {
+    transform: rotateY(240deg) translateZ(43vw);
+}
+
+.carousel__cell:nth-child(6) {
+    transform: rotateY(300deg) translateZ(43vw);
+}
+
+
+/*CAROUSLE*/
+
+#es_circle:hover {
+    position: absolute;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-moz-keyframes spin {
+    25% {
+        -moz-transform: rotate(45deg);
+    }
+    75% {
+        -moz-transform: rotate(-45deg);
+    }
+    100% {
+        -moz-transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    25% {
+        -webkit-transform: rotate(45deg);
+    }
+    75% {
+        -webkit-transform: rotate(-45deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes spin {
+    25% {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg) scale(1.1);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
+    }
+    75% {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg) scale(1.1);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.int_edu {
+    width: 80%;
+    left: 10%;
+    background-image: url("https://2021.igem.org/wiki/images/4/4a/T--ESTONIA_TUIT--interactive_education-comm-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.salsaletters {
+    display: none;
+}
+
+
+/* contribution */
+
+.section-grad-contribution {
+    background-image: linear-gradient(#888EBA, #CBABC8);
+}
+
+.section-grad-contribution-2 {
+    background-image: linear-gradient(#EABE9B, #9C7884);
+}
+
+.wave-down-contribution {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #888EBA), to(#888EBA));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+.wave-up-contribution {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #CBABC8), to(#CBABC8));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
+.wave-down-contribution-2 {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #EABE9B), to(#EABE9B));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+.wave-up-contribution-2 {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #9C7884), to(#9C7884));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg);
+}
+
+#img_folders {
+    width: 20%;
+    margin: 5%;
+}
+
+.folders {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-folders {
+    /* margin: 5%; */
+    color: white;
+}
+
+.superman {
+    /* margin-top: 5%; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-superman {
+    /* margin: 5%; */
+    color: white;
+}
+
+#header_cyan_img {
+    width: 13%;
+}
+
+.h1-header {
+    color: white;
+}
+
+.header-text-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top: 1%; */
+}
+
+.grad-text {
+    margin-top: 5%;
+}
+
+.section-grad-yell {
+    background-image: linear-gradient(#CBABC8, #EABE9B);
+}
+
+#header_yellow_img {
+    width: 13%;
+}
+
+.wave-down-contribution-yell {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #CBABC8), to(#CBABC8));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+.wave-up-contribution-yell {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #EABE9B), to(#EABE9B));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg)
+}
+
+.section-grad-morange {
+    background-image: linear-gradient(#9C7884, #FBA58E);
+}
+
+.wave-down-contribution-morange {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #9C7884), to(#9C7884));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+.wave-up-contribution-morange {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #FBA58E), to(#FBA58E));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg)
+}
+
+.section-grad-contribution-mrfp {
+    background-image: linear-gradient(#BD8481, #867481);
+}
+
+.wave-down-contribution-mrfp {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(white), color-stop(0.49, white), color-stop(0.51, #BD8481), to(#BD8481));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg) translateY(-20px);
+}
+
+.wave-up-contribution-mrfp {
+    height: 35px;
+    width: 100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 50, from(white), color-stop(0.49, white), color-stop(0.51, #867481), to(#867481));
+    -webkit-background-size: 35px 100%;
+    transform: rotateX(180deg)
+}
+
+
+/* videos */
+
+#thumbnail {
+    width: 45%;
+}
+
+.video-menu {
+    height: 30vw;
+}
+
+.video-fluid {
+    width: auto;
+    height: 100%;
+}
+
+.videocontainer {
+    height: 30vw;
+}
+
+.thumbnail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.thumbnail__text {
+    margin-left: 10%;
 }
