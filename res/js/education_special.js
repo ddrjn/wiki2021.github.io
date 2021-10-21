@@ -81,7 +81,7 @@ function letsgo(a) {
 
     setValues();
     answerlength = a.questions.length;
-    console.log(answerlength);
+    //console.log(answerlength);
     canvas.style.width = "0px";
 
 }
