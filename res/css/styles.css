@@ -1,3 +1,37 @@
+#top_title {
+    display: none;
+}
+
+#top {
+    display: none;
+}
+
+#globalWrapper {
+    padding-bottom: 0;
+}
+
+.top_bar {
+    display: none !important;
+}
+
+#content {
+    all: unset;
+}
+
+#bodycontent {
+    all: unset;
+}
+
+.igem_column_wrapper {
+    all: unset;
+}
+
+.igem_content_wrapper .igem_column_wrapper p {}
+
+.extra_space {
+    display: none;
+}
+
 .navbar {
     background: none;
 }
