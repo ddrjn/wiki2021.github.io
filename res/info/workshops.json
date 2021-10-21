@@ -2,124 +2,124 @@
     "workshops": [
 
         {
-            "name": "xuinya12",
+            "name": "Escape Room",
             "date": "31.13",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/img/education and communication/4thCH.mp4"
+            "descrition": "Two years in a row now, the students from our team have organised an escape room quest for the visitors of the Interactive Education event. The quest consists of several tasks, at the end of which visitors have to find one letter and a hint for the next task. The code word for completing the quest is 'SALSA' - as the protein with the same abbreviation is a major point of interest in our project. Since our project this year is focused on dental hygiene, the plot of the escape room followed the steps and logic of a usual visit to the doctor's office. However, this time the visitors are more motivated to complete the quest, as in case they do not manage to find a fake news article about our project, the doctor will extract their sick tooth instead of treating it. Through several tasks of identifying the problematic tooth, researching in dentistry books and looking for hints hidden between the objects in the room - like cavities hidden between teeth, 90% of teams managed to escape the room with an innovative biological solution without the help of instructors.",
+            "photo": "https://2021.igem.org/wiki/images/2/20/T--Estonia_TUIT--escroomcol.jpg"
         },
         {
-            "name": "Mart Loog",
+            "name": "Art Exhibition 'The greatest scientists are artists as well.'",
+            "date": "The boss",
+            "descrition": "Our team believes that beauty is everywhere, art is everywhere and science can also be art. Just look at the cells under the microscope or the DNA gels under UV - aren't these amazing? Being scientists taught us to be creative and showed us that you can find beauty in everything, even if something in your experiment goes wrong. To display biology wet lab routines and to let our visitors see how charming biology can be, we exhibit pictures taken by our teammates while they were spending days and nights in the lab. We also received some digital art photos through a collaboration with another team. The photos were printed out and displayed in frames with the authors and their contact information. Besides, we created collages using iGEM team’s postcards of each season showing our history through the years and explaining to the visitors our scientific iGEM projects over the years. We also demonstrated drawings of artists inspired by science.The main purpose of our Art exhibition is not only to show how fascinating science can be but also to encourage people to start their scientific journey, find out a little bit more about synthetic biology,  inspire, motivate and show the beauty of science!",
+            "photo": ""
+        },
+        {
+            "name": "Kahoot!",
+            "date": "The boss",
+            "descrition": "This year, to make our communication events even more entertaining, we decided to create a quiz in Kahoot!. Every 15 minutes we give our audience a question about science and they need to answer via Kahoot! platform. The person who gives the right answer first, receives a small present from our team. This activity has already become one of the most fun and remarkable parts of the night for our guests. (questions from the quiz)",
+            "photo": ""
+        },
+        {
+            "name": "Workshops",
             "date": "The boss",
             "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
             "photo": "res/members/davit.png"
         },
         {
-            "name": "Mart Loog",
+            "name": "Microscopy",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "The purpose of this workshop is to let people see the world from a biologist's perspective. We provide our guests with samples of leaves and yeasts, so they can take a look at what these things look like under the microscope. We want to encourage people's interest in science, so we let them get a peek behind the curtains of our everyday laboratory routine.",
+            "photo": ""
         },
         {
-            "name": "Mart Loog",
+            "name": "Chromatography flowers",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "We believe that everything in life should be beautiful. And our paper chromatography experiment is a good example of this. It is 50% science and 50% art. Participants make paper roses and color them using different markers. The capillary effect allows for dyes to migrate in the filter paper and produce extraordinarily colorful pallets and patterns. We have conducted this workshop several times this season, with over a hundred participants, who were very excited with the result as well as were interested in the scientific background of the experiment.",
+            "photo": ""
         },
         {
-            "name": "Mart Loog",
+            "name": "DNA extraction",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "Our team's classic experiment running for five years now is DNA extraction from kiwi. And no matter how many times we do it, people are always interested in the opportunity to see DNA with the naked eye. But apart from the entertaining part, participants also learn the scientific principles behind the experiment. We teach them why we always add detergent, and what would happen if you forget to add salt (spoiler: DNA will not precipitate). We are always excited to see how the workshop participants learn something new.",
+            "photo": ""
         },
         {
-            "name": "Mart Loog",
+            "name": "DNA puzzle",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "We have created DNA puzzles to explain the DNA complementarity rules. In this interactive activity, participants have to put together words, which are connected to our project. The trick is that the letters could be connected only if their 'DNA' overhangs match. We found that this type of activity attracts people of all age groups, and at the end of the game, they are familiar with the DNA complementarity rules. Therefore, our DNA puzzle is a good example of educational material and could fairly easily be adjusted to meet different purposes.",
+            "photo": ""
         },
         {
-            "name": "Mart Loog",
+            "name": "Traffic lights",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "This is one of our participants' favourite experiments. We teach them about oscillating reactions. People are very fascinated to witness an eye-catching experiment with changing colors and to understand the underlying chemical principles that are behind the effects.",
+            "photo": ""
         },
         {
-            "name": "Mart Loog11",
+            "name": "Pigment extraction",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "We are constantly updating our workshop collection and this year we decided to add an experiment called Pigment Extraction. It is a known fact that the green color of the plant's leaves is a result of the presence of green pigments called chlorophylls. But what if we say that there are also orange pigments called carotenoids which are hidden inside of the leaves, but you can see them with your own eyes. All you need is just mash some leaves, mix them with ethanol and add some solvent. After a couple of minutes you will see two layers of different colors. One layer will contain yellow color pigments, named xanthophylls, and the other one will contain chlorophylls and carotenes. This colorful experiment demonstrates that plants contain more than one pigment and shows the potential of investigating various processes using simple tools.",
+            "photo": ""
         },
         {
-            "name": "Mart Loog12",
+            "name": "JulyGEM",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "JulyGem was an event organized by team Calgary, in which different iGEM teams from across the world gathered to present their projects. A Q&A session followed the presentation, and each team also had the chance to get feedback from experienced individuals in the field. Our team took part in this project by presenting SALSASMILE and answering several questions about our lab work and different aspects of our project.",
+            "photo": ""
         },
         {
-            "name": "Mart Loog13",
+            "name": "Festival of Opinion (Arvamusfestival)",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "We held a workshop in Paide in order to increase people's interest in science, especially synthetic biology. Everybody was welcomed to participate in various workshops, such as DNA extraction and chromatography flowers, solve some DNA puzzles and work with the microscope. Our Science and Technology students were happy to discuss our project SALSASMILE and iGEM.",
+            "photo": "https://2021.igem.org/wiki/images/0/07/T--Estonia_TUIT--Education_OpinionFest.jpg"
         },
         {
-            "name": "Mart Loog14",
+            "name": "River Day (Jõepäev)",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "Our team was invited to share our scientific experience with the general audience via introducing them to the field of synthetic biology. Our Science and Technology students discussed our team's previous iGEM experience and engaged people to take part in several workshops - DNA extraction, microscopy, chromatography flowers. Our guests also enjoyed solving the entertaining DNA puzzles.",
+            "photo": "https://2021.igem.org/wiki/images/2/29/T--Estonia_TUIT--Education_RiverDay.jpg"
         },
         {
-            "name": "Mart Loog",
+            "name": "Võru Summerdays (Võru Linnapäevad)",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "Our iGEM team visited Võru to raise people's awareness about the synthetic biology field and introduced the concept of iGEM. We also engaged the public to do some of our workshops that were specially prepared for this event: DNA extraction, microscopy, DNA puzzles and chromatography flowers. We presented our new project SALSASMILE and discussed its importance with our guests.",
+            "photo": "https://2021.igem.org/wiki/images/f/fc/T--Estonia_TUIT--Education_Summerdays.jpg"
         },
         {
-            "name": "Mart Loog",
+            "name": "Summer Days in Narva (Suvepäevad Narvas)",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "Narva is one of the most remarkable Estonian cities. Every year our team visits Narva to participate in different festivals and engage a wider public in life sciences via our fun and educational workshops. Our guests were extremely excited to learn and see the process of DNA extraction from kiwi, work with microscopic samples, solve tricky DNA puzzles and create scientific art pieces with their own hands as a result of the chromatography flowers workshop. We were happy to talk about our iGEM project and the Science and Technology program.",
+            "photo": "https://2021.igem.org/wiki/images/5/57/T--Estonia_TUIT--Education_SummerDaysNarva.jpg"
         },
         {
-            "name": "Mart Loog",
+            "name": "Tartu Wisdom Day (Tarkusepäev)",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "Tartu is the second largest Estonian city and the home of our iGEM team. We were grateful for the opportunity to take part in Tartu Wisdom Day and speak about the importance of the synthetic biology field. We introduced the innovative Science and Technology program to our guests and explained the concept of the iGEM - the biggest synthetic biology competition in the world. We also carried out the DNA extraction workshop, chromatography flowers, provided microscopy samples for observing and DNA puzzles to show how entertaining and educative science can be.",
+            "photo": "https://2021.igem.org/wiki/images/b/b4/T--Estonia_TUIT--Education_TartuWisdomDay.jpg"
         },
         {
-            "name": "Mart Loog",
+            "name": "Researchers’ Night (Teadlaste öö festival)",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "This year, already for the 5th time in a row, our team became a part of the Researchers’ Night festival. Together with all our participants, we performed some of our favourite workshops such as traffic lights, DNA extraction, colorful chromatography flowers and even solved DNA puzzles. We also had a discussion about our iGEM project and introduced the audience to an innovative Science and Technology program.",
+            "photo": "https://2021.igem.org/wiki/images/a/ad/T--Estonia_TUIT--Education_Researchers_Night.jpg"
         },
         {
-            "name": "Mart Loog",
+            "name": "Dragon’s Biome",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "Dragon’s biome event, organized by team KU LEUVEN, gave incredibly useful experience by practicing pitching our idea and showed advantages and disadvantages of our presenting format. Suggestion to address bigger companies as partners and not only as competitors boosted our team morale. Preparation for dragon biome allowed our team to develop future plans and look into the business side of project development.",
+            "photo": ""
         },
         {
-            "name": "Mart Loog",
+            "name": "1st Global Diagnostics & Therapeutics conference",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "The D&T conference, organized by team Korea_HS, took place in Zoom in the form of a meeting with three breakout rooms: The main hall, The presentation room, and The iGem Cinema. We contributed to this conference by presenting our project to several other iGem teams from various countries and by responding to inquiries about different aspects of our project.",
+            "photo": ""
         },
         {
-            "name": "Mart Loog",
+            "name": "Scientific Art Exhibition and Escape room",
             "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
-        },
-        {
-            "name": "Mart Loog",
-            "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
-        },
-        {
-            "name": "Mart Loog",
-            "date": "The boss",
-            "descrition": "There is a reason why we call our team's primary PI the boss. no photosession happens without him. He is our major sponsor and mentor, lets us use his lab in the Institute of Technology of University of Tartu, thus the shots are being called by him.",
-            "photo": "res/members/davit.png"
+            "descrition": "This year, for the second time, our team held an Art exhibition (checkout this link to see the art works). We showed digital art pieces and some photos taken by our team members, postcard collages and drawings we received for our last year's exhibition. Throughout the event our guests could try our best workshops, such as DNA extraction, microscopy, DNA puzzles, Chromatography flowers, Traffic lights and Pigment extraction. Furthermore, our visitors were able to participate in the Scientific Kahoot! quiz and, and last but not least, try to find a way through our fascinating Escape room. During the event, we discussed our iGEM project SALSASMILE, the unique possibility of Science and Technology students to participate in iGEM, what iGEM means and its purpose.",
+            "photo": "https://2021.igem.org/wiki/images/a/ae/T--Estonia_TUIT--Education_ScientificArtExhibition.jpg"
         }
 
 

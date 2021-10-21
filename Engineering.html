@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" data-target="" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Engineering </title>
-    <link rel="stylesheet" type="text/css" href="bootstrap-5.1.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="res/css/styles.css">
-
+    <link rel="stylesheet" type="text/css" href="https://2021.igem.org/Team:Estonia_TUIT/Bootstrapcss?action=raw&ctype=text/css">
+    <link rel="stylesheet" type="text/css" href="https://2021.igem.org/Team:Estonia_TUIT/styles?action=raw&ctype=text/css">
 
 
 
@@ -115,10 +114,9 @@
                     <b>Overview</b>
                 </p>
                 <p class="t-xxs text-justify color-10 fade_from_left">
-                     We developed a testing system that would allow us to engineer a specific protease for the cleavage of the SALSA protein. In order to target SALSA, we first carried out a structural analysis of the
-                    SALSA protein to estimate which sequences are on the surface of the protein and accessible for proteolytic cleavage. Having identified the regions to target, we were then posed with the task of creating an effective, specific and affordable
-                    method of carrying out this cleavage. For this, we developed a method that enables us to screen for proteases that target distinct sequences. The method enables high-throughput screening where the protease cleavage efficiency is translated
-                    to yeast growth rate as a simple readout.
+                    We developed a testing system that would allow us to engineer a specific protease for the cleavage of the SALSA protein. In order to target SALSA, we first carried out a structural analysis of the SALSA protein to estimate which sequences are on the surface
+                    of the protein and accessible for proteolytic cleavage. Having identified the regions to target, we were then posed with the task of creating an effective, specific and affordable method of carrying out this cleavage. For this, we
+                    developed a method that enables us to screen for proteases that target distinct sequences. The method enables high-throughput screening where the protease cleavage efficiency is translated to yeast growth rate as a simple readout.
 
                 </p>
 
@@ -126,11 +124,11 @@
                     <b> SALSA structure </b>
                 </p>
                 <p class="t-xxs text-justify color-10 fade_from_right">
-                     The SALSA protein consists of 15 folded domains separated by unstructured linker regions, raising a question of which regions to choose as the target sequence for the protease. The scavenger
-                    receptor cysteine-rich (SRCR) domains are of key importance for this project, as they are involved in both SALSA binding to the tooth and bacteria binding to the SALSA protein (Bikker et al., 2002). According to the three-dimensional
-                    structure of the SALSA protein (AlphaFold Protein Structure Database, n.d.), the SRCR domains are globular domains that are not easily accessible to proteases. The linkers, or SRCR-interspersed domains (SIDs), however, are unstructured
-                    and can potentially be easily cleaved (Figure 1). SIDs are roughly 20-amino-acid-long threonine-serine-proline-rich stretches consisting of a number of glycosylation sites that proposedly render the linkers to extended conformation,
-                    spanning 7 nm (Reichhardt et al., 2020; Turenchalk & Xu, 2001).
+                    The SALSA protein consists of 15 folded domains separated by unstructured linker regions, raising a question of which regions to choose as the target sequence for the protease. The scavenger receptor cysteine-rich (SRCR) domains are of key importance
+                    for this project, as they are involved in both SALSA binding to the tooth and bacteria binding to the SALSA protein (Bikker et al., 2002). According to the three-dimensional structure of the SALSA protein (AlphaFold Protein Structure
+                    Database, n.d.), the SRCR domains are globular domains that are not easily accessible to proteases. The linkers, or SRCR-interspersed domains (SIDs), however, are unstructured and can potentially be easily cleaved (Figure 1). SIDs
+                    are roughly 20-amino-acid-long threonine-serine-proline-rich stretches consisting of a number of glycosylation sites that proposedly render the linkers to extended conformation, spanning 7 nm (Reichhardt et al., 2020; Turenchalk &
+                    Xu, 2001).
                 </p>
             </div>
             <div class="col-1"></div>
@@ -174,21 +172,20 @@
                 </p>
                 <p class="text-justify color-1 t-sxs fade_from_left">
 
-                    Having aligned all SIDs and obtained a consensus sequence, we were able to make a decision about which proteases to consider based on their sequence specificity, as well as toxicity, availability
-                    and cost. (Supplementary alignment 1)(Supplementary alignment 2) Two candidate proteases, trypsin and prolyl peptidase, were identified as the most suitable enzymes based on these parameters. Trypsin cleaves peptide bonds from the
-                    C-terminal side of positively charged lysine and arginine residues, whereas prolyl peptidase cleaves C-terminally of proline residues. As SRCR-interspersed domains are highly enriched with proline residues (Alignment 1), they are the
-                    ideal substrate for prolyl peptidase. To set up the protease specificity assay, we also used the TEV protease as the model and control enzyme, as it is highly sequence-specific and thoroughly studied. While trypsin and prolyl peptidase
-                    have less determinants for cleavage site, TEV protease specifically targets the sequence ENLYFQS/G.
+                    Having aligned all SIDs and obtained a consensus sequence, we were able to make a decision about which proteases to consider based on their sequence specificity, as well as toxicity, availability and cost. (Supplementary alignment 1)(Supplementary alignment
+                    2) Two candidate proteases, trypsin and prolyl peptidase, were identified as the most suitable enzymes based on these parameters. Trypsin cleaves peptide bonds from the C-terminal side of positively charged lysine and arginine residues,
+                    whereas prolyl peptidase cleaves C-terminally of proline residues. As SRCR-interspersed domains are highly enriched with proline residues (Alignment 1), they are the ideal substrate for prolyl peptidase. To set up the protease specificity
+                    assay, we also used the TEV protease as the model and control enzyme, as it is highly sequence-specific and thoroughly studied. While trypsin and prolyl peptidase have less determinants for cleavage site, TEV protease specifically
+                    targets the sequence ENLYFQS/G.
                 </p>
 
                 <p class="text-justify t-l color-1 fade_from_top">
                     <b class="t-l">Yeast surface display for protein engineering</b>
                 </p>
                 <p class="text-justify color-1 t-sxs fade_from_left">
-                    Yeast surface display is a method for high-throughput screening of proteins based on their interactions. One way to target SALSA would be to engineer a protease
-                    that binds strongly to SALSA, making the assumption that increased local concentration of the protease near SALSA would lead to cleavage of SALSA. Yeast surface display has been used to engineer antibodies for distinct targets, and
-                    a similar approach could be used for the protease and SALSA interaction. However, Furthermore, a modified version of yeast surface display has been used to engineer a TEV protease with slightly different specificity. This approach,
-                    however, requires
+                    Yeast surface display is a method for high-throughput screening of proteins based on their interactions. One way to target SALSA would be to engineer a protease that binds strongly to SALSA, making the assumption that increased local concentration of
+                    the protease near SALSA would lead to cleavage of SALSA. Yeast surface display has been used to engineer antibodies for distinct targets, and a similar approach could be used for the protease and SALSA interaction. However, Furthermore,
+                    a modified version of yeast surface display has been used to engineer a TEV protease with slightly different specificity. This approach, however, requires
                 </p>
 
                 <p class="text-justify t-l color-1 fade_from_top">
@@ -196,11 +193,11 @@
                 </p>
 
                 <p class="text-justify color-1 t-sxs fade_from_right">
-                    We modified the yeast two-hybrid system to test the candidate proteases in cleaving the desired sequence. Canonical yeast two-hybrid screening
-                    aims to study protein-protein interactions (Wong et al., 2017a). The system consists of a transcription factor, promoter and a reporter gene. The transcription factor consists of separate binding and activation domains, and can only
-                    induce transcription when the two domains are close to each other. In two-hybrid, each domain has a protein of interest fused to it. Therefore, when two proteins interact, the two transcription factor domains come close to each other.
-                    This leads to activation of the promoter and transcription of the reporter gene, which is used as a readout of the assay. If the two proteins do not interact, there is no transcription of the reporter gene (Wong et al., 2017b). For
-                    our modified yeast two-hybrid system, we adopted the idea of transcription factor's domains in proximity to each other. However, in our case, domains are in conjunction from the beginning and need to be separated.
+                    We modified the yeast two-hybrid system to test the candidate proteases in cleaving the desired sequence. Canonical yeast two-hybrid screening aims to study protein-protein interactions (Wong et al., 2017a). The system consists of a transcription factor,
+                    promoter and a reporter gene. The transcription factor consists of separate binding and activation domains, and can only induce transcription when the two domains are close to each other. In two-hybrid, each domain has a protein of
+                    interest fused to it. Therefore, when two proteins interact, the two transcription factor domains come close to each other. This leads to activation of the promoter and transcription of the reporter gene, which is used as a readout
+                    of the assay. If the two proteins do not interact, there is no transcription of the reporter gene (Wong et al., 2017b). For our modified yeast two-hybrid system, we adopted the idea of transcription factor's domains in proximity to
+                    each other. However, in our case, domains are in conjunction from the beginning and need to be separated.
                 </p>
 
                 <p class="text-justify t-l color-1 fade_from_top">
@@ -208,8 +205,7 @@
                 </p>
 
                 <p class="text-justify color-1 t-sxs fade_from_left">
-                    We used the Golden Gate assembly MoClo yeast toolkit (Lee et al., 2015) to make the 
-                    necessary constructs for our protease targeting assay.
+                    We used the Golden Gate assembly MoClo yeast toolkit (Lee et al., 2015) to make the necessary constructs for our protease targeting assay.
                 </p>
 
 
@@ -307,9 +303,7 @@
             <div class="col-8">
                 <img src="res/img/engineering/Engineering_Figure3.svg" alt="" class="img-fluid fade_from_right">
                 <p class="t-sxs text-justify color-1 fade_from_bottom">
-                    <b>Figure 3. A predicted structural model of the SALSA protein.</b> 
-                    The unstructured SID linkers separate the SRCR domains that bind to the teeth and that 
-                    are used by the bacteria to anchor on the tooth.
+                    <b>Figure 3. A predicted structural model of the SALSA protein.</b> The unstructured SID linkers separate the SRCR domains that bind to the teeth and that are used by the bacteria to anchor on the tooth.
 
                 </p>
 
@@ -337,10 +331,10 @@
                     <b>Protease activity inactivates expression of a growth repressor</b>
                 </p>
                 <p class="t-xxs text-justify color-10 fade_from_left">
-                    Both TU2 and TU3 contain GAL1 promoters. Therefore, the second and the third transcriptional units are expressed simultaneously. When the protease
-                    cuts the SID domain in the transcription factor, it divides the LexA and VP16 domains of the transcription factor, inactivating the transcription factor and the expression of SIC1∆N. In this case, the cells grow normally, indicating
-                    that protease has efficiently cleaved the desired sequence. If the protease fails to cut the SID linker, then the transcription factor attaches to the SIC1∆N promoter, leading to expression of the inhibitor and termination of the cell
-                    cycle and yeast growth. Our modified yeast two-hybrid system is intended to integrate into yeast S. cerevisiae chromosomes, which we approached in two ways: separate integration for each transcription unit or teamwise integration.
+                    Both TU2 and TU3 contain GAL1 promoters. Therefore, the second and the third transcriptional units are expressed simultaneously. When the protease cuts the SID domain in the transcription factor, it divides the LexA and VP16 domains of the transcription
+                    factor, inactivating the transcription factor and the expression of SIC1∆N. In this case, the cells grow normally, indicating that protease has efficiently cleaved the desired sequence. If the protease fails to cut the SID linker,
+                    then the transcription factor attaches to the SIC1∆N promoter, leading to expression of the inhibitor and termination of the cell cycle and yeast growth. Our modified yeast two-hybrid system is intended to integrate into yeast S. cerevisiae
+                    chromosomes, which we approached in two ways: separate integration for each transcription unit or teamwise integration.
 
                 </p>
 
@@ -364,13 +358,12 @@
                     <b>High-throughput screening of proteases</b>
                 </p>
                 <p class="t-xxs text-justify color-10 fade_from_left">
-                    After testing our candidate proteases and finding the ones that cleave the SID linkers most efficiently, we plan to implement error-prone PCR to create protease libraries
-                    and to improve their specificity for the SID linkers. Error-prone PCR is a random mutagenesis technique for introducing mutations in genes encoding proteins. Mutations appear because of using a polymerase with decreased proofreading
-                    ability and the specific conditions of the polymerase chain reaction — specifically, the concentration of Mg2+ and Mn2+ ions and an unbalanced ratio of nucleotides. The number of cycles can control the frequency of the mutations incorporated.
-                    The mutant PCR products are subsequently cloned into an expression vector resulting in the library for screening changes in proteins activity and identifying beneficial mutations (Tao & Raz, 2015). As the screening is based on positive
-                    selection using a simple readout, yeast growth, this is a powerful tool to isolate rare variants that have increased efficiency for cleaving the SID linkers. Also, the assay selects for specific proteases, as proteases with very broad
-                    specificity will target additional yeast proteins, causing off-target toxicity and their depletion in the competitive growth assay. This attribute is also beneficial for our project to obtain a protease with least off-target effects
-                    when used for oral hygiene.
+                    After testing our candidate proteases and finding the ones that cleave the SID linkers most efficiently, we plan to implement error-prone PCR to create protease libraries and to improve their specificity for the SID linkers. Error-prone PCR is a random
+                    mutagenesis technique for introducing mutations in genes encoding proteins. Mutations appear because of using a polymerase with decreased proofreading ability and the specific conditions of the polymerase chain reaction — specifically,
+                    the concentration of Mg2+ and Mn2+ ions and an unbalanced ratio of nucleotides. The number of cycles can control the frequency of the mutations incorporated. The mutant PCR products are subsequently cloned into an expression vector
+                    resulting in the library for screening changes in proteins activity and identifying beneficial mutations (Tao & Raz, 2015). As the screening is based on positive selection using a simple readout, yeast growth, this is a powerful tool
+                    to isolate rare variants that have increased efficiency for cleaving the SID linkers. Also, the assay selects for specific proteases, as proteases with very broad specificity will target additional yeast proteins, causing off-target
+                    toxicity and their depletion in the competitive growth assay. This attribute is also beneficial for our project to obtain a protease with least off-target effects when used for oral hygiene.
 
                 </p>
 
@@ -409,9 +402,7 @@
         <div class="row no_top_padding ">
             <div class="col-sm-5 col-4"></div>
             <div class="col-sm-2 col-4">
-                <button class="btn read_more_button color-10 t-sxs text-center fade_from_top" type="button" 
-                        data-bs-toggle="collapse" data-bs-target="#references" aria-expanded="false" 
-                        aria-controls="references">
+                <button class="btn read_more_button color-10 t-sxs text-center fade_from_top" type="button" data-bs-toggle="collapse" data-bs-target="#references" aria-expanded="false" aria-controls="references">
                 References
               </button>
             </div>
@@ -468,14 +459,28 @@
     <footer class="p-2 bg-dark text-white text-center position-relative ">
         <div class="container-fluid">
             <div class="d-sm-flex align-items-center row">
-                <div class="col-md-6 ">
-                    <img class="img-fluid" src="res/img/res9.svg" alt="">
+                <div class="col-md-1 ">
+                </div>
+                <div class="col-md-1 ">
+                    <img class="img-fluid" src="https://2021.igem.org/wiki/images/7/7a/T--ESTONIA_TUIT--footer--1.png" alt="">
+                </div>
+                <div class="col-md-1 ">
+                    <img class="img-fluid" src="https://2021.igem.org/wiki/images/9/9c/T--ESTONIA_TUIT--footer--2.png" alt="">
+                </div>
+                <div class="col-md-1 ">
+                    <img class="img-fluid" src="https://2021.igem.org/wiki/images/8/86/T--ESTONIA_TUIT--footer--3.png" alt="">
+                </div>
+                <div class="col-md-1 ">
+                    <img class="img-fluid" src="https://2021.igem.org/wiki/images/5/58/T--ESTONIA_TUIT--footer--4.png" alt="">
+                </div>
+                <div class="col-md-1 ">
+                    <img class="img-fluid" src="https://2021.igem.org/wiki/images/3/3c/T--ESTONIA_TUIT--footer--5.png" alt="">
                 </div>
 
-                <div class="col-md-3 ">
+                <div class="col-md-1 ">
                 </div>
 
-                <div class="col-md-3 ">
+                <div class="col-md-4 text-center">
 
                     <div class="contact-us-container">
 

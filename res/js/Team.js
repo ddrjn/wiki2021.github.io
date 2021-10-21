@@ -6,7 +6,7 @@ let scrollval = 0;
 let memberInfo;
 var imgArray = new Array(); //array storing peoples images
 var positions = new Array(); //array for storing circle positions, first mentornum are mentors
-var mentorNum = 6; //ammount of mentors
+var mentorNum = 5; //ammount of mentors
 var startAnimating = false; //boolean for addressing when to start animation
 var personCircleSize; //size of circle of person dependent on screen size
 var mentorCircleSize;
@@ -86,7 +86,7 @@ function setup() {
 
 
 
-    myCanvas = createCanvas(window.innerWidth, canvasSize);
+    myCanvas = createCanvas(window.innerWidth, canvasSize).id("teamcanvas");
     myCanvas.parent("teamCanvas");
     myCanvas.id("teamcanvas");
     myCanvas.background('rgba(255,255,255, 0)');
