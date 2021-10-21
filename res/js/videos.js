@@ -24,7 +24,7 @@ let all_videos = {
         {
             "name": "Korabli",
             "thumbnail": "res/img/education_kolbi.svg",
-            "source": "https://mdbootstrap.com/img/video/Sail-Away.mp4"
+            "source": "https://video.igem.org/static/streaming-playlists/hls/83c20668-f551-48f9-8eb0-726086d111b5/4b67afcc-a587-4ec0-93b2-142f615aec0f-1080-fragmented.mp4"
         }
         
 

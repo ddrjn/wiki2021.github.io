@@ -64,10 +64,15 @@ function setPoints(attach) {
 
 
             var peventstop = document.getElementById("p-events").getBoundingClientRect().top + document.documentElement.scrollTop;
+            console.log("PEVENTSTOP", peventstop);
             var pevents = document.getElementById("p-events");
             pevents.style.position = "relative";
-            pevents.style.top = `4.5vw`;
-            pevents.style.left = `-5%`;
+            // pevents.style.top = `4.7vw`;
+            pevents.style.left = `10%`;
+            
+            let kakajato_hujnya = $('#p-events').offset().top + document.documentElement.scrollTop;
+            let pe_svg_top = 4.7 + (4 / kakajato_hujnya/10); 
+            $("#p-events").css({top: `${pe_svg_top}vw`});
             // document.getElementById("circle"+i).addEventListener("click", function(j){
 
             //     document.getElementById("exampleModalLongTitle").innerHTML = workshops.workshops[j].name;

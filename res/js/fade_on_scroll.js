@@ -1,3 +1,4 @@
+
 $(window).on("load", function() {
     $('.fade_from_static').css({ position: 'relative', opacity: '0' });
     $('.fade_from_left').css({ position: 'relative', opacity: '0', left: '-100px' });

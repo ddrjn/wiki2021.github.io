@@ -506,6 +506,22 @@ footer>.container-fluid>.row {
     box-shadow: 4px 4px 1vw 1vw rgba(134, 116, 129, 1);
 }
 
+/* HARDWARE STYLE BUTTON */
+.read_more_button_blue {
+    background-color: #888EBA;
+    color: white !important;
+    border-radius: 20px;
+    width: 100%;
+    /* border-style: solid; */
+}
+
+.read_more_button_blue:hover {
+    background-color: white;
+    color: #888EBA !important;
+    box-shadow: 4px 4px 1vw 1vw #888EBA;
+    /* animation: ; */
+}
+
 .quiz-button {
     border-radius: 20px;
     border-color: #5B69AA;
@@ -1029,4 +1045,8 @@ st {
 
 .text_m_top {
     margin-top: 5%;
+}
+
+.no_top_margin {
+    margin-top: 0;
 }
