@@ -53,7 +53,7 @@ var titles = [
 ]
 
 function escape_preload() {
-    escapeRoomPicture = loadImage("res/img/education/escape_room/escape_room.jpg");
+    escapeRoomPicture = loadImage("res/img/education/escape_room/room.png");
     //escapeRoomPicture = loadImage("https://2021.igem.org/wiki/images/a/ab/T--Estonia_TUIT--mathtask.jpg");
     level0picture = loadImage("res/img/education/escape_room/mathtask.PNG");
     level1picture = loadImage("res/img/education/escape_room/aaaaaaaaaaaa.PNG");
@@ -64,7 +64,7 @@ function escape_preload() {
     level3pictureuv = loadImage("res/img/education/escape_room/periodic_uv.jpg");
     uvbutton = loadImage("res/img/education/escape_room/uv.png");
     lightbutton = loadImage("res/img/education/escape_room/light.png");
-    congratsimage = loadImage("res/img/education/escape_room/aaaaaaaaaaaa.PNG");
+    congratsimage = loadImage("res/img/education/escape_room/congrats.jpg");
 }
 
 
@@ -90,7 +90,7 @@ function draw() {
 
     if (level == 5) {
         image(congratsimage, 0, 0, containerdims, containerdims);
-        document.getElementById("levelDescription").innerHTML = "Great Job! <br> You have succesfully passed escaped!!";
+        document.getElementById("levelDescription").innerHTML = "Great Job! <br> You have succesfully escaped!!";
         document.getElementById("levelIndicator").innerHTML = "Congradulations";
         document.getElementById("numberInput").style.display = "none";
         document.getElementById("numberButton").style.display = "none";
@@ -241,6 +241,7 @@ function startEscapeRoom() {
 
 function startlevel(lvl) {
     // image(level0picture, 0, 0, containerdims, containerdims);
+    myCanvas.background(255);
     onlevel = true;
     if (lvl == 0) level1();
     if (lvl == 1) level2();
