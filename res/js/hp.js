@@ -1,7 +1,7 @@
 let hps;
 
 window.onload = function() {
-    hps = loadJSON("res/info/hp.json");
+    hps = loadJSON("");
     setthingsup();
 
 
